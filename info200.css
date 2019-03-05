@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+   font-family: 'Open Sans', sans-serif;
+}
+
+#start .bg h1 {
+  text-align: center;
+  /*color: #E3888A /*#FF7477;*/
+  font-size: 11em;
+  font-weight: bold;
+  display: block;
+}
+
+.bg {
+  background-color:	rgba(0,255,127, 0.25);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#filter-form .bg {
+   flex-direction: row;
+   align-items: baseline;
+   padding: 100px;
+}
+
+#recipe-card .bg {
+   flex-direction: row;
+}
+
+body, html, main {
+  height: 100%;
+  margin: 0;
+}
+
+.buttons {
+   width: 80%;
+   display: flex;
+   justify-content: space-between;
+}
+
+#start-button {
+   font-size: 15em;
+   margin-left: auto;
+   margin-right: auto;
+   width: 30%;
+}
+
+#start button {
+   font-size: 3em;
+   width: 17%;
+}
+
+
+
+.hidden {
+   display: none;
+
+}
+
+.checkbox {
+   display: block;
+   font-size: 2.5em;
+}
+
+.card {
+   margin-left: 20px;
+   margin-right: 20px;
+}
+
+.card:hover {
+   cursor: pointer;
+}
+
+#filter-form .jumbotron {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+fieldset {
+   margin: 100px;
+}
+
+#legend {
+   position: absolute;
+   right: 50px;
+   top: 50px;
+   width: 15em;
+}
+
+.back-button {
+   background-image: url("back-arrow.svg");
+   background-repeat: no-repeat;
+   position: absolute;
+   left: 50px;
+   top: 50px;
+   width: 25px;
+   height: 25px;
+}
+
+.back-button:hover {
+   cursor: pointer;
+}
+
+#recipe-card img {
+   width: 100%;
+   margin-bottom: 100px;
+}
+
+#recipe-card .jumbotron {
+   flex-basis: 45%;
+}
+
+#recipe-card .img-wrapper {
+   flex-basis: 45%;
+}
+
+#recipe-card li {
+   font-size: 2em;
+}
