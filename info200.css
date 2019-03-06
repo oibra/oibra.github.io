@@ -5,6 +5,10 @@
    font-family: 'Open Sans', sans-serif;
 }
 
+html {
+   background-color:	rgba(0,255,127, 0.25);
+}
+
 #start .bg h1 {
   text-align: center;
   /*color: #E3888A /*#FF7477;*/
@@ -32,7 +36,8 @@
 #filter-form .bg {
    flex-direction: row;
    align-items: baseline;
-   padding: 100px;
+   /* padding: 100px;*/
+   padding: 2em;
 }
 
 #recipe-card .bg {
@@ -75,8 +80,8 @@ body, html, main {
 }
 
 .card {
-   margin-left: 20px;
-   margin-right: 20px;
+   margin-left: 1em;
+   margin-right: 1em;
 }
 
 .card:hover {
@@ -90,13 +95,13 @@ body, html, main {
 }
 
 fieldset {
-   margin: 100px;
+   margin: 10em;
 }
 
 #legend {
    position: absolute;
-   right: 50px;
-   top: 50px;
+   right: 5em;
+   top: 5em;
    width: 15em;
 }
 
@@ -104,10 +109,10 @@ fieldset {
    background-image: url("back-arrow.svg");
    background-repeat: no-repeat;
    position: absolute;
-   left: 50px;
-   top: 50px;
-   width: 25px;
-   height: 25px;
+   left: 1em;
+   top: 5em;
+   width: 2.5em;
+   height: 2.5em;
 }
 
 .back-button:hover {
@@ -116,15 +121,20 @@ fieldset {
 
 #recipe-card img {
    width: 100%;
-   margin-bottom: 100px;
+   margin-bottom: 10em;
+   border: 1em gray solid;
+   border-radius: 2em;
 }
 
 #recipe-card .jumbotron {
-   flex-basis: 45%;
+   display: flex;
+   flex-direction: row;
+   width: 90%;
+   align-items: center;
 }
 
 #recipe-card .img-wrapper {
-   flex-basis: 45%;
+   flex-basis: 50%;
 }
 
 #recipe-card li {
