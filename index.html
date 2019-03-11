@@ -43,46 +43,46 @@
          <fieldset>
             <legend>Dietary Restrictions</legend>
             <div class="checkbox">
-               <input type="checkbox" value="halal" id="halal">Halal
+               <input class="restriction" type="checkbox" value="halal" id="halal">Halal
             </div>
             <div class="checkbox">
-               <input type="checkbox" value="kosher" id="kosher">Kosher
+               <input class="restriction" type="checkbox" value="kosher" id="kosher">Kosher
             </div>
             <div class="checkbox">
-               <input type="checkbox" value="pescetarian" id="pescetarian">Pescetarian
+               <input class="restriction" type="checkbox" value="pescetarian" id="pescetarian">Pescetarian
             </div>
             <div class="checkbox">
-               <input type="checkbox" value="vegan" id="vegan">Vegan
+               <input class="restriction" type="checkbox" value="vegan" id="vegan">Vegan
             </div>
             <div class="checkbox">
-               <input type="checkbox" value="vegetarian" id="vegetarian">Vegetarian
+               <input class="restriction" type="checkbox" value="vegetarian" id="vegetarian">Vegetarian
             </div>
          </fieldset>
          <fieldset>
             <legend>Allergens</legend>
             <div class="checkbox">
-               <input type="checkbox" value="eggs" id="eggs">Eggs
+               <input class="allergen" type="checkbox" value="eggs" id="eggs">Eggs
             </div>
             <div class="checkbox">
-               <input type="checkbox" value="dairy" id="dairy">Dairy
+               <input class="allergen" type="checkbox" value="dairy" id="dairy">Dairy
             </div>
             <div class="checkbox">
-               <input type="checkbox" value="fish" id="fish">Fish
+               <input class="allergen" type="checkbox" value="fish" id="fish">Fish
             </div>
             <div class="checkbox">
-               <input type="checkbox" value="wheat" id="wheat">Wheat
+               <input class="allergen" type="checkbox" value="wheat" id="wheat">Wheat
             </div>
             <div class="checkbox">
-               <input type="checkbox" value="soy" id="soy">Soy Beans
+               <input class="allergen" type="checkbox" value="soy" id="soy">Soy Beans
             </div>
             <div class="checkbox">
-               <input type="checkbox" value="peanuts" id="peanuts">Peanuts
+               <input class="allergen" type="checkbox" value="peanuts" id="peanuts">Peanuts
             </div>
             <div class="checkbox">
-               <input type="checkbox" value="nuts" id="nuts">Tree Nuts
+               <input class="allergen" type="checkbox" value="nuts" id="nuts">Tree Nuts
             </div>
             <div class="checkbox">
-               <input type="checkbox" value="shellfish" id="shellfish">Shellfish
+               <input class="allergen" type="checkbox" value="shellfish" id="shellfish">Shellfish
             </div>
          </fieldset>
          <fieldset>
@@ -104,7 +104,7 @@
                         <div class="input-group-prepend">
                            <span class="input-group-text">$</span>
                         </div>
-                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" id="budget">
                         <div class="input-group-append">
                            <span class="input-group-text">.00</span>
                         </div>
@@ -276,8 +276,10 @@
          </div>
          <div class="jumbotron">
             <div class="img-wrapper">
-            <h1 class="title">Spaghetti Cacio e Pepe</h1>
-            <h3 class="time">Time: 25 minutes</h5>
+               <h1 class="title">Spaghetti Cacio e Pepe</h1>
+               <h3>Time: <span class="time">25</span> minutes</h3>
+               <h3>Price: $<span class="price">25</span>.00</h3>
+               <h3>Difficulty: <span class="diff">2</span></h3>
                <ol>
                   <li>Bring a large pot of salted water to a boil</li>
                   <li>Cook spaghetti in boiling water until tender but firm to the bite, about 10 minutes. Reserve some of the cooking water and drain spaghetti.</li>
