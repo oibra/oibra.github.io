@@ -34,10 +34,19 @@ html {
 }
 
 #start .bg {
-   background-image: url("logo_transparent.png");
+
    justify-content: space-between;
    padding-top: 5em;
    padding-bottom: 5em;
+}
+
+#logo {
+   background-image: url("logo_transparent.png");
+   background-position: center;
+   background-size: contain;
+   background-repeat: no-repeat;
+   width: 100em;
+   height: 100%;
 }
 
 #filter-form .bg {
