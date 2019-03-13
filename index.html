@@ -30,7 +30,8 @@
             <button type="button" class="btn btn-outline-info">Lang</button>
             <button type="button" class="btn btn-outline-info">Help</button>
          </div>
-         <h1>Readycipe</h1>
+         <!--<h1>Readycipe</h1>-->
+         <!--<img src="logo.jpg" />-->
          <div class="buttons">
             <button type="button" class="btn btn-primary btn-lg" id="start-button">Start</button>
          </div>
@@ -42,48 +43,72 @@
          <div class="jumbotron">
          <fieldset>
             <legend>Dietary Restrictions</legend>
-            <div class="checkbox">
-               <input class="restriction" type="checkbox" value="halal" id="halal">Halal
-            </div>
-            <div class="checkbox">
-               <input class="restriction" type="checkbox" value="kosher" id="kosher">Kosher
-            </div>
-            <div class="checkbox">
-               <input class="restriction" type="checkbox" value="pescetarian" id="pescetarian">Pescetarian
-            </div>
-            <div class="checkbox">
-               <input class="restriction" type="checkbox" value="vegan" id="vegan">Vegan
-            </div>
-            <div class="checkbox">
-               <input class="restriction" type="checkbox" value="vegetarian" id="vegetarian">Vegetarian
-            </div>
+            <div class="custom-control custom-checkbox">
+               <input type="checkbox" class="custom-control-input restriction" id="halal">
+               <label class="custom-control-label" for="halal">Halal</label>
+             </div>
+             <br />
+             <div class="custom-control custom-checkbox">
+               <input type="checkbox" class="custom-control-input restriction" id="kosher">
+               <label class="custom-control-label" for="kosher">Kosher</label>
+             </div>
+             <br />
+             <div class="custom-control custom-checkbox">
+               <input type="checkbox" class="custom-control-input restriction" id="pescetarian">
+               <label class="custom-control-label" for="pescetarian">Pescetarian</label>
+             </div>
+             <br />
+             <div class="custom-control custom-checkbox">
+               <input type="checkbox" class="custom-control-input restriction" id="vegan">
+               <label class="custom-control-label" for="vegan">Vegan</label>
+             </div>
+             <br />
+             <div class="custom-control custom-checkbox">
+               <input type="checkbox" class="custom-control-input restriction" id="vegetarian">
+               <label class="custom-control-label" for="vegetarian">Vegetarian</label>
+             </div>
          </fieldset>
          <fieldset>
             <legend>Allergens</legend>
-            <div class="checkbox">
-               <input class="allergen" type="checkbox" value="eggs" id="eggs">Eggs
-            </div>
-            <div class="checkbox">
-               <input class="allergen" type="checkbox" value="dairy" id="dairy">Dairy
-            </div>
-            <div class="checkbox">
-               <input class="allergen" type="checkbox" value="fish" id="fish">Fish
-            </div>
-            <div class="checkbox">
-               <input class="allergen" type="checkbox" value="wheat" id="wheat">Wheat
-            </div>
-            <div class="checkbox">
-               <input class="allergen" type="checkbox" value="soy" id="soy">Soy Beans
-            </div>
-            <div class="checkbox">
-               <input class="allergen" type="checkbox" value="peanuts" id="peanuts">Peanuts
-            </div>
-            <div class="checkbox">
-               <input class="allergen" type="checkbox" value="nuts" id="nuts">Tree Nuts
-            </div>
-            <div class="checkbox">
-               <input class="allergen" type="checkbox" value="shellfish" id="shellfish">Shellfish
-            </div>
+            <div class="custom-control custom-checkbox">
+               <input type="checkbox" class="custom-control-input allergen" id="eggs">
+               <label class="custom-control-label" for="eggs">Eggs</label>
+             </div>
+             <br />
+             <div class="custom-control custom-checkbox">
+               <input type="checkbox" class="custom-control-input allergen" id="dairy">
+               <label class="custom-control-label" for="dairy">Dairy</label>
+             </div>
+             <br />
+             <div class="custom-control custom-checkbox">
+               <input type="checkbox" class="custom-control-input allergen" id="fish">
+               <label class="custom-control-label" for="fish">Fish</label>
+             </div>
+             <br />
+             <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input allergen" id="wheat">
+                <label class="custom-control-label" for="wheat">Wheat</label>
+             </div>
+             <br />
+             <div class="custom-control custom-checkbox">
+               <input type="checkbox" class="custom-control-input allergen" id="soy">
+               <label class="custom-control-label" for="soy">Soy Beans</label>
+             </div>
+             <br />
+             <div class="custom-control custom-checkbox">
+               <input type="checkbox" class="custom-control-input allergen" id="peanuts">
+               <label class="custom-control-label" for="peanuts">Peanuts</label>
+             </div>
+             <br />
+             <div class="custom-control custom-checkbox">
+               <input type="checkbox" class="custom-control-input allergen" id="nuts">
+               <label class="custom-control-label" for="nuts">Tree Nuts</label>
+             </div>
+             <br />
+             <div class="custom-control custom-checkbox">
+               <input type="checkbox" class="custom-control-input allergen" id="shellfish">
+               <label class="custom-control-label" for="shellfish">Shellfish</label>
+             </div>
          </fieldset>
          <fieldset>
             <legend>Requirements</legend>
@@ -136,7 +161,7 @@
                   </select>
                </div>
             </div>
-            <button type="submit" class="btn btn-primary" id="continue">Continue</button>
+            <button type="submit" class="btn btn-primary btn-lg" id="continue">Continue</button>
          </fieldset>
       </div>
       </div>
@@ -151,7 +176,7 @@
                <div class="card-body">
                   <h5 class="card-title">$<span class="price">24</span>.00</h5>
                </div>
-               <img style="height: 200px; width: 300px; display: block;" src="cacio.jpg" alt="Spaghetti Cacio e Pepe">
+               <img style="height: 180px; width: 270px; display: block;" src="cacio.jpg" alt="Spaghetti Cacio e Pepe">
                <ul class="list-group list-group-flush">
                 <li class="list-group-item"><span class="time">25</span> minutes</li>
                 <li class="list-group-item">Difficulty: <span class="diff">2</span> (Easy)</li>
@@ -169,7 +194,7 @@
                <div class="card-body">
                   <h5 class="card-title">$<span class="price">26</span>.00</h5>
                </div>
-               <img style="height: 200px; width: 300px; display: block;" src="chicken.jpg" alt="Chicken Parmesan">
+               <img style="height: 180px; width: 270px; display: block;" src="chicken.jpg" alt="Chicken Parmesan">
                <ul class="list-group list-group-flush">
                 <li class="list-group-item"><span class="time">35</span> minutes</li>
                 <li class="list-group-item">Difficulty: <span class="diff">2</span> (Easy)</li>
@@ -184,7 +209,7 @@
                <div class="card-body">
                   <h5 class="card-title">$<span class="price">30</span>.00</h5>
                </div>
-               <img style="height: 200px; width: 300px; display: block;" src="lasagna.jpg" alt="Beef Lasagna">
+               <img style="height: 180px; width: 270px; display: block;" src="lasagna.jpg" alt="Beef Lasagna">
                <ul class="list-group list-group-flush">
                 <li class="list-group-item"><span class="time">45</span> minutes</li>
                 <li class="list-group-item">Difficulty: <span class="diff">2</span> (Easy)</li>
@@ -201,7 +226,7 @@
                <div class="card-body">
                   <h5 class="card-title">$<span class="price">28</span>.00</h5>
                </div>
-               <img style="height: 200px; width: 300px; display: block;" src="fish-tacos.jpg" alt="Fish Tacos">
+               <img style="height: 180px; width: 270px; display: block;" src="fish-tacos.jpg" alt="Fish Tacos">
                <ul class="list-group list-group-flush">
                 <li class="list-group-item"><span class="time">70</span> minutes</li>
                 <li class="list-group-item">Difficulty: <span class="diff">3</span> (Medium)</li>
@@ -217,7 +242,7 @@
                <div class="card-body">
                   <h5 class="card-title">$<span class="price">32</span>.00</h5>
                </div>
-               <img style="height: 200px; width: 300px; display: block;" src="salmon.jpg" alt="Salmon">
+               <img style="height: 180px; width: 270px; display: block;" src="salmon.jpg" alt="Salmon">
                <ul class="list-group list-group-flush">
                 <li class="list-group-item"><span class="time">55</span> minutes</li>
                 <li class="list-group-item">Difficulty: <span class="diff">3</span> (Medium)</li>
@@ -233,7 +258,7 @@
                <div class="card-body">
                   <h5 class="card-title">$<span class="price">25</span>.00</h5>
                </div>
-               <img style="height: 200px; width: 300px; display: block;" src="roast-chicken.jpg" alt="Roasted Rosemary Chicken">
+               <img style="height: 180px; width: 270px; display: block;" src="roast-chicken.jpg" alt="Roasted Rosemary Chicken">
                <ul class="list-group list-group-flush">
                 <li class="list-group-item"><span class="time">60</span> minutes</li>
                 <li class="list-group-item">Difficulty: <span class="diff">3</span> (Medium)</li>

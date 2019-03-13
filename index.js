@@ -36,18 +36,18 @@
    }
 
    function openRecipes() {
-      let meal = $('meal').value;
       let budget = $('budget').value;
-      let time = $('time').value;
-      if (!time) {
-         time = 0;
-      }
-      let difficulty = parseInt($('difficulty').value);
-      let restrictions = getChecked('restriction');
-      let allergens = getChecked('allergen');
       if (!budget) {
          alert("You must fill out the budget field.")
       } else {
+         let time = $('time').value;
+         if (!time) {
+            time = 0;
+         }
+         let meal = $('meal').value;
+         let difficulty = parseInt($('difficulty').value);
+         let restrictions = getChecked('restriction');
+         let allergens = getChecked('allergen');
          getRecipes(meal, budget, time, difficulty, restrictions, allergens);
          addHidden();
          removeHidden('recipes');
@@ -80,11 +80,8 @@
          let section = sections[i];
          if (!section.classList.contains('hidden')) {
             section.classList.toggle('hidden');
-            //page = section.id;
-            //lastPage.push(section.id);
          }
       }
-      //return page;
    }
 
    function removeHidden(query) {
@@ -104,7 +101,7 @@
 
    function getRecipes(meal, budget, time, difficulty, restrictions, allergens) {
       let message = meal + "\n" + budget + "\n" + time + "\n" + difficulty + "\n" + restrictions + "\n" + allergens
-      alert(message);
+      //alert(message);
    }
 
    function setRecipeCard(title, imgSrc, time, diff, price) {
