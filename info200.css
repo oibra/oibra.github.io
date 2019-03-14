@@ -83,16 +83,16 @@ body, html, main {
 #start button {
    font-size: 3em;
    width: 17%;
+   vertical-align: middle;
 }
 
 
 
 .hidden {
    display: none;
-
 }
 
-label.custom-control-label {
+#filter-form label.custom-control-label {
    font-size: 2em;
 }
 
@@ -140,24 +140,33 @@ fieldset {
 
 #recipe-card img {
    width: 100%;
-   margin-bottom: 10em;
-   border: 1em gray solid;
-   border-radius: 2em;
+   border: 1em #78c2ad solid;
+   border-radius: 1.5em;
+   height: 300px;
+   width: 450px;
+   margin-bottom: 1.5em;
 }
 
 #recipe-card .jumbotron {
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    width: 90%;
    align-items: center;
    margin-bottom: 0;
-   padding-bottom: 0;
+   padding: 0;
 }
 
 #recipe-card .img-wrapper {
-   flex-basis: 50%;
+   flex-basis: 45%;
+   padding-left: 1%;
+   padding-right: 1%;
 }
 
 #recipe-card li {
    font-size: 2em;
+}
+
+#recipe-card .row {
+   justify-content: space-around;
+   align-items: center;
 }

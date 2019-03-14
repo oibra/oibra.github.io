@@ -16,20 +16,86 @@
    <link href="bootstrap.css" rel="stylesheet">
    <link href="_variables.scss" rel="stylesheet">
    <link href="_bootswatch.scss" rel="stylesheet">
+   <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
 
 
-<link rel="stylesheet" href="info200.css">
-<script src="index.js"></script>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="info200.css">
+   <script src="index.js"></script>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+   <div id="lang-box" class="modal">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title">Languages:</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+               <p>Unfortunately, English is the only language we support right now. Sorry!</p>
+               <div class="form-group">
+                  <div class="custom-control custom-radio">
+                     <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
+                     <label class="custom-control-label" for="customRadio1">English</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                     <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" disabled="">
+                     <label class="custom-control-label" for="customRadio2">Spanish</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                     <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" disabled="">
+                     <label class="custom-control-label" for="customRadio3">French</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                     <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" disabled="">
+                     <label class="custom-control-label" for="customRadio3">Mandarin</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                     <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" disabled="">
+                     <label class="custom-control-label" for="customRadio3">Arabic</label>
+                  </div>
+               </div>
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-primary">Set Language</button>
+               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="help-box" class="modal">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title">Instructions</h5>
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+               </button>
+            </div>
+            <div class="modal-body">
+               <ol>
+                  <li>Tap start to begin</li>
+                  <li>Select the limits that apply to you</li>
+                  <li>Select a recipe from the list</li>
+                  <li>Confirm your recipe choice</li>
+                  <li>Take the printed recipe card into the store and find your ingredients</li>
+               </ol>
+            </div>
+            <div class="modal-footer">
+            </div>
+         </div>
+      </div>
+   </div>
    <main id="start">
       <div class="bg">
          <div class="buttons">
-            <button type="button" class="btn btn-outline-info">Lang</button>
-            <button type="button" class="btn btn-outline-info">Help</button>
+            <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#lang-box">Lang</button>
+            <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#help-box">Help</button>
          </div>
+
          <div id="logo"></div>
          <!--<h1>Readycipe</h1>-->
          <!--<img src="logo.jpg" />-->
@@ -42,129 +108,129 @@
 
       <div class="bg">
          <div class="jumbotron">
-         <fieldset>
-            <legend>Dietary Restrictions</legend>
-            <div class="custom-control custom-checkbox">
-               <input type="checkbox" class="custom-control-input restriction" id="halal">
-               <label class="custom-control-label" for="halal">Halal</label>
-             </div>
-             <br />
-             <div class="custom-control custom-checkbox">
-               <input type="checkbox" class="custom-control-input restriction" id="kosher">
-               <label class="custom-control-label" for="kosher">Kosher</label>
-             </div>
-             <br />
-             <div class="custom-control custom-checkbox">
-               <input type="checkbox" class="custom-control-input restriction" id="pescetarian">
-               <label class="custom-control-label" for="pescetarian">Pescetarian</label>
-             </div>
-             <br />
-             <div class="custom-control custom-checkbox">
-               <input type="checkbox" class="custom-control-input restriction" id="vegan">
-               <label class="custom-control-label" for="vegan">Vegan</label>
-             </div>
-             <br />
-             <div class="custom-control custom-checkbox">
-               <input type="checkbox" class="custom-control-input restriction" id="vegetarian">
-               <label class="custom-control-label" for="vegetarian">Vegetarian</label>
-             </div>
-         </fieldset>
-         <fieldset>
-            <legend>Allergens</legend>
-            <div class="custom-control custom-checkbox">
-               <input type="checkbox" class="custom-control-input allergen" id="eggs">
-               <label class="custom-control-label" for="eggs">Eggs</label>
-             </div>
-             <br />
-             <div class="custom-control custom-checkbox">
-               <input type="checkbox" class="custom-control-input allergen" id="dairy">
-               <label class="custom-control-label" for="dairy">Dairy</label>
-             </div>
-             <br />
-             <div class="custom-control custom-checkbox">
-               <input type="checkbox" class="custom-control-input allergen" id="fish">
-               <label class="custom-control-label" for="fish">Fish</label>
-             </div>
-             <br />
-             <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input allergen" id="wheat">
-                <label class="custom-control-label" for="wheat">Wheat</label>
-             </div>
-             <br />
-             <div class="custom-control custom-checkbox">
-               <input type="checkbox" class="custom-control-input allergen" id="soy">
-               <label class="custom-control-label" for="soy">Soy Beans</label>
-             </div>
-             <br />
-             <div class="custom-control custom-checkbox">
-               <input type="checkbox" class="custom-control-input allergen" id="peanuts">
-               <label class="custom-control-label" for="peanuts">Peanuts</label>
-             </div>
-             <br />
-             <div class="custom-control custom-checkbox">
-               <input type="checkbox" class="custom-control-input allergen" id="nuts">
-               <label class="custom-control-label" for="nuts">Tree Nuts</label>
-             </div>
-             <br />
-             <div class="custom-control custom-checkbox">
-               <input type="checkbox" class="custom-control-input allergen" id="shellfish">
-               <label class="custom-control-label" for="shellfish">Shellfish</label>
-             </div>
-         </fieldset>
-         <fieldset>
-            <legend>Requirements</legend>
-            <div class="form-group">
-               <div class="form-group">
-                  <label for="meal">Meal</label>
-                  <select class="form-control" id="meal">
-                     <option>Breakfast</option>
-                     <option>Lunch</option>
-                     <option>Dinner</option>
-                     <option>Any</option>
-                  </select>
+            <fieldset>
+               <legend>Dietary Restrictions</legend>
+               <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input restriction" id="halal">
+                  <label class="custom-control-label" for="halal">Halal</label>
                </div>
+               <br />
+               <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input restriction" id="kosher">
+                  <label class="custom-control-label" for="kosher">Kosher</label>
+               </div>
+               <br />
+               <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input restriction" id="pescetarian">
+                  <label class="custom-control-label" for="pescetarian">Pescetarian</label>
+               </div>
+               <br />
+               <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input restriction" id="vegan">
+                  <label class="custom-control-label" for="vegan">Vegan</label>
+               </div>
+               <br />
+               <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input restriction" id="vegetarian">
+                  <label class="custom-control-label" for="vegetarian">Vegetarian</label>
+               </div>
+            </fieldset>
+            <fieldset>
+               <legend>Allergens</legend>
+               <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input allergen" id="eggs">
+                  <label class="custom-control-label" for="eggs">Eggs</label>
+               </div>
+               <br />
+               <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input allergen" id="dairy">
+                  <label class="custom-control-label" for="dairy">Dairy</label>
+               </div>
+               <br />
+               <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input allergen" id="fish">
+                  <label class="custom-control-label" for="fish">Fish</label>
+               </div>
+               <br />
+               <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input allergen" id="wheat">
+                  <label class="custom-control-label" for="wheat">Wheat</label>
+               </div>
+               <br />
+               <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input allergen" id="soy">
+                  <label class="custom-control-label" for="soy">Soy Beans</label>
+               </div>
+               <br />
+               <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input allergen" id="peanuts">
+                  <label class="custom-control-label" for="peanuts">Peanuts</label>
+               </div>
+               <br />
+               <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input allergen" id="nuts">
+                  <label class="custom-control-label" for="nuts">Tree Nuts</label>
+               </div>
+               <br />
+               <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input allergen" id="shellfish">
+                  <label class="custom-control-label" for="shellfish">Shellfish</label>
+               </div>
+            </fieldset>
+            <fieldset>
+               <legend>Requirements</legend>
                <div class="form-group">
-                  <label class="control-label">Budget</label>
                   <div class="form-group">
-                     <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                           <span class="input-group-text">$</span>
-                        </div>
-                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" id="budget">
-                        <div class="input-group-append">
-                           <span class="input-group-text">.00</span>
+                     <label for="meal">Meal</label>
+                     <select class="form-control" id="meal">
+                        <option>Breakfast</option>
+                        <option>Lunch</option>
+                        <option>Dinner</option>
+                        <option>Any</option>
+                     </select>
+                  </div>
+                  <div class="form-group">
+                     <label class="control-label">Budget</label>
+                     <div class="form-group">
+                        <div class="input-group mb-3">
+                           <div class="input-group-prepend">
+                              <span class="input-group-text">$</span>
+                           </div>
+                           <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" id="budget">
+                           <div class="input-group-append">
+                              <span class="input-group-text">.00</span>
+                           </div>
                         </div>
                      </div>
                   </div>
+                  <div class="form-group">
+                     <label class="col-form-label col-form-label-lg" for="timee">Time Limit (0 for none)</label>
+                     <input class="form-control form-control-lg" type="text" placeholder="0" id="time">
+                  </div>
+                  <div class="form-group">
+                     <label for="servings">Serving Size</label>
+                     <select class="form-control" id="servings">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5+</option>
+                     </select>
+                  </div>
+                  <div class="form-group">
+                     <label for="difficulty">Max Difficulty (1-5)</label>
+                     <select class="form-control" id="difficulty">
+                        <option>1 (Very Easy)</option>
+                        <option>2 (Easy)</option>
+                        <option>3 (Medium)</option>
+                        <option>4 (Challenging)</option>
+                        <option>5 (Difficult)</option>
+                     </select>
+                  </div>
                </div>
-               <div class="form-group">
-                  <label class="col-form-label col-form-label-lg" for="timee">Time Limit (0 for none)</label>
-                  <input class="form-control form-control-lg" type="text" placeholder="0" id="time">
-               </div>
-               <div class="form-group">
-                  <label for="servings">Serving Size</label>
-                  <select class="form-control" id="servings">
-                     <option>1</option>
-                     <option>2</option>
-                     <option>3</option>
-                     <option>4</option>
-                     <option>5+</option>
-                  </select>
-               </div>
-               <div class="form-group">
-                  <label for="difficulty">Max Difficulty (1-5)</label>
-                  <select class="form-control" id="difficulty">
-                     <option>1 (Very Easy)</option>
-                     <option>2 (Easy)</option>
-                     <option>3 (Medium)</option>
-                     <option>4 (Challenging)</option>
-                     <option>5 (Difficult)</option>
-                  </select>
-               </div>
-            </div>
-            <button type="submit" class="btn btn-primary btn-lg" id="continue">Continue</button>
-         </fieldset>
-      </div>
+               <button type="submit" class="btn btn-primary btn-lg" id="continue">Continue</button>
+            </fieldset>
+         </div>
       </div>
    </main>
    <main id="recipes" class="hidden">
@@ -177,11 +243,11 @@
                <div class="card-body">
                   <h5 class="card-title">$<span class="price">24</span>.00</h5>
                </div>
-               <img style="height: 180px; width: 270px; display: block;" src="cacio.jpg" alt="Spaghetti Cacio e Pepe">
+               <img style="height: 150px; width: 225px; display: block;" src="cacio.jpg" alt="Spaghetti Cacio e Pepe">
                <ul class="list-group list-group-flush">
-                <li class="list-group-item"><span class="time">25</span> minutes</li>
-                <li class="list-group-item">Difficulty: <span class="diff">2</span> (Easy)</li>
-              </ul>
+                  <li class="list-group-item"><span class="time">25</span> minutes</li>
+                  <li class="list-group-item">Difficulty: <span class="diff">2</span> (Easy)</li>
+               </ul>
                <div class="card-footer text-muted">
                   <span class="badge badge-primary badge-pill">H</span>
                   <span class="badge badge-primary badge-pill">K</span>
@@ -195,11 +261,11 @@
                <div class="card-body">
                   <h5 class="card-title">$<span class="price">26</span>.00</h5>
                </div>
-               <img style="height: 180px; width: 270px; display: block;" src="chicken.jpg" alt="Chicken Parmesan">
+               <img style="height: 150px; width: 225px; display: block;" src="chicken.jpg" alt="Chicken Parmesan">
                <ul class="list-group list-group-flush">
-                <li class="list-group-item"><span class="time">35</span> minutes</li>
-                <li class="list-group-item">Difficulty: <span class="diff">2</span> (Easy)</li>
-              </ul>
+                  <li class="list-group-item"><span class="time">35</span> minutes</li>
+                  <li class="list-group-item">Difficulty: <span class="diff">2</span> (Easy)</li>
+               </ul>
                <div class="card-footer text-muted">
                   <span class="badge badge-primary badge-pill">H</span>
                   <span class="badge badge-primary badge-pill">K</span>
@@ -210,11 +276,11 @@
                <div class="card-body">
                   <h5 class="card-title">$<span class="price">30</span>.00</h5>
                </div>
-               <img style="height: 180px; width: 270px; display: block;" src="lasagna.jpg" alt="Beef Lasagna">
+               <img style="height: 150px; width: 225px; display: block;" src="lasagna.jpg" alt="Beef Lasagna">
                <ul class="list-group list-group-flush">
-                <li class="list-group-item"><span class="time">45</span> minutes</li>
-                <li class="list-group-item">Difficulty: <span class="diff">2</span> (Easy)</li>
-              </ul>
+                  <li class="list-group-item"><span class="time">45</span> minutes</li>
+                  <li class="list-group-item">Difficulty: <span class="diff">2</span> (Easy)</li>
+               </ul>
                <div class="card-footer text-muted">
                   <span class="badge badge-primary badge-pill">H</span>
                   <span class="badge badge-primary badge-pill">K</span>
@@ -227,11 +293,11 @@
                <div class="card-body">
                   <h5 class="card-title">$<span class="price">28</span>.00</h5>
                </div>
-               <img style="height: 180px; width: 270px; display: block;" src="fish-tacos.jpg" alt="Fish Tacos">
+               <img style="height: 150px; width: 225px; display: block;" src="fish-tacos.jpg" alt="Fish Tacos">
                <ul class="list-group list-group-flush">
-                <li class="list-group-item"><span class="time">70</span> minutes</li>
-                <li class="list-group-item">Difficulty: <span class="diff">3</span> (Medium)</li>
-              </ul>
+                  <li class="list-group-item"><span class="time">70</span> minutes</li>
+                  <li class="list-group-item">Difficulty: <span class="diff">3</span> (Medium)</li>
+               </ul>
                <div class="card-footer text-muted">
                   <span class="badge badge-primary badge-pill">H</span>
                   <span class="badge badge-primary badge-pill">K</span>
@@ -243,11 +309,11 @@
                <div class="card-body">
                   <h5 class="card-title">$<span class="price">32</span>.00</h5>
                </div>
-               <img style="height: 180px; width: 270px; display: block;" src="salmon.jpg" alt="Salmon">
+               <img style="height: 150px; width: 225px; display: block;" src="salmon.jpg" alt="Salmon">
                <ul class="list-group list-group-flush">
-                <li class="list-group-item"><span class="time">55</span> minutes</li>
-                <li class="list-group-item">Difficulty: <span class="diff">3</span> (Medium)</li>
-              </ul>
+                  <li class="list-group-item"><span class="time">55</span> minutes</li>
+                  <li class="list-group-item">Difficulty: <span class="diff">3</span> (Medium)</li>
+               </ul>
                <div class="card-footer text-muted">
                   <span class="badge badge-primary badge-pill">H</span>
                   <span class="badge badge-primary badge-pill">K</span>
@@ -255,57 +321,48 @@
                </div>
             </div>
             <div class="card mb-3">
-               <h3 class="card-header">Roasted Rosemary Chicken</h3>
+               <h3 class="card-header">Rosemary Chicken</h3>
                <div class="card-body">
                   <h5 class="card-title">$<span class="price">25</span>.00</h5>
                </div>
-               <img style="height: 180px; width: 270px; display: block;" src="roast-chicken.jpg" alt="Roasted Rosemary Chicken">
+               <img style="height: 150px; width: 225px; display: block;" src="roast-chicken.jpg" alt="Roasted Rosemary Chicken">
                <ul class="list-group list-group-flush">
-                <li class="list-group-item"><span class="time">60</span> minutes</li>
-                <li class="list-group-item">Difficulty: <span class="diff">3</span> (Medium)</li>
-              </ul>
+                  <li class="list-group-item"><span class="time">60</span> minutes</li>
+                  <li class="list-group-item">Difficulty: <span class="diff">3</span> (Medium)</li>
+               </ul>
                <div class="card-footer text-muted">
                   <span class="badge badge-primary badge-pill">H</span>
                   <span class="badge badge-primary badge-pill">K</span>
                </div>
             </div>
          </div>
-         <!--
-         <ul class="list-group" id="legend">
-           <li class="list-group-item d-flex justify-content-between align-items-center">
-             Halal
-             <span class="badge badge-primary badge-pill">H</span>
-           </li>
-           <li class="list-group-item d-flex justify-content-between align-items-center">
-             Kosher
-             <span class="badge badge-primary badge-pill">K</span>
-           </li>
-           <li class="list-group-item d-flex justify-content-between align-items-center">
-             Pescetarian
-             <span class="badge badge-primary badge-pill">P</span>
-           </li>
-           <li class="list-group-item d-flex justify-content-between align-items-center">
-             Vegan
-             <span class="badge badge-primary badge-pill">V</span>
-           </li>
-           <li class="list-group-item d-flex justify-content-between align-items-center">
-             Vegetarian
-             <span class="badge badge-primary badge-pill">V+</span>
-           </li>
-         </ul>
-      -->
+</div>
+</main>
+<main id="recipe-card" class="hidden">
+   <div class="bg">
+      <div class="back-button" >
       </div>
-   </main>
-   <main id="recipe-card" class="hidden">
-      <div class="bg">
-         <div class="back-button" >
+      <div class="jumbotron">
+         <div class="row">
+            <h1 class="title">Spaghetti Cacio e Pepe</h1>
          </div>
-         <div class="jumbotron">
+         <div class="row">
             <div class="img-wrapper">
-               <h1 class="title">Spaghetti Cacio e Pepe</h1>
+               <img src="cacio.jpg" />
                <h3>Time: <span class="time">25</span> minutes</h3>
                <h3>Price: $<span class="price">25</span>.00</h3>
-               <h3>Difficulty: <span class="diff">2</span></h3>
+               <ul>
+                  <li>1 pound spaghetti</li>
+                  <li>6 tablespoons olive oil</li>
+                  <li>2 cloves garlic, minced</li>
+                  <li>2 teaspoons ground black pepper</li>
+                  <li>1 3/4 cups grated Pecorino-Romano cheese</li>
+               </ul>
+            </div>
+            <!--<div class="img-wrapper">
+
+            </div>-->
+            <div class="img-wrapper">
                <ol>
                   <li>Bring a large pot of salted water to a boil</li>
                   <li>Cook spaghetti in boiling water until tender but firm to the bite, about 10 minutes. Reserve some of the cooking water and drain spaghetti.</li>
@@ -315,14 +372,16 @@
                   <li>Add ~1/2 cup o reserved pasta water; stir until cheese is melted, about 1 minute.</li>
                   <li>Add more pata water until the sauce coats the spaghetti, about 1 minute more</li>
                </ol>
-            </div>
-            <div class="img-wrapper">
-               <img src="cacio.jpg" />
-               <button type="button" class="btn btn-primary btn-lg btn-block">Print Recipe Card</button>
+               <button type="button" class="btn btn-primary btn-lg btn-block" id="print-btn">Print Recipe Card</button>
             </div>
          </div>
-
       </div>
-   </main>
+   </div>
+</main>
+<main id="transition" class="hidden">
+   <div class="bg">
+      <h2>Thank You For Using Readycipe!</h2>
+   </div>
+</main>
 </body>
 </html>

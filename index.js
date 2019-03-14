@@ -28,6 +28,16 @@
       for (let i = 0; i < backButtons.length; i++) {
          backButtons[i].onclick = openLastPage;
       }
+      $('print-btn').onclick = transitionToStart;
+   }
+
+   function transitionToStart() {
+      addHidden();
+      removeHidden('transition');
+      setTimeout(function() {
+         addHidden();
+         removeHidden('start');
+      }, 2500);
    }
 
    function openFilterForm() {
@@ -108,7 +118,6 @@
       $('recipe-card').querySelector('.title').innerText = title;
       $('recipe-card').querySelector('img').src = imgSrc;
       $('recipe-card').querySelector('.time').innerText = time;
-      $('recipe-card').querySelector('.diff').innerText = diff;
       $('recipe-card').querySelector('.price').innerText = price;
    }
 })();
