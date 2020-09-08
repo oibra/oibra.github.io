@@ -1,389 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-   <!-- Latest compiled and minified CSS -->
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Omar Ibrahim">
+    <meta name="description" content="My personal portfolio website">
+    <meta property="og:image" content="./img/background.png">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://students.washington.edu/oibra" />
+    <meta property="og:title" content="omar's portfolio" />
+    <meta property="og:description" content="it's omar. and a website. hooray." />
 
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <title>omar's portfolio</title>
 
-   <!-- jQuery library -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
 
-   <!-- Latest compiled JavaScript -->
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-   <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-T5jhQKMh96HMkXwqVMSjF3CmLcL1nT9//tCqu9By5XSdj7CwR0r+F3LTzUdfkkQf" crossorigin="anonymous">
-
-   <link href="bootstrap.min.css" rel="stylesheet">
-   <link href="bootstrap.css" rel="stylesheet">
-   <link href="_variables.scss" rel="stylesheet">
-   <link href="_bootswatch.scss" rel="stylesheet">
-   <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
-
-
-   <link rel="stylesheet" href="info200.css">
-   <script src="index.js"></script>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
 </head>
-<body>
-   <div id="lang-box" class="modal">
-      <div class="modal-dialog" role="document">
-         <div class="modal-content">
-            <div class="modal-header">
-               <h5 class="modal-title">Languages:</h5>
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-               </button>
+<body class="bg-light">
+    <header class="bg-primary intro">
+        <nav>
+            <!--<a href="https://dribbble.com/omaryibrahim">dribbble</a> |-->
+            <a href="https://github.com/oibra">github</a> |
+            <a href="https://www.linkedin.com/in/omaryibrahim">linkedin</a> |
+            <a href="resume.pdf">resume</a> |
+            <a href="mailto:oibra@uw.edu">email</a>
+        </nav>
+        <div class="name">
+            <span id="O">O</span><span id="M">M</span>
+            <span id="A">A</span><span id="R">R</span>
+        </div>
+        <div class="bio">
+            <div>
+                <p id="headline">a computer science student with a passion for music, web design, and teaching, and a strong dislike of capital letters.</p>
+                <p id="description">hello! i'm a 20 year old computer science student based in seattle, washington and originally from richland, washington. i got my start in the computer science field as a high school research intern at pacific northwest national laboratory, and following that decided to study it in college, which led to me discovering the field of UX, which is something am very interested in pursuing now. i'm currently in my third year studying computer science with minors in informatics and music at the university of washington. during the school year, i work as a ta in the paul g. allen school of computer science , and this summer i'll be working as an intern (virtually) at Amazon.</p>
             </div>
-            <div class="modal-body">
-               <p>Unfortunately, English is the only language we support right now. Sorry!</p>
-               <div class="form-group">
-                  <div class="custom-control custom-radio">
-                     <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
-                     <label class="custom-control-label" for="customRadio1">English</label>
-                  </div>
-                  <!--
-                  <div class="custom-control custom-radio">
-                     <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" disabled="">
-                     <label class="custom-control-label" for="customRadio2">Spanish</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                     <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" disabled="">
-                     <label class="custom-control-label" for="customRadio3">French</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                     <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" disabled="">
-                     <label class="custom-control-label" for="customRadio3">Mandarin</label>
-                  </div>
-                  <div class="custom-control custom-radio">
-                     <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" disabled="">
-                     <label class="custom-control-label" for="customRadio3">Arabic</label>
-                  </div>
-               -->
-               </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container-fluid mb-3">
+            <h1 class="pt-3 mb-3 text-dark">Projects</h1>
+            <div id="projects-grid" class="mt-2">
+                <div class="project-card card" id="linter">
+                    <img class=" card-img-top" src="img/linter.png" />
+                    <div class="card-body bg-primary">
+                        <p class="project-title card-title text-light">intro java style linter</p>
+                    </div>
+                </div>
+                <div class="project-card card" id="sophie">
+                    <img class=" card-img-top" src="img/Group.png" />
+                    <div class="card-body bg-primary">
+                        <p class="project-title card-title text-light">sophie larsen portfolio</p>
+                    </div>
+                </div>
+                <div class="project-card card" id="style-guide">
+                    <img class=" card-img-top" src="img/cse142.png" />
+                    <div class="card-body bg-primary">
+                        <p class="project-title card-title text-light">cse 142 style guide</p>
+                    </div>
+                </div>
+                <div class="project-card card" id="website" data-toggle="modal" data-target="#website-modal" >
+                    <img class="card-img-top" src="img/website.png" />
+                    <div class="card-body bg-primary">
+                        <p class="project-title card-title text-light">this website!</p>
+                    </div>
+                </div>
+                <div class="project-card card" id="readycipe">
+                    <img class="card-img-top" src="img/readycipe.png" />
+                    <div class="card-body bg-primary">
+                        <p class="project-title card-title text-light">readycipe</p>
+                    </div>
+                </div>
+                <div class="project-card card" id="ictc">
+                    <img class="card-img-top" src="img/ictc.jpg" />
+                    <div class="card-body bg-primary">
+                        <span class="project-title card-title text-light">ICTC Website</span>
+                    </div>
+                </div>
+                <div class="project-card card" id="snaptrack">
+                    <img class="card-img-top" src="img/snap.png" />
+                    <div class="card-body bg-primary">
+                        <span class="project-title card-title text-light">SNAPTRack</span>
+                    </div>
+                </div>
+                <div class="project-card card" id="info201">
+                    <img class="card-img-top" src="img/info201.png" />
+                    <div class="card-body bg-primary">
+                        <span class="project-title card-title text-light">info 201 final project</span>
+                    </div>
+                </div>
             </div>
-            <div class="modal-footer">
-               <button type="button" class="btn btn-primary">Set Language</button>
-               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+    </main>
+    <!-- Modals Here -->
+    <div id="website-modal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-white">
+                <div class="modal-header">
+                    <h5 class="modal-title">this website</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        hahaha I don't have that many projects right now and I made this site myself so... ta da.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                </div>
             </div>
-         </div>
-      </div>
-   </div>
-   <div id="help-box" class="modal">
-      <div class="modal-dialog" role="document">
-         <div class="modal-content">
-            <div class="modal-header">
-               <h5 class="modal-title">Instructions</h5>
-               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-               </button>
-            </div>
-            <div class="modal-body">
-               <ol>
-                  <li>Tap start to begin</li>
-                  <li>Select the limits that apply to you</li>
-                  <li>Select a recipe from the list</li>
-                  <li>Confirm your recipe choice</li>
-                  <li>Take the printed recipe card into the store and find your ingredients</li>
-               </ol>
-            </div>
-            <div class="modal-footer">
-            </div>
-         </div>
-      </div>
-   </div>
-   <main id="start">
-      <div class="bg">
-         <div class="buttons">
-            <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#lang-box">Lang</button>
-            <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#help-box">Help</button>
-         </div>
+        </div>
+    </div>
 
-         <div id="logo"></div>
-         <!--<h1>Readycipe</h1>-->
-         <!--<img src="logo.jpg" />-->
-         <div class="buttons">
-            <button type="button" class="btn btn-primary btn-lg" id="start-button">Start</button>
-         </div>
-      </div>
-   </main>
-   <main id="filter-form" class="hidden">
+    <div id="style-guide-modal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-white">
+                <div class="modal-header">
+                    <h5 class="modal-title">cse 142 style guide</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>i work as a teaching assistant for cse 142 (intro computer science) at the university of washington. one project i did as a ta was to improve our introductory java style guide by rewriting it and formatting it as a web document that would be easier to access and read.</p>
+                </div>
+                <div class="modal-footer">
+                    <p><a class="project-link text-dark" href="https://staff.washington.edu/oibra/style-guide/">check it out!</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-      <div class="bg">
-         <div class="jumbotron">
-            <fieldset>
-               <legend>Dietary Restrictions</legend>
-               <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input restriction" id="halal">
-                  <label class="custom-control-label" for="halal">Halal</label>
-               </div>
-               <br />
-               <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input restriction" id="kosher">
-                  <label class="custom-control-label" for="kosher">Kosher</label>
-               </div>
-               <br />
-               <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input restriction" id="pescetarian">
-                  <label class="custom-control-label" for="pescetarian">Pescetarian</label>
-               </div>
-               <br />
-               <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input restriction" id="vegan">
-                  <label class="custom-control-label" for="vegan">Vegan</label>
-               </div>
-               <br />
-               <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input restriction" id="vegetarian">
-                  <label class="custom-control-label" for="vegetarian">Vegetarian</label>
-               </div>
-            </fieldset>
-            <fieldset>
-               <legend>Allergens</legend>
-               <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input allergen" id="eggs">
-                  <label class="custom-control-label" for="eggs">Eggs</label>
-               </div>
-               <br />
-               <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input allergen" id="dairy">
-                  <label class="custom-control-label" for="dairy">Dairy</label>
-               </div>
-               <br />
-               <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input allergen" id="fish">
-                  <label class="custom-control-label" for="fish">Fish</label>
-               </div>
-               <br />
-               <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input allergen" id="wheat">
-                  <label class="custom-control-label" for="wheat">Wheat</label>
-               </div>
-               <br />
-               <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input allergen" id="soy">
-                  <label class="custom-control-label" for="soy">Soy Beans</label>
-               </div>
-               <br />
-               <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input allergen" id="peanuts">
-                  <label class="custom-control-label" for="peanuts">Peanuts</label>
-               </div>
-               <br />
-               <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input allergen" id="nuts">
-                  <label class="custom-control-label" for="nuts">Tree Nuts</label>
-               </div>
-               <br />
-               <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input allergen" id="shellfish">
-                  <label class="custom-control-label" for="shellfish">Shellfish</label>
-               </div>
-            </fieldset>
-            <fieldset>
-               <legend>Requirements</legend>
-               <div class="form-group">
-                  <div class="form-group">
-                     <label for="meal">Meal</label>
-                     <select class="form-control" id="meal">
-                        <option>Breakfast</option>
-                        <option>Lunch</option>
-                        <option>Dinner</option>
-                        <option>Any</option>
-                     </select>
-                  </div>
-                  <div class="form-group">
-                     <label class="control-label">Budget</label>
-                     <div class="form-group">
-                        <div class="input-group mb-3">
-                           <div class="input-group-prepend">
-                              <span class="input-group-text">$</span>
-                           </div>
-                           <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" id="budget">
-                           <div class="input-group-append">
-                              <span class="input-group-text">.00</span>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="form-group">
-                     <label class="col-form-label col-form-label-lg" for="timee">Time Limit (0 for none)</label>
-                     <input class="form-control form-control-lg" type="text" placeholder="0" id="time">
-                  </div>
-                  <div class="form-group">
-                     <label for="servings">Serving Size</label>
-                     <select class="form-control" id="servings">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5+</option>
-                     </select>
-                  </div>
-                  <div class="form-group">
-                     <label for="difficulty">Max Difficulty (1-5)</label>
-                     <select class="form-control" id="difficulty">
-                        <option>1 (Very Easy)</option>
-                        <option>2 (Easy)</option>
-                        <option>3 (Medium)</option>
-                        <option>4 (Challenging)</option>
-                        <option>5 (Difficult)</option>
-                     </select>
-                  </div>
-               </div>
-               <button type="submit" class="btn btn-primary btn-lg" id="continue">Continue</button>
-            </fieldset>
-         </div>
-      </div>
-   </main>
-   <main id="recipes" class="hidden">
-      <div class="bg">
-         <div class="back-button">
-         </div>
-         <div class="row">
-            <div class="card mb-3">
-               <h3 class="card-header">Spaghetti Cacio e Pepe</h3>
-               <div class="card-body">
-                  <h5 class="card-title">$<span class="price">24</span>.00</h5>
-               </div>
-               <img style="height: 150px; width: 225px; display: block;" src="cacio.jpg" alt="Spaghetti Cacio e Pepe">
-               <ul class="list-group list-group-flush">
-                  <li class="list-group-item"><span class="time">25</span> minutes</li>
-                  <li class="list-group-item">Difficulty: <span class="diff">2</span> (Easy)</li>
-               </ul>
-               <div class="card-footer text-muted">
-                  <span class="badge badge-primary badge-pill">H</span>
-                  <span class="badge badge-primary badge-pill">K</span>
-                  <span class="badge badge-primary badge-pill">P</span>
-                  <span class="badge badge-primary badge-pill">V</span>
-                  <span class="badge badge-primary badge-pill">V+</span>
-               </div>
+    <div id="linter-modal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-white">
+                <div class="modal-header">
+                    <h5 class="modal-title">intro java style linter</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>an interactive information web app, created for the Client-Side Web Development course at the UW iSchool. This web app functions as an educational Java linter that checks the style of users' input Java code and inform users of what the style errors are with suggestions on how to fix them. This app is built around the style guidelines for UW CSE 14X (Intro CS1 & 2 at UW) with those students as the primary audience, but should be a helpful resource for any novice Java learners.</p>
+                </div>
+                <div class="modal-footer">
+                    <p><a class="project-link text-dark" href="https://info340c-sp20.github.io/project-1-oibra/">check it out!</a></p>
+                </div>
             </div>
-            <div class="card mb-3">
-               <h3 class="card-header">Chicken Parmesan</h3>
-               <div class="card-body">
-                  <h5 class="card-title">$<span class="price">26</span>.00</h5>
-               </div>
-               <img style="height: 150px; width: 225px; display: block;" src="chicken.jpg" alt="Chicken Parmesan">
-               <ul class="list-group list-group-flush">
-                  <li class="list-group-item"><span class="time">35</span> minutes</li>
-                  <li class="list-group-item">Difficulty: <span class="diff">2</span> (Easy)</li>
-               </ul>
-               <div class="card-footer text-muted">
-                  <span class="badge badge-primary badge-pill">H</span>
-                  <span class="badge badge-primary badge-pill">K</span>
-               </div>
-            </div>
-            <div class="card mb-3">
-               <h3 class="card-header">Beef Lasagna</h3>
-               <div class="card-body">
-                  <h5 class="card-title">$<span class="price">30</span>.00</h5>
-               </div>
-               <img style="height: 150px; width: 225px; display: block;" src="lasagna.jpg" alt="Beef Lasagna">
-               <ul class="list-group list-group-flush">
-                  <li class="list-group-item"><span class="time">45</span> minutes</li>
-                  <li class="list-group-item">Difficulty: <span class="diff">2</span> (Easy)</li>
-               </ul>
-               <div class="card-footer text-muted">
-                  <span class="badge badge-primary badge-pill">H</span>
-                  <span class="badge badge-primary badge-pill">K</span>
-               </div>
-            </div>
-         </div>
-         <div class="row">
-            <div class="card mb-3">
-               <h3 class="card-header">Fish Tacos</h3>
-               <div class="card-body">
-                  <h5 class="card-title">$<span class="price">28</span>.00</h5>
-               </div>
-               <img style="height: 150px; width: 225px; display: block;" src="fish-tacos.jpg" alt="Fish Tacos">
-               <ul class="list-group list-group-flush">
-                  <li class="list-group-item"><span class="time">70</span> minutes</li>
-                  <li class="list-group-item">Difficulty: <span class="diff">3</span> (Medium)</li>
-               </ul>
-               <div class="card-footer text-muted">
-                  <span class="badge badge-primary badge-pill">H</span>
-                  <span class="badge badge-primary badge-pill">K</span>
-                  <span class="badge badge-primary badge-pill">P</span>
-               </div>
-            </div>
-            <div class="card mb-3">
-               <h3 class="card-header">Grilled Salmon</h3>
-               <div class="card-body">
-                  <h5 class="card-title">$<span class="price">32</span>.00</h5>
-               </div>
-               <img style="height: 150px; width: 225px; display: block;" src="salmon.jpg" alt="Salmon">
-               <ul class="list-group list-group-flush">
-                  <li class="list-group-item"><span class="time">55</span> minutes</li>
-                  <li class="list-group-item">Difficulty: <span class="diff">3</span> (Medium)</li>
-               </ul>
-               <div class="card-footer text-muted">
-                  <span class="badge badge-primary badge-pill">H</span>
-                  <span class="badge badge-primary badge-pill">K</span>
-                  <span class="badge badge-primary badge-pill">P</span>
-               </div>
-            </div>
-            <div class="card mb-3">
-               <h3 class="card-header">Rosemary Chicken</h3>
-               <div class="card-body">
-                  <h5 class="card-title">$<span class="price">25</span>.00</h5>
-               </div>
-               <img style="height: 150px; width: 225px; display: block;" src="roast-chicken.jpg" alt="Roasted Rosemary Chicken">
-               <ul class="list-group list-group-flush">
-                  <li class="list-group-item"><span class="time">60</span> minutes</li>
-                  <li class="list-group-item">Difficulty: <span class="diff">3</span> (Medium)</li>
-               </ul>
-               <div class="card-footer text-muted">
-                  <span class="badge badge-primary badge-pill">H</span>
-                  <span class="badge badge-primary badge-pill">K</span>
-               </div>
-            </div>
-         </div>
-</div>
-</main>
-<main id="recipe-card" class="hidden">
-   <div class="bg">
-      <div class="back-button" >
-      </div>
-      <div class="jumbotron">
-         <div class="row">
-            <h1 class="title">Spaghetti Cacio e Pepe</h1>
-         </div>
-         <div class="row">
-            <div class="img-wrapper">
-               <img src="cacio.jpg" />
-               <h3>Time: <span class="time">25</span> minutes</h3>
-               <h3>Price: $<span class="price">25</span>.00</h3>
-               <ul>
-                  <li>1 pound spaghetti</li>
-                  <li>6 tablespoons olive oil</li>
-                  <li>2 cloves garlic, minced</li>
-                  <li>2 teaspoons ground black pepper</li>
-                  <li>1 3/4 cups grated Pecorino-Romano cheese</li>
-               </ul>
-            </div>
-            <!--<div class="img-wrapper">
+        </div>
+    </div>
 
-            </div>-->
-            <div class="img-wrapper">
-               <ol>
-                  <li>Bring a large pot of salted water to a boil</li>
-                  <li>Cook spaghetti in boiling water until tender but firm to the bite, about 10 minutes. Reserve some of the cooking water and drain spaghetti.</li>
-                  <li>Heat oil in a large skillet over medium heat.</li>
-                  <li>Add garlic and pepper to the oil. Cook and stir until fragrant, 1-2 minutes</li>
-                  <li>Add spaghetti and Pecorino Romano cheese</li>
-                  <li>Add ~1/2 cup o reserved pasta water; stir until cheese is melted, about 1 minute.</li>
-                  <li>Add more pata water until the sauce coats the spaghetti, about 1 minute more</li>
-               </ol>
-               <button type="button" class="btn btn-primary btn-lg btn-block" id="print-btn">Print Recipe Card</button>
+    <div id="sophie-modal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-white">
+                <div class="modal-header">
+                    <h5 class="modal-title">sophie larsen portfolio</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>i created a portfolio site from scratch for my wonderful partner, sophie larsen, who'll be a graduate student in mathematics starting in the fall.</p>
+                </div>
+                <div class="modal-footer">
+                    <p><a class="project-link text-dark" href="https://students.washington.edu/sll26/">check it out!</a></p>
+                </div>
             </div>
-         </div>
-      </div>
-   </div>
-</main>
-<main id="transition" class="hidden">
-   <div class="bg">
-      <h2>Thank You For Using Readycipe!</h2>
-   </div>
-</main>
+        </div>
+    </div>
+
+    <div id="readycipe-modal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-white">
+                <div class="modal-header">
+                    <h5 class="modal-title">readycipe</h5>
+                    <button type="button" class="close align-self-start" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>my group created Readycipe as a class final project to streamline the food-making process and make cooking more accessible for lower-income people working on tighter budget with less free time for shopping and cooking. We created a prototype of a machine that would facilitate the streamlining of the food-preparation process for users. I fully created the UI for the machine and the basics of a backend.</p>
+                    <p><strong>note:</strong> because this project was developed with certain hardware in mind, it's made to display well on a portrait computer screen and is not optimized for small/portrait screens. sorry mobile users!</p>
+                </div>
+                <div class="modal-footer">
+                    <p><a class="project-link text-dark" href="https://oibra.github.io/readycipe/">check it out!</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ictc-modal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+
+            <div class="modal-content bg-white">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">ictc website</h5>
+                    <button type="button" class="close align-self-start" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>I designed a new, updated website for my hometown mosque. I basically grew up there and their old website was incredibly outdated, so I volunteered to design a new one to update their web presence. It's built on WordPress to allow for easy upkeep, and I implemented a self-updating table of prayer times.</p>
+                </div>
+                <div class="modal-footer">
+                    <p><a class="project-link text-dark" href="https://islamiccenteroftricities.org/">check it out!</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="snaptrack-modal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+
+            <div class="modal-content bg-white">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">snaptrack</h5>
+                    <button type="button" class="close align-self-start" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>SNAPTrack is an app i took part in developing for the dubhacks 2018 hackathon. we created it with the intention to help people who use SNAP benefits by providing them with information that can help them make the most of their SNAP benefits. it's taking the place of a now defunct service that informed people about what they could use SNAP benfits on, while also providing more specific services, such as store and item specific information about where they can use their benefits and what they can use their benefits for, as well as scraping receipt data to better flesh out the database of SNAP eligible items and places and locating stores where they can use their SNAP benefits. i worked on the front-end of the project, creating the UI (originally in ReactNative but ending up using HTML + CSS) and getting all of the separate pieces to mesh together.</p>
+                </div>
+                <div class="modal-footer">
+                    <p><a class="project-link text-dark" href="./SNAPTracker/">check it out!</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="info201-modal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+
+            <div class="modal-content bg-white">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">info 201 final project</h5>
+                    <button type="button" class="close align-self-start" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        the final project for my class info 201 (Technical Foundations of Informatics), we put
+                        together a set of data visualizations and analytics about Seattle and National crime
+                        data using R and shinyapps. I implemented the arson data tab as well as styling the entire
+                        site (the API for the arson data has changed since this project was done and unfortunately
+                        the arson page no longer loads properly as a result of that change).
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <p><a class="project-link text-dark" href="https://omar-ibrahim.shinyapps.io/info201-group-project/">check it out!</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/modal.js"></script>
 </body>
-</html>
