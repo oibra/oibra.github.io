@@ -35,10 +35,10 @@
       # There were problems, so tell the user and
       # don't send the message yet
       foreach ($messages as $message) {
-        echo("<p>$message</p>\n");
+        echo("$message\n");
       }
-      echo("<p>Click the back button and correct the problems. " .
-        "Then click Send Your Message again.</p>");
+      echo("Click the back button and correct the problems. " .
+        "Then click Send Your Message again.");
     } else {
       # Send the email - we're done
   mail($recipient,
