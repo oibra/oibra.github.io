@@ -107,7 +107,7 @@
         $$('dark').onclick = setColorDark;
         $$('maroon').onclick = setColorMaroon;
         $$('sophieblue').onclick = setColorSophieblue;
-        setupForm();
+        // setupForm();
 
         setIntroMessage();
         setTimeout(typeIntro, 3500);
