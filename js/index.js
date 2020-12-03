@@ -190,9 +190,9 @@
             accents[i].className = "accent " + palette.textLink;
         }
         
-        ($('textarea')[0]).className = "expanding " + palette.textarea;
-        ($('#contact-content button small')[0]).className = palette.textLink;
-        ($('#contact-content button .send-icn')[0]).className.baseVal = 'send-icn ' + palette.textLink;
+        // ($('textarea')[0]).className = "expanding " + palette.textarea;
+        // ($('#contact-content button small')[0]).className = palette.textLink;
+        // ($('#contact-content button .send-icn')[0]).className.baseVal = 'send-icn ' + palette.textLink;
 
         $$('currentColor').className = "fas fa-square fa-lg " + palette.color;
         $$('colorSelectorButton').className = 'btn dropdown-toggle ' + palette.button + " " + palette.color
