@@ -120,11 +120,12 @@ nav a strong {
     padding-left: 0.3rem;
     font-size: 1.25rem;
     font-weight: bold;
-    text-decoration: underline;
+    
 }
 
 .pronouns a {
     font-family: 'Josefin Sans', sans-serif;
+    text-decoration: underline;
 }
 
 .bio {
