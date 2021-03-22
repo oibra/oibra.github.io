@@ -90,7 +90,7 @@
     }
 
     window.onload = function() {
-        setTimeout(hideLoading, 3000);
+        setTimeout(hideLoading, 1000);
         setColorPalette();
         showWelcome();
         
