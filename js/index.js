@@ -110,7 +110,7 @@
         // setupForm();
 
         setIntroMessage();
-        setTimeout(typeIntro, 3500);
+        setTimeout(typeIntro, 1500);
     };
 
     function hideLoading() {
@@ -168,6 +168,10 @@
         cardTitles = $('.job-title');
         for (let i = 0; i < cardTitles.length; i++) {
             cardTitles[i].className = "job-title card-title " + palette.cardTitle;
+        }
+        let jobDates = $('.job-dates');
+        for (let i = 0; i < jobDates.length; i++) {
+            jobDates[i].className = "job-dates " + palette.textLink;
         }
         let projectLinks = $('.project-link');
         for (let i = 0; i < projectLinks.length; i++) {
