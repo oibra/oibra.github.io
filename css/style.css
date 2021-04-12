@@ -162,8 +162,20 @@ footer p {
     width: 90%;
 }
 
-.blog-post {
+/* blog */
+
+.blog-snippet {
     margin-bottom: 1rem;
+}
+
+.blog-snippet p {
+    margin-bottom: 0;
+}
+
+.blog-link {
+    cursor: pointer;
+    text-decoration: underline !important;
+    font-weight: bold;
 }
 
 /* lists */

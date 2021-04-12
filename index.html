@@ -15,15 +15,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/b4c4b44588.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script> --> 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-    <script src="js/index.js"></script>
 </head>
-<body >
+
+<body>
     <div class="loading-icon"></div>
     <header>
         <nav>
@@ -56,9 +50,7 @@
         <div class="pronouns">
             <a href="https://mypronouns.org/he-him">he</a>/<a href="https://mypronouns.org/they-them">they</a>
         </div>
-        <!-- <div > -->
-            <p id="headline" class="bio">a computer science student with a passion for music, web design, and teaching, and a strong dislike of capital letters.</p>
-        <!-- </div> -->
+        <p id="headline" class="bio">a computer science student with a passion for music, web design, and teaching, and a strong dislike of capital letters.</p>
         <div class="page-nav">
             <ul>
                 <li id="projects">projects</li>
@@ -75,14 +67,19 @@
             <p id="description">i'm a 21 year old undergraduate student based in seattle, washington. i'm currently in my final year studying computer science with minors in informatics and music at the university of washington, planning on pursuing a graduate degree studying computer science education. during the school year, i work as a teaching assistant in the paul g. allen school of computer science, and am currently the head teaching assistant for intro to computer programming 1 at the university of washington</p>
             <div id="blog" class="">
                 <hr>
-                <div class="blog-post">
+                <div class="blog-snippet">
+                    <h3>04.10.21 | <em class="blog-title">sigcse 2021 post-mortem</em></h3>
+                    <p>SIGCSE 2021 was the first, and, as I move ever closer to graduating this year, seemingly the last academic conference of my college career. I’ve heard faculty members talk about all the issues with the conference, and I get where they’re coming from, but for me, and maybe because it was my first conference, it was amazing; it was a lifeline...</p>
+                    <a id="sigcse2021" class="blog-link">read more</a>
+                </div>
+                <div class="blog-snippet">
                     <h3>11.09.20 | <em class="blog-title">building a new website</em></h3>
                     <p>at the beginning of every school year, i feel like a different person, creatively, than the year before. so every school year, i redesign my portfolio site to reflect where i'm currently at. being in my senior year and applying to grad schools, i got pretty behind and didn't end up updating it until i got a spur of inspiration and wrote the whole thing this last weekend. so welcome to omar's portfolio 4.0!</p>
                 </div>
             </div>
         </section>
 
-        <section id="project-content" class="hidden">
+        <section id="projects-content" class="hidden">
             <div class="project flipped">
                 <div class="project-description right-align">
                     <p>as a project for my human-computer interaction class, my group designed and prototyped an app called forager.  with the explosion of popularity foraging has gained in recent years, we wanted to make the entire process simpler and lower the barrier of entry for new foragers. forager gives mushroom foragers a smoother and more fulfilling experience. you can read more in <a class="link" href="https://cse440.medium.com/forager-a-better-mushroom-foraging-experience-cb98b9a9ce3">our blog post</a>. this project was awarded "overall best design" in our human-computer interaction course.</p>
@@ -297,8 +294,23 @@
             <h3 class="accent">schedule a meeting</h3>
             <p>you can schedule a meeting with me through <a class="link" href="https://https://calendly.com/oibra">calendly</a></p>
         </section>
+
+        <section id="sigcse2021-content" class="blog hidden">
+            <h1 class="blog-title">sigcse 2021 post-mortem</h1>
+            <h3>04.10.2021</h3>
+            <p>SIGCSE 2021 was the first, and, as I move ever closer to graduating this year, seemingly the last academic conference of my college career. I’ve heard faculty members talk about all the issues with the conference, and I get where they’re coming from, but for me, and maybe because it was my first conference, it was amazing; it was a lifeline. I started this year full of passion for CS Ed and applied to 7 PhD programs to study it after I graduated. When SIGCSE started, I had been rejected from 5 of those programs, and I would know I was rejected from the other 2 by the time SIGCSE was over. Suffice to say, I was feeling pretty convinced that CS Ed just might not be for me. SIGCSE completely pulled me out of that. A full week of meeting droves of people passionate about CS education, getting to experience nuanced, deep, passionate discussions about things I’ve never had people to talk with about, getting to hear people talk about years and years of experience with things I’d only ever heard about. It was enlightening; like finding a new world full of people who care just as much about this niche thing I care about as me. For people already acquainted with that world, I’m sure the virtual conference didn’t deliver all the networking, connecting, and reuniting it normally does. But for someone discovering that world for the first time, especially with social anxiety, the whole experience was revelatory and refreshing. It was also bittersweet.</p>
+            <p>SIGCSE 2021 was the first conference of my college career, but it wasn’t supposed to be. Just a year before, I had been packing for SIGCSE 2020, which my department had funded me to attend. The conference, which was set to be in nearby Portland OR, was cancelled last minute due to COVID-19, and I never got to go. As I experienced SIGCSe for the first time this year, as excited as I was, I couldn’t help but wonder what it would’ve been like to be able to attend earlier in my college career. How might my path have been different -- how might I have been different, if I had been able to experience everything I was experiencing now a year earlier, long before I jumped into graduate program applications without a clue as to what I was doing or where I was going. I am truly happy I got to experience SIGCSE before I graduated, but God do I wish  I could’ve had some of those formative experiences just a little sooner.</p>
+            <p>On a brighter note, SIGCSE also left me with some hope for my future with CS education; when it started, I was pretty much ready to give up on it. But in my time attending the conference, I met so many people, who took so many paths to get into the field I thought I was ready to give up on. It was really nice to see living, breathing proof that just because the path I thought I would take didn’t work out, I shouldn’t give in to despair just yet.</p>
+        </section>
+
         <footer>
             <p>Omar Ibrahim &copy; 2020</p>
         </footer>
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
