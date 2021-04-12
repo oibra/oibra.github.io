@@ -188,6 +188,10 @@
             className: "project-title card-title",
             palette: ["cardTitle"]
         },
+        ".job-title": {
+            className: "job-title card-title",
+            palette: ["cardTitle"]
+        },
         ".job-dates": {
             className: "job-dates",
             palette: ["textLink"]
