@@ -537,55 +537,55 @@ footer p {
 
 /* colors */
 .mediumslateblue {
-    color: mediumslateblue;
+    color: mediumslateblue !important;
 }
 
 .ghostwhite {
-    color: ghostwhite;
+    color: ghostwhite !important;
 }
 
 .strawberry {
-    color: #ec8094;
+    color: #ec8094 !important;
 }
 
 .dark {
-    color: #121212;
+    color: #121212 !important;
 }
 
 .maroon {
-    color: #8b0023;
+    color: #8b0023 !important;
 }
 
 .sophieblue {
-    color: #00e1c6;
+    color: #00e1c6 !important;
 }
 
 .mediumslateblue:hover {
-    color: mediumslateblue;
+    color: mediumslateblue !important;
 }
 
 .ghostwhite:hover {
-    color: ghostwhite;
+    color: ghostwhite !important;
 }
 
 .strawberry:hover {
-    color: #ec8094;
+    color: #ec8094 !important;
 }
 
 .dark:hover {
-    color: #121212;
+    color: #121212 !important;
 }
 
 .maroon:hover {
-    color: #8b0023;
+    color: #8b0023 !important;
 }
 
 .sophieblue:hover {
-    color: #00e1c6;
+    color: #00e1c6 !important;
 }
 
 .mediumslateblueBackground {
-    background-color: mediumslateblue;
+    background-color: mediumslateblue !important;
 }
 
 .textPurple, .textPurple:hover {
@@ -598,12 +598,12 @@ footer p {
 }
 
 .textBlack, .textBlack:hover  {
-    color: black;
+    color: black !important;
     fill: black;
 }
 
 .textBlack nav a, header.textBlack a, a.dropdown-item.textBlack {
-    color: black;
+    color: black !important;
 }
 
 .darkBackground {
@@ -611,7 +611,7 @@ footer p {
 }
 
 .textDark {
-    color: #121212;
+    color: #121212 !important;
 }
 
 .ghostwhiteBackground, .ghostwhiteButton, .ghostwhiteButton:hover {
@@ -619,12 +619,12 @@ footer p {
 }
 
 .textWhite, .textWhite:hover {
-    color: ghostwhite;
+    color: ghostwhite !important;
     fill: ghostwhite;
 }
 
 .textWhite nav a, header.textWhite a {
-    color: ghostwhite;
+    color: ghostwhite !important;
 }
 
 .strawberryBackground {
@@ -632,7 +632,7 @@ footer p {
 }
 
 .textDarkStrawberry, .textDarkStrawberry:hover {
-    color: #b75166;
+    color: #b75166 !important;
     fill: #b75166;
 }
 
@@ -641,7 +641,7 @@ footer p {
 }
 
 .textMaroonAccent, .textMaroonAccent:hover {
-    color: #570000;
+    color: #570000 !important;
     fill: #570000;
 }
 
@@ -650,6 +650,7 @@ footer p {
 }
 
 .textSophieblueAccent, .textSophieblueAccent:hover {
-    color: #009583;
+    color: #009583 !important;
     fill:  #009583;
 }
+
