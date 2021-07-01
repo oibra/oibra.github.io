@@ -12,7 +12,7 @@
     <title>omar ibrahim</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 </head>
 
@@ -49,7 +49,7 @@
         <div class="pronouns">
             <a href="https://mypronouns.org/he-him">he</a>/<a href="https://mypronouns.org/they-them">they</a>
         </div>
-        <p id="headline" class="bio">a computer science student with a passion for music, web design, and teaching, and a strong dislike of capital letters.</p>
+        <p id="headline" class="bio">a computer scientist with a passion for music, web design, and teaching, and a strong dislike of capital letters.</p>
         <div class="page-nav">
             <ul>
                 <li id="projects">projects</li>
@@ -63,7 +63,7 @@
     <main id="main">
         <section id="welcome-content">
             <h1 id="hello">&nbsp;</h1>
-            <p id="description">i'm a 21 year old undergraduate student based in seattle, washington. i'm currently in my final year studying computer science with minors in informatics and music at the university of washington, planning on pursuing a graduate degree studying computer science education. during the school year, i work as a teaching assistant in the paul g. allen school of computer science, and am currently the head teaching assistant for intro to computer programming 1 at the university of washington</p>
+            <p id="description">i'm a 21 year old computer scientist based in seattle, washington. i recently graduated with my B.S. in Computer Science with a minor in informatics from the university of washington, and I'm planning on pursuing a graduate degree studying computer science education. i'm currently the instructional lecturer for intro to computer programming 1 at the university of washington</p>
             <div id="blog" class="">
                 <hr>
                 <div class="blog-snippet">
@@ -79,196 +79,512 @@
         </section>
 
         <section id="projects-content" class="hidden">
-            <div class="project flipped">
-                <div class="project-description right-align">
-                    <p>as a project for my human-computer interaction class, my group designed and prototyped an app called forager.  with the explosion of popularity foraging has gained in recent years, we wanted to make the entire process simpler and lower the barrier of entry for new foragers. forager gives mushroom foragers a smoother and more fulfilling experience. you can read more in <a class="link" href="https://cse440.medium.com/forager-a-better-mushroom-foraging-experience-cb98b9a9ce3">our blog post</a>. this project was awarded "overall best design" in our human-computer interaction course.</p>
-                    <p><a class="project-link" href="https://www.figma.com/proto/vvX9pW2F5EvgBNNO7HEBar/Digital-Mockup?node-id=1%3A2&scaling=min-zoom">check it out!</a></p>
-                </div>
-                <div class="project-card card" id="forager">
-                    <img class=" card-img-top" src="assets/img/forager.png" />
-                    <div class="card-body ">
-                        <p class="project-title card-title">forager</p>
+            <div class="projects-grid">
+                <div class="project-card card" id="linter" data-bs-toggle="modal" data-bs-target="#linter-modal">
+                    <div class="card-date">
+                        <span class="card-dates project-dates">2020 - 2021</span>
                     </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-card card" id="linter">
                     <img class=" card-img-top" src="assets/img/linter.png" />
                     <div class="card-body ">
                         <p class="project-title card-title">intro java style linter</p>
                     </div>
                 </div>
-                <div class="project-description">
-                    <p>an interactive information web app, created for the Client-Side Web Development course in the iSchool at the university of washington. This web app functions as an educational Java linter that checks the style of users' input Java code and inform users of what the style errors are with suggestions on how to fix them. This app is built around the style guidelines for CSE 14X (Intro to computer programming 1 & 2 at the university of washington) with those students as the primary audience, but should be a helpful resource for any novice Java learners.</p>
-                    <p><a class="project-link" href="https://www.omaryibrahim.me/project-1-oibra/">check it out!</a></p>
+                
+                <div class="project-card card" id="forager" data-bs-toggle="modal" data-bs-target="#forager-modal">
+                    <div class="card-date">
+                        <span class="card-dates project-dates">2020</span>
+                    </div>
+                    <img class=" card-img-top" src="assets/img/forager-light.png" />
+                    <div class="card-body ">
+                        <p class="project-title card-title">forager</p>
+                    </div>
                 </div>
-            </div>
-            <div class="project flipped">
-                <div class="project-description right-align">
-                    <p>i created a portfolio site from scratch for my wonderful partner, sophie larsen, a graduate student in mathematics at the university of illinois urbana/champagne</p>
-                    <p><a class="project-link" href="https://www.sophielarsen.me">check it out!</a></p>
-                </div>
-                <div class="project-card card" id="sophie">
+                
+                <div class="project-card card" id="sophie" data-bs-toggle="modal" data-bs-target="#sophie-modal">
+                    <div class="card-date">
+                        <span class="card-dates project-dates">2019 - 2020</span>
+                    </div>
                     <img class=" card-img-top" src="assets/img/Group.png" />
                     <div class="card-body ">
                         <p class="project-title card-title">sophie larsen portfolio</p>
                     </div>
                 </div>
-            </div>
-            <div class="project">
-                <div class="project-card card" id="style-guide">
+
+                <div class="project-card card" id="style-guide" data-bs-toggle="modal" data-bs-target="#style-guide-modal">
+                    <div class="card-date">
+                        <span class="card-dates project-dates">2018 - 2020</span>
+                    </div>
                     <img class=" card-img-top" src="assets/img/cse142.jpg" />
                     <div class="card-body ">
                         <p class="project-title card-title">cse 142 style guide</p>
                     </div>
                 </div>
-                <div class="project-description">
-                    <p>i work as a teaching assistant for cse 142 (intro to computer programming 1) at the university of washington. one project i did as a teaching assistant was to improve our introductory java style guide by rewriting it and formatting it as a web document that would be easier to access and read.</p>
-                    <p><a class="project-link" href="https://www.omaryibrahim.me/java-code-quality-guide/">check it out!</a>(also reformatted on <a class="link" href="https://cs.washington.edu/142/21sp/quality.html">the course site</a>)</p>
-                </div>
-            </div>
-            <div class="project flipped">
-                <div class="project-description right-align">
-                    <p>Readycipe was created as a final project for my intro to informatics class to streamline the food-making process and make cooking more accessible for lower-income people working on tighter budgets with less free time for shopping and cooking. We created a prototype of a machine that would facilitate the streamlining of the food-preparation process for users. I created the UI for the machine and the basics of a backend.</p>
-                    <p><strong>note:</strong> this project was developed with certain hardware in mind, and it's only made to display well on a portrait computer screen. sorry mobile users!</p>
-                    <p><a class="project-link" href="https://oibra.github.io/readycipe/">check it out!</a></p>
-                </div>
-                <div class="project-card card" id="readycipe">
+
+                <div class="project-card card" id="readycipe" data-bs-toggle="modal" data-bs-target="#readycipe-modal">
+                    <div class="card-date">
+                        <span class="card-dates project-dates">2019</span>
+                    </div>
                     <img class="card-img-top" src="assets/img/readycipe.png" />
                     <div class="card-body ">
                         <p class="project-title card-title">readycipe</p>
                     </div>
                 </div>
-            </div>
-            <div class="project">
-                <div class="project-card card" id="ictc">
+
+                <div class="project-card card" id="ictc" data-bs-toggle="modal" data-bs-target="#ictc-modal">
+                    <div class="card-date">
+                        <span class="card-dates project-dates">2018 - 2019</span>
+                    </div>
                     <img class="card-img-top" src="assets/img/ictc.jpg" />
                     <div class="card-body ">
                         <span class="project-title card-title">ICTC Website</span>
                     </div>
                 </div>
-                <div class="project-description">
-                    <p>I designed a new, updated website for my hometown mosque. I basically grew up there and their old website was incredibly outdated, so I volunteered to design a new one to update their web presence. It's built on WordPress to allow for easy upkeep, and I implemented a self-updating table of prayer times.</p>
-                    <p><a class="project-link" href="https://islamiccenteroftricities.org/">check it out!</a></p>
-                </div>
-            </div>
-            <div class="project flipped">
-                <div class="project-description right-align">
-                    <p>SNAPTrack is an app i helped develop for the dubhacks 2018 hackathon. we created it with the intention to help people who use SNAP benefits by providing them with information to help them make the most of their SNAP benefits. it's taking the place of a now defunct service that informed people about what they could use SNAP benfits on, while also providing more specific services; store and item specific information about where they can use their benefits, what they can use their benefits for, and scraping user receipt data to better flesh out the database of SNAP eligible items/places and locating stores where users can use SNAP benefits. i created the front-end of the project.</p>
-                    <p><a class="project-link" href="./SNAPTracker/">check it out!</a></p>
-                </div>
-                <div class="project-card card" id="snaptrack">
-                    <img class="card-img-top" src="assets/img/snap.png" />
-                    <div class="card-body ">
-                        <span class="project-title card-title">SNAPTRack</span>
+
+                <div class="project-card card" id="info201" data-bs-toggle="modal" data-bs-target="#info201-modal">
+                    <div class="card-date">
+                        <span class="card-dates project-dates">2018</span>
                     </div>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-card card" id="info201">
                     <img class="card-img-top" src="assets/img/info201.png" />
                     <div class="card-body ">
                         <span class="project-title card-title">info 201 final project</span>
                     </div>
                 </div>
-                <div class="project-description">
-                    <p>the final project for my Technical Foundations of Informatics class, we put together a set of data visualizations and analytics about Seattle and National crime data using R and shinyapps. I implemented the arson data tab as well as styling the entire site.</p>
-                    <p><strong>note:</strong> the API for the arson data has changed since this project was done and unfortunately the arson page no longer loads properly as a result of that change</p>
-                    <p><a class="project-link" href="https://omar-ibrahim.shinyapps.io/info201-group-project/">check it out!</a></p>
+
+                <div class="project-card card" id="snaptrack" data-bs-toggle="modal" data-bs-target="#snaptrack-modal">
+                    <div class="card-date">
+                        <span class="card-dates project-dates">2017</span>
+                    </div>
+                    <img class="card-img-top" src="assets/img/snap.png" />
+                    <div class="card-body ">
+                        <span class="project-title card-title">SNAPTrack</span>
+                    </div>
+                </div>   
+            </div>
+
+            <div class="modal fade" id="forager-modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-card">
+                            <img class="card-img modal-card-img" src="assets/img/forager-light.png" />
+                        </div>
+                        <div class="modal-wrapper">
+                            <div class="modal-header">
+                                <h3 class="modal-title card-title">forager</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>as a project for my human-computer interaction class, my group designed and prototyped an app called forager.  with the explosion of popularity foraging has gained in recent years, we wanted to make the entire process simpler and lower the barrier of entry for new foragers. forager gives mushroom foragers a smoother and more fulfilling experience. you can read more in <a class="link" href="https://cse440.medium.com/forager-a-better-mushroom-foraging-experience-cb98b9a9ce3">our blog post</a>. this project was awarded "overall best design" in our human-computer interaction course.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                                <a class="btn btn-project" href="https://www.figma.com/proto/vvX9pW2F5EvgBNNO7HEBar/Digital-Mockup?node-id=1%3A2&scaling=min-zoom">check it out!</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <div class="modal fade" id="linter-modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-card">
+                            <img class="card-img modal-card-img" src="assets/img/linter-mediumslateblue.png" />
+                        </div>
+                        <div class="modal-wrapper">
+                            <div class="modal-header">
+                                <h3 class="modal-title card-title">intro java style linter</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>an interactive information web app, created for the Client-Side Web Development course in the iSchool at the university of washington. This web app functions as an educational Java linter that checks the style of users' input Java code and inform users of what the style errors are with suggestions on how to fix them. This app is built around the style guidelines for CSE 14X (Intro to computer programming 1 & 2 at the university of washington) with those students as the primary audience, but should be a helpful resource for any novice Java learners.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                                <a class="btn btn-project" href="https://www.omaryibrahim.me/project-1-oibra/">check it out!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="sophie-modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-card">
+                            <img class="card-img modal-card-img" src="assets/img/sophie-mediumslateblue.png" />
+                        </div>
+                        <div class="modal-wrapper">
+                            <div class="modal-header">
+                                <h3 class="modal-title card-title">sophie larsen portfolio site</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>i created a portfolio site from scratch for my wonderful partner, sophie larsen, a graduate student in mathematics at the university of illinois urbana/champagne</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                                <a class="btn btn-project" href="https://www.sophielarsen.me">check it out!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="style-guide-modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-card">
+                            <img class="card-img modal-card-img" src="assets/img/style-guide-mediumslateblue.png" />
+                        </div>
+                        <div class="modal-wrapper">
+                            <div class="modal-header">
+                                <h3 class="modal-title card-title">cse 142 style guide</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>i work as a teaching assistant for cse 142 (intro to computer programming 1) at the university of washington. one project i did as a teaching assistant was to improve our introductory java style guide by rewriting it and formatting it as a web document that would be easier to access and read (it's also reformatted on <a class="link" href="https://cs.washington.edu/142/21sp/quality.html">the course site</a>).</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                                <a class="btn btn-project" href="https://www.omaryibrahim.me/java-code-quality-guide/">check it out!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="readycipe-modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-card">
+                            <img class="card-img modal-card-img" src="assets/img/readycipe-mediumslateblue.png" />
+                        </div>
+                        <div class="modal-wrapper">
+                            <div class="modal-header">
+                                <h3 class="modal-title card-title">readycipe</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Readycipe was created as a final project for my intro to informatics class to streamline the food-making process and make cooking more accessible for lower-income people working on tighter budgets with less free time for shopping and cooking. We created a prototype of a machine that would facilitate the streamlining of the food-preparation process for users. I created the UI for the machine and the basics of a backend.</p>
+                                <p><strong>note:</strong> this project was developed with certain hardware in mind, and it's only made to display well on a portrait computer screen. sorry mobile users!</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                                <a class="btn btn-project" href="https://oibra.github.io/readycipe/">check it out!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="ictc-modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-card">
+                            <img class="card-img modal-card-img" src="assets/img/ictc-mediumslateblue.png" />
+                        </div>
+                        <div class="modal-wrapper">
+                            <div class="modal-header">
+                                <h3 class="modal-title card-title">ICTC Website</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>I designed a new, updated website for my hometown mosque. I basically grew up there and their old website was incredibly outdated, so I volunteered to design a new one to update their web presence. It's built on WordPress to allow for easy upkeep, and I implemented a self-updating table of prayer times.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                                <a class="btn btn-project" href="https://islamiccenteroftricities.org/">check it out!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="snaptrack-modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-card">
+                            <img class="card-img modal-card-img" src="assets/img/snaptrack-mediumslateblue.png" />
+                        </div>
+                        <div class="modal-wrapper">
+                            <div class="modal-header">
+                                <h3 class="modal-title card-title">SNAPtrack</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>SNAPTrack is an app i helped develop for the dubhacks 2018 hackathon. we created it with the intention to help people who use SNAP benefits by providing them with information to help them make the most of their SNAP benefits. it's taking the place of a now defunct service that informed people about what they could use SNAP benfits on, while also providing more specific services; store and item specific information about where they can use their benefits, what they can use their benefits for, and scraping user receipt data to better flesh out the database of SNAP eligible items/places and locating stores where users can use SNAP benefits. i created the front-end of the project.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                                <!-- <a class="btn btn-project" href="">check it out!</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="info201-modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-card">
+                            <img class="card-img modal-card-img" src="assets/img/info201-mediumslateblue.png" />
+                        </div>
+                        <div class="modal-wrapper">
+                            <div class="modal-header">
+                                <h3 class="modal-title card-title">SNAPtrack</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>the final project for my Technical Foundations of Informatics class, we put together a set of data visualizations and analytics about Seattle and National crime data using R and shinyapps. I implemented the arson data tab as well as styling the entire site.</p>
+                                <p><strong>note:</strong> the API for the arson data has changed since this project was done and unfortunately the arson page no longer loads properly as a result of that change</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                                <a class="btn btn-project" href="https://omar-ibrahim.shinyapps.io/info201-group-project/">check it out!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <section id="experience-content" class="hidden">
-            <div class="job">
-                <div class="job-card card" id="uw">
-                    <img class=" card-img-top" src="assets/img/cse142.jpg" />
+            <div class="projects-grid">
+                <div class="job-card card" id="undergrad-ta" data-bs-toggle="modal" data-bs-target="#undergrad-ta-modal" >
+                    <div class="card-date">
+                        <span class="card-dates project-dates">2018 - 2021</span>
+                    </div>
+                    <img class=" card-img-top" src="assets/img/undergrad-ta-mediumslateblue.png" />
                     <div class="card-body ">
-                        <p class="job-title card-title">university of washington</p>
+                        <h2 class="job-title card-title">undergraduate teaching assistant</h2>
+                        <p class="job-subtitle card-title">university of washington</p>
                     </div>
                 </div>
-                <div class="job-description">
-                    <h2>undergraduate teaching assistant</h2>
-                    <span class="job-dates">03.2018 - present</span>
-                    <p>I teach a quiz section for various courses in the Paul G. Allen School of Computer science (intro to computer programming 1 & 2, programming languages), mostly (and currently) intro to computer programming 1. My job includes teaching quiz section, holding office hours, and grading homework and exams.</p>
-                    <h4>head teaching assisstant</h4>
-                    <span class="job-dates">09.2020 - present</span>
-                    <p>As head TA, I schedule and lead meetings with the course staff and course instructors, I advise other teaching assistants, manage and develop course infrastructure, and develop and update the course site</p>
-                </div>
-            </div>
-            <div class="job flipped">
-                <div class="job-description right-align">
-                    <h2>student mentor</h2>
-                    <span class="job-dates">06.2020 - 08.2020</span>
-                    <p>I taught bi-weekly mentoring sessions for a small group of middle- and high-school students. An 8-week program in which we covered basic skills in web development (HTML, CSS, JS) and data programming (in Python). Students went from learning basic syntax at the beginning of the program to developing their own small projects by the end of the program</p>
-                </div>
-                <div class="job-card card" id="stem-league">
-                    <img class=" card-img-top" src="assets/img/stem-league.png" />
+
+                <div class="job-card card" id="mentor" data-bs-toggle="modal" data-bs-target="#mentor-modal" >
+                    <div class="card-date">
+                        <span class="card-dates project-dates">2020</span>
+                    </div>
+                    <img class=" card-img-top" src="assets/img/mentor-mediumslateblue.png" />
                     <div class="card-body ">
-                        <p class="job-title card-title">stem league</p>
+                        <h2 class="job-title card-title">student mentor</h2>
+                        <p class="job-subtitle card-title">stem league</p>
                     </div>
                 </div>
-            </div>
-            <div class="job">
-                <div class="job-card card" id="amazon">
-                    <img class=" card-img-top" src="assets/img/amazon.jpg" />
+
+                <div class="job-card card" id="amazon" data-bs-toggle="modal" data-bs-target="#amazon-modal">
+                    <div class="card-date">
+                        <span class="card-dates project-dates">2020</span>
+                    </div>
+                    <img class=" card-img-top" src="assets/img/amazon-mediumslateblue.png" />
                     <div class="card-body ">
-                        <p class="job-title card-title">amazon</p>
+                        <h2 class="job-title card-title">software development engineer intern</h2>
+                        <p class="job-subtitle card-title">amazon web services</p>
                     </div>
                 </div>
-                <div class="job-description">
-                    <h2>software development engineer intern</h2>
-                    <span class="job-dates">06.2020 - 09.2020</span>
-                    <p>I did fullstack development on a new feature for an internal EC2 insight tool. I designed the feature using Sketch and wrote a Java backend that connected to an existing frontend built using React and Redux. I also worked on and added features to said frontend. The project was developed and deployed through AWS</p>
-                </div>
-            </div>
-            <div class="job flipped">
-                <div class="job-description right-align">
-                    <h2>software development intern</h2>
-                    <span class="job-dates">06.2019 - 09.2019</span>
-                    <p>My work included using Bash and Azure to ensure the security of internal dev environments, using Bash, Python, and AWS to improve automated tasks to help modernize and improve workflow efficiency of engineers, and using jQuery to work on full-stack creation of features for customer troubleshooting. I also started the process of transitioning my team's infrastructure from jQuery to React.</p>
-                </div>
-                <div class="job-card card" id="citrix">
-                    <img class=" card-img-top" src="assets/img/citrix.jfif" />
+
+                <div class="job-card card" id="citrix" data-bs-toggle="modal" data-bs-target="#citrix-modal">
+                    <div class="card-date">
+                        <span class="card-dates project-dates">2019</span>
+                    </div>
+                    <img class=" card-img-top" src="assets/img/citrix-mediumslateblue.png" />
                     <div class="card-body ">
-                        <p class="job-title card-title">citrix systems</p>
+                        <h2 class="job-title card-title">software development intern</h2>
+                        <p class="job-subtitle card-title">citrix systems</p>
                     </div>
                 </div>
-            </div>
-            <div class="job">
-                <div class="job-card card" id="wrps">
-                    <img class=" card-img-top" src="assets/img/wrps.jpg" />
+
+                <div class="job-card card" id="wrps" data-bs-toggle="modal" data-bs-target="#wrps-modal">
+                    <div class="card-date">
+                        <span class="card-dates project-dates">2018</span>
+                    </div>
+                    <img class=" card-img-top" src="assets/img/wrps-mediumslateblue.png" />
                     <div class="card-body ">
-                        <p class="job-title card-title">washington river protection solutions</p>
+                        <h2 class="job-title card-title">undergrad intern - technical</h2>
+                        <p class="job-subtitle card-title">washington river protection solutions</p>
                     </div>
                 </div>
-                <div class="job-description">
-                    <h2>ugrad intern - technical</h2>
-                    <span class="job-dates">06.2018 - 08.2020</span>
-                    <p>I created near-real-time data visualizations for nuclear waste treatment facilities on the Hanford site using PI Systems and JavaScript. I also built and updated attribute templates for data organization and management on PI Asset Framework servers using R and SQL.</p>
-                </div>
-            </div>
-            <div class="job flipped">
-                <div class="job-description right-align">
-                    <h2>science research intern</h2>
-                    <span class="job-dates">09.2016 - 05.2017</span>
-                    <p>I maintained and updated mass spectrometry contaminant databases to provide a higher level of precision to mass spectroscopy analysis results. I also worked on debugging, generating test data sets, and testing of new mass spectrometer data analysis application Formularity to ensure reproducible and accurate measurements</p>
-                </div>
-                <div class="job-card card" id="pnnl">
-                    <img class=" card-img-top" src="assets/img/pnnl.png" />
+
+                <div class="job-card card" id="pnnl" data-bs-toggle="modal" data-bs-target="#pnnl-modal">
+                    <div class="card-date">
+                        <span class="card-dates project-dates">2016 - 2017</span>
+                    </div>
+                    <img class=" card-img-top" src="assets/img/pnnl-mediumslateblue.png" />
                     <div class="card-body ">
-                        <p class="job-title card-title">pacific northwest national laboratory</p>
+                        <h2 class="job-title card-title">science research intern</h2>
+                        <p class="job-subtitle card-title">pacific northwest national laboratory</p>
                     </div>
                 </div>
             </div>
+
+            <div class="modal fade" id="undergrad-ta-modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-card">
+                            <img class="card-img modal-card-img" src="" />
+                        </div>
+                        <div class="modal-wrapper">
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                    <h2 class="modal-title card-title">undergraduate teaching assistant</h2>
+                                    <p class="modal-title card-title">university of washington</p>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <span class="job-dates">03.2018 - 06.2021</span>
+                                <p>I taught a weekly quiz section of ~10-25 students for various courses in the Paul G. Allen School of Computer science. I taught intro to computer programming I (<a href="cs.uw.edu/142">cse 142</a>) for seven quarters, intro to computer programming II (<a href="cs.uw.edu/143">cse 143</a>)for one quarter, and  programming languages (<a href="cs.uw.edu/341">cse 341</a>) for one quarter. My job as a TA has included teaching a weekly quiz section, holding office hours, grading homework, quizzes, and exams, creating materials and resources for students, and t=creating testing structures for student programs.</p>
+                                <h4>head teaching assisstant</h4>
+                                <span class="job-dates">09.2020 - 06.2021</span>
+                                <p>i served as the head TA of cse 142 for the last 2 quarters I taught it. as head TA, I was responsible for scheduling and leading meetings with the course staff and course instructors, advising other teaching assistants, managing and developing course infrastructure and resources, and developing and managing the course website. my work as head ta also included building infrastructure in python and bash to change our grading infrstructure to increase reliability and reduce the course's tech debt, as well as building infrastructure to transition the course to a new pedagogical grade system.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="mentor-modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-card">
+                            <img class="card-img modal-card-img" src="" />
+                        </div>
+                        <div class="modal-wrapper">
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                    <h2 class="modal-title card-title">student mentor</h2>
+                                    <p class="modal-title card-title">stem league</p>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <span class="job-dates">06.2020 - 08.2020</span>
+                                <p>I taught bi-weekly mentoring sessions for a small group of middle- and high-school students. An 8-week program in which we covered basic skills in web development (HTML, CSS, JS) and data programming (in Python). Students went from learning basic syntax at the beginning of the program to developing their own small projects by the end of the program</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="amazon-modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-card">
+                            <img class="card-img modal-card-img" src="" />
+                        </div>
+                        <div class="modal-wrapper">
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                    <h2 class="modal-title card-title">software development engineer intern</h2>
+                                    <p class="modal-title card-title">amazon web services</p>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <span class="job-dates">06.2020 - 09.2020</span>
+                                <p>I did fullstack development on a new feature for an internal EC2 insight tool. I designed the feature using Sketch and wrote a Java backend that connected to an existing frontend built using React and Redux. I also worked on and added features to said frontend. The project was developed and deployed through AWS</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="citrix-modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-card">
+                            <img class="card-img modal-card-img" src="" />
+                        </div>
+                        <div class="modal-wrapper">
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                    <h2 class="modal-title card-title">software development intern</h2>
+                                    <p class="modal-title card-title">citrix systems</p>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <span class="job-dates">06.2020 - 09.2020</span>
+                                <p>I did fullstack development on a new feature for an internal EC2 insight tool. I designed the feature using Sketch and wrote a Java backend that connected to an existing frontend built using React and Redux. I also worked on and added features to said frontend. The project was developed and deployed through AWS</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="wrps-modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-card">
+                            <img class="card-img modal-card-img" src="" />
+                        </div>
+                        <div class="modal-wrapper">
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                    <h2 class="modal-title card-title">undergrad intern - technical</h2>
+                                    <p class="modal-title card-title">washington river protection solutions</p>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <span class="job-dates">06.2018 - 08.2020</span>
+                                <p>I created near-real-time data visualizations for nuclear waste treatment facilities on the Hanford site using PI Systems and JavaScript. I also built and updated attribute templates for data organization and management on PI Asset Framework servers using R and SQL.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade" id="pnnl-modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-card">
+                            <img class="card-img modal-card-img" src="" />
+                        </div>
+                        <div class="modal-wrapper">
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                    <h2 class="modal-title card-title">science research intern</h2>
+                                    <p class="modal-title card-title">pacific northwest national laboratories</p>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <span class="job-dates">09.2016 - 05.2017</span>
+                                <p>I maintained and updated mass spectrometry contaminant databases to provide a higher level of precision to mass spectroscopy analysis results. I also worked on debugging, generating test data sets, and testing of new mass spectrometer data analysis application Formularity to ensure reproducible and accurate measurements</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
 
         <section id="teaching-content" class="hidden">
-            <p>i am currently the head ta of cse 142 at the university of washington. i've been a ta in the allen school at the university of washington for 2.5 years, mostly teaching intro programming courses, but i've also taught our programming languages course. i'm really passionate about introductory computer science, equitable cs pedagogy, and equitable cs outreach -- dealing with diversity/inclusion/equity problems in the cs world and cs spaces.</p>
+            <p>i am currently the summer instructor for cse 142, intro to computer programming 1, at the university of washington. i've served as a ta in the allen school at the university of washington for 3 years during my undergraduate, mostly teaching intro programming courses, but i've also taught our programming languages course. i served as a head ta for cse 142 during my senior year of undergrad. i'm really passionate about introductory computer science, equitable cs pedagogy, and equitable cs outreach -- dealing with diversity/inclusion/equity problems in the cs world and cs spaces.</p>
             <h2>courses</h2>
             <div class="course">
                 <h3 class="accent">cse 142: intro to computer programming 1</h3>
-                <small><a class="link" href="https://cs.uw.edu/142/21sp">spring '21</a> - autumn '20 - winter '20 - autumn '19 - spring '19 - autumn '18 - spring '18</small>
+                <small><a class="link" href="https://cs.uw.edu/142/21su">summer '21</a>- spring '21 - autumn '20 - winter '20 - autumn '19 - spring '19 - autumn '18 - spring '18</small>
                 <p>a course on basic procedural programming, as well as introductory object-oriented programming concepts. i've taught this course for 6 terms as a teaching assistant. in that time, i've lead exploration sessions where we host talks on a wide variety of computing topics for intro students, and served as head ta and hosted class on occassion.</p>
             </div>
             <div class="course">
@@ -292,6 +608,8 @@
         <section id="contact-content"class="hidden">
             <h3 class="accent">schedule a meeting</h3>
             <p>you can schedule a meeting with me through <a class="link" href="https://https://calendly.com/oibra">calendly</a></p>
+            <!-- <h3 class="accent">contact me</h3>
+            <p></p> -->
         </section>
 
         <section id="sigcse2021-content" class="blog hidden">
@@ -307,10 +625,10 @@
         </footer>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b4c4b44588.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
     <script src="assets/js/index.js"></script>
 </body>

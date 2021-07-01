@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Omar Ibrahim">
+    <meta name="description" content="my personal portfolio website">
+    <meta property="og:image" content="assets/img/website.png">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://students.washington.edu/oibra" />
+    <meta property="og:title" content="omar's portfolio" />
+    <meta property="og:description" content="it's omar. and a website. hooray." />
+    <title>omar ibrahim</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="loading-icon"></div>
+    <header>
+        <nav>
+            <button class="btn dropdown-toggle" type="button" id="colorSelectorButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-square fa-lg" id="currentColor"></i>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="colorSelectorButton">
+                  <div class="color-menu">
+                <a class="dropdown-item textBlack" id="mediumslateblue"><i class="fas fa-square fa-lg" style="color: mediumslateblue"></i> mediumslateblue</a>
+                <a class="dropdown-item textBlack" id="ghostwhite"><i class="fas fa-square fa-lg white-square" style="color: ghostwhite"></i> ghostwhite</a>
+                <a class="dropdown-item textBlack" id="strawberry"><i class="fas fa-square fa-lg" style="color: #ec8094"></i> strawberry</a>
+                <a class="dropdown-item textBlack" id="dark"><i class="fas fa-square fa-lg" style="color: #121212"></i> dark</a>
+                <a class="dropdown-item textBlack" id="maroon"><i class="fas fa-square fa-lg" style="color: #8b0023"></i> maroon</a>
+                <a class="dropdown-item textBlack" id="sophieblue" alt="sophie blue"><i class="fas fa-square fa-lg" style="color: #00e1c6"></i> sophie blue</a>
+            </div>
+              </div>
+            
+            &nbsp;    
+            <a href="https://github.com/oibra"><i id="github" class="fab fa-github-square fa-lg" ></i></a>
+            &nbsp;
+            <a href="https://www.linkedin.com/in/omaryibrahim"><i class="fab fa-linkedin fa-lg" ></i></a>
+            &nbsp;
+            <a href="mailto:oibrahim.2727@gmail.com"><i class="fas fa-envelope-square fa-lg"></i></a>
+            &nbsp;
+            <a href="assets/files/cv.pdf"><strong>CV</strong></a>
+        </nav>
+        <h1 class="name" id="welcome">
+            omar ibrahim
+        </h1>
+        <div class="pronouns">
+            <a href="https://mypronouns.org/he-him">he</a>/<a href="https://mypronouns.org/they-them">they</a>
+        </div>
+        <p id="headline" class="bio">a computer science student with a passion for music, web design, and teaching, and a strong dislike of capital letters.</p>
+        <div class="page-nav">
+            <ul>
+                <li id="projects">projects</li>
+                <li id="experience">experience</li>
+                <li id="teaching">teaching</li>
+                <li id="contact">contact</li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="main">
+        <section id="welcome-content">
+            <h1 id="hello">&nbsp;</h1>
+            <p id="description">i'm a 21 year old undergraduate student based in seattle, washington. i'm currently in my final year studying computer science with minors in informatics and music at the university of washington, planning on pursuing a graduate degree studying computer science education. during the school year, i work as a teaching assistant in the paul g. allen school of computer science, and am currently the head teaching assistant for intro to computer programming 1 at the university of washington</p>
+            <div id="blog" class="">
+                <hr>
+                <div class="blog-snippet">
+                    <h3>04.10.21 | <em class="blog-title">sigcse 2021 post-mortem</em></h3>
+                    <p>SIGCSE 2021 was the first, and, as I move ever closer to graduating this year, seemingly the last academic conference of my college career. I’ve heard faculty members talk about all the issues with the conference, and I get where they’re coming from, but for me, and maybe because it was my first conference, it was amazing; it was a lifeline...</p>
+                    <a id="sigcse2021" class="blog-link">read more</a>
+                </div>
+                <div class="blog-snippet">
+                    <h3>11.09.20 | <em class="blog-title">building a new website</em></h3>
+                    <p>at the beginning of every school year, i feel like a different person, creatively, than the year before. so every school year, i redesign my portfolio site to reflect where i'm currently at. being in my senior year and applying to grad schools, i got pretty behind and didn't end up updating it until i got a spur of inspiration and wrote the whole thing this last weekend. so welcome to omar's portfolio 4.0!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects-content" class="hidden">
+            <div class="project flipped">
+                <div class="project-description right-align">
+                    <p>as a project for my human-computer interaction class, my group designed and prototyped an app called forager.  with the explosion of popularity foraging has gained in recent years, we wanted to make the entire process simpler and lower the barrier of entry for new foragers. forager gives mushroom foragers a smoother and more fulfilling experience. you can read more in <a class="link" href="https://cse440.medium.com/forager-a-better-mushroom-foraging-experience-cb98b9a9ce3">our blog post</a>. this project was awarded "overall best design" in our human-computer interaction course.</p>
+                    <p><a class="project-link" href="https://www.figma.com/proto/vvX9pW2F5EvgBNNO7HEBar/Digital-Mockup?node-id=1%3A2&scaling=min-zoom">check it out!</a></p>
+                </div>
+                <div class="project-card card" id="forager">
+                    <img class=" card-img-top" src="assets/img/forager.png" />
+                    <div class="card-body ">
+                        <p class="project-title card-title">forager</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-card card" id="linter">
+                    <img class=" card-img-top" src="assets/img/linter.png" />
+                    <div class="card-body ">
+                        <p class="project-title card-title">intro java style linter</p>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <p>an interactive information web app, created for the Client-Side Web Development course in the iSchool at the university of washington. This web app functions as an educational Java linter that checks the style of users' input Java code and inform users of what the style errors are with suggestions on how to fix them. This app is built around the style guidelines for CSE 14X (Intro to computer programming 1 & 2 at the university of washington) with those students as the primary audience, but should be a helpful resource for any novice Java learners.</p>
+                    <p><a class="project-link" href="https://www.omaryibrahim.me/project-1-oibra/">check it out!</a></p>
+                </div>
+            </div>
+            <div class="project flipped">
+                <div class="project-description right-align">
+                    <p>i created a portfolio site from scratch for my wonderful partner, sophie larsen, a graduate student in mathematics at the university of illinois urbana/champagne</p>
+                    <p><a class="project-link" href="https://www.sophielarsen.me">check it out!</a></p>
+                </div>
+                <div class="project-card card" id="sophie">
+                    <img class=" card-img-top" src="assets/img/Group.png" />
+                    <div class="card-body ">
+                        <p class="project-title card-title">sophie larsen portfolio</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-card card" id="style-guide">
+                    <img class=" card-img-top" src="assets/img/cse142.jpg" />
+                    <div class="card-body ">
+                        <p class="project-title card-title">cse 142 style guide</p>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <p>i work as a teaching assistant for cse 142 (intro to computer programming 1) at the university of washington. one project i did as a teaching assistant was to improve our introductory java style guide by rewriting it and formatting it as a web document that would be easier to access and read.</p>
+                    <p><a class="project-link" href="https://www.omaryibrahim.me/java-code-quality-guide/">check it out!</a>(also reformatted on <a class="link" href="https://cs.washington.edu/142/21sp/quality.html">the course site</a>)</p>
+                </div>
+            </div>
+            <div class="project flipped">
+                <div class="project-description right-align">
+                    <p>Readycipe was created as a final project for my intro to informatics class to streamline the food-making process and make cooking more accessible for lower-income people working on tighter budgets with less free time for shopping and cooking. We created a prototype of a machine that would facilitate the streamlining of the food-preparation process for users. I created the UI for the machine and the basics of a backend.</p>
+                    <p><strong>note:</strong> this project was developed with certain hardware in mind, and it's only made to display well on a portrait computer screen. sorry mobile users!</p>
+                    <p><a class="project-link" href="https://oibra.github.io/readycipe/">check it out!</a></p>
+                </div>
+                <div class="project-card card" id="readycipe">
+                    <img class="card-img-top" src="assets/img/readycipe.png" />
+                    <div class="card-body ">
+                        <p class="project-title card-title">readycipe</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-card card" id="ictc">
+                    <img class="card-img-top" src="assets/img/ictc.jpg" />
+                    <div class="card-body ">
+                        <span class="project-title card-title">ICTC Website</span>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <p>I designed a new, updated website for my hometown mosque. I basically grew up there and their old website was incredibly outdated, so I volunteered to design a new one to update their web presence. It's built on WordPress to allow for easy upkeep, and I implemented a self-updating table of prayer times.</p>
+                    <p><a class="project-link" href="https://islamiccenteroftricities.org/">check it out!</a></p>
+                </div>
+            </div>
+            <div class="project flipped">
+                <div class="project-description right-align">
+                    <p>SNAPTrack is an app i helped develop for the dubhacks 2018 hackathon. we created it with the intention to help people who use SNAP benefits by providing them with information to help them make the most of their SNAP benefits. it's taking the place of a now defunct service that informed people about what they could use SNAP benfits on, while also providing more specific services; store and item specific information about where they can use their benefits, what they can use their benefits for, and scraping user receipt data to better flesh out the database of SNAP eligible items/places and locating stores where users can use SNAP benefits. i created the front-end of the project.</p>
+                    <p><a class="project-link" href="./SNAPTracker/">check it out!</a></p>
+                </div>
+                <div class="project-card card" id="snaptrack">
+                    <img class="card-img-top" src="assets/img/snap.png" />
+                    <div class="card-body ">
+                        <span class="project-title card-title">SNAPTRack</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-card card" id="info201">
+                    <img class="card-img-top" src="assets/img/info201.png" />
+                    <div class="card-body ">
+                        <span class="project-title card-title">info 201 final project</span>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <p>the final project for my Technical Foundations of Informatics class, we put together a set of data visualizations and analytics about Seattle and National crime data using R and shinyapps. I implemented the arson data tab as well as styling the entire site.</p>
+                    <p><strong>note:</strong> the API for the arson data has changed since this project was done and unfortunately the arson page no longer loads properly as a result of that change</p>
+                    <p><a class="project-link" href="https://omar-ibrahim.shinyapps.io/info201-group-project/">check it out!</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience-content" class="hidden">
+            <div class="job">
+                <div class="job-card card" id="uw">
+                    <img class=" card-img-top" src="assets/img/cse142.jpg" />
+                    <div class="card-body ">
+                        <p class="job-title card-title">university of washington</p>
+                    </div>
+                </div>
+                <div class="job-description">
+                    <h2>undergraduate teaching assistant</h2>
+                    <span class="job-dates">03.2018 - present</span>
+                    <p>I teach a quiz section for various courses in the Paul G. Allen School of Computer science (intro to computer programming 1 & 2, programming languages), mostly (and currently) intro to computer programming 1. My job includes teaching quiz section, holding office hours, and grading homework and exams.</p>
+                    <h4>head teaching assisstant</h4>
+                    <span class="job-dates">09.2020 - present</span>
+                    <p>As head TA, I schedule and lead meetings with the course staff and course instructors, I advise other teaching assistants, manage and develop course infrastructure, and develop and update the course site</p>
+                </div>
+            </div>
+            <div class="job flipped">
+                <div class="job-description right-align">
+                    <h2>student mentor</h2>
+                    <span class="job-dates">06.2020 - 08.2020</span>
+                    <p>I taught bi-weekly mentoring sessions for a small group of middle- and high-school students. An 8-week program in which we covered basic skills in web development (HTML, CSS, JS) and data programming (in Python). Students went from learning basic syntax at the beginning of the program to developing their own small projects by the end of the program</p>
+                </div>
+                <div class="job-card card" id="stem-league">
+                    <img class=" card-img-top" src="assets/img/stem-league.png" />
+                    <div class="card-body ">
+                        <p class="job-title card-title">stem league</p>
+                    </div>
+                </div>
+            </div>
+            <div class="job">
+                <div class="job-card card" id="amazon">
+                    <img class=" card-img-top" src="assets/img/amazon.jpg" />
+                    <div class="card-body ">
+                        <p class="job-title card-title">amazon</p>
+                    </div>
+                </div>
+                <div class="job-description">
+                    <h2>software development engineer intern</h2>
+                    <span class="job-dates">06.2020 - 09.2020</span>
+                    <p>I did fullstack development on a new feature for an internal EC2 insight tool. I designed the feature using Sketch and wrote a Java backend that connected to an existing frontend built using React and Redux. I also worked on and added features to said frontend. The project was developed and deployed through AWS</p>
+                </div>
+            </div>
+            <div class="job flipped">
+                <div class="job-description right-align">
+                    <h2>software development intern</h2>
+                    <span class="job-dates">06.2019 - 09.2019</span>
+                    <p>My work included using Bash and Azure to ensure the security of internal dev environments, using Bash, Python, and AWS to improve automated tasks to help modernize and improve workflow efficiency of engineers, and using jQuery to work on full-stack creation of features for customer troubleshooting. I also started the process of transitioning my team's infrastructure from jQuery to React.</p>
+                </div>
+                <div class="job-card card" id="citrix">
+                    <img class=" card-img-top" src="assets/img/citrix.jfif" />
+                    <div class="card-body ">
+                        <p class="job-title card-title">citrix systems</p>
+                    </div>
+                </div>
+            </div>
+            <div class="job">
+                <div class="job-card card" id="wrps">
+                    <img class=" card-img-top" src="assets/img/wrps.jpg" />
+                    <div class="card-body ">
+                        <p class="job-title card-title">washington river protection solutions</p>
+                    </div>
+                </div>
+                <div class="job-description">
+                    <h2>ugrad intern - technical</h2>
+                    <span class="job-dates">06.2018 - 08.2020</span>
+                    <p>I created near-real-time data visualizations for nuclear waste treatment facilities on the Hanford site using PI Systems and JavaScript. I also built and updated attribute templates for data organization and management on PI Asset Framework servers using R and SQL.</p>
+                </div>
+            </div>
+            <div class="job flipped">
+                <div class="job-description right-align">
+                    <h2>science research intern</h2>
+                    <span class="job-dates">09.2016 - 05.2017</span>
+                    <p>I maintained and updated mass spectrometry contaminant databases to provide a higher level of precision to mass spectroscopy analysis results. I also worked on debugging, generating test data sets, and testing of new mass spectrometer data analysis application Formularity to ensure reproducible and accurate measurements</p>
+                </div>
+                <div class="job-card card" id="pnnl">
+                    <img class=" card-img-top" src="assets/img/pnnl.png" />
+                    <div class="card-body ">
+                        <p class="job-title card-title">pacific northwest national laboratory</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="teaching-content" class="hidden">
+            <p>i am currently the head ta of cse 142 at the university of washington. i've been a ta in the allen school at the university of washington for 2.5 years, mostly teaching intro programming courses, but i've also taught our programming languages course. i'm really passionate about introductory computer science, equitable cs pedagogy, and equitable cs outreach -- dealing with diversity/inclusion/equity problems in the cs world and cs spaces.</p>
+            <h2>courses</h2>
+            <div class="course">
+                <h3 class="accent">cse 142: intro to computer programming 1</h3>
+                <small><a class="link" href="https://cs.uw.edu/142/21sp">spring '21</a> - autumn '20 - winter '20 - autumn '19 - spring '19 - autumn '18 - spring '18</small>
+                <p>a course on basic procedural programming, as well as introductory object-oriented programming concepts. i've taught this course for 6 terms as a teaching assistant. in that time, i've lead exploration sessions where we host talks on a wide variety of computing topics for intro students, and served as head ta and hosted class on occassion.</p>
+            </div>
+            <div class="course">
+                <h3 class="accent">cse 341: programming languages</h3>
+                <small><a class="link" href="https://cs.uw.edu/341/20sp">spring '20</a></small>
+                <p>the allen school's course on programming languages. it explores a variety of programming language topics by studying functional programming languages, static- and dynamicly-typed languages, and loose- and strict-typed languages, through the lenses of SML, racket, and ruby. i taught this course for one term, and I think it's a super fun exploration into the mechanics of programming languages. if you're a cse student at uw, i highly recommend this class!/p>
+            </div>
+            <div class="course">
+                <h3 class="accent">cse 143: intro to computer programming 2</h3>
+                <small><a class="link" href="https://cs.uw.edu/143/19wi">winter '19</a></small>
+                <p></p>
+            </div>
+            <h2>resources</h2>
+            <ul>
+                <li>a <a href="https://staff.washington.edu/oibra/style-guide/" class="link">code quality guide</a> for cse 142 @ the university of washington that I wrote</li>
+                <li>the cs-ed podcast! a set of great dives into cs education topics with some great people in the field, including the university of washington's own dr. amy ko!</li>
+            </ul>
+            <iframe src="https://open.spotify.com/embed-podcast/episode/7x2wJcQs9jrSiRHu9ZNmlr" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>        
+        </section>
+        
+        <section id="contact-content"class="hidden">
+            <h3 class="accent">schedule a meeting</h3>
+            <p>you can schedule a meeting with me through <a class="link" href="https://https://calendly.com/oibra">calendly</a></p>
+        </section>
+
+        <section id="sigcse2021-content" class="blog hidden">
+            <h1 class="blog-title">sigcse 2021 post-mortem</h1>
+            <h3>04.10.2021</h3>
+            <p>SIGCSE 2021 was the first, and, as I move ever closer to graduating this year, seemingly the last academic conference of my college career. I’ve heard faculty members talk about all the issues with the conference, and I get where they’re coming from, but for me, and maybe because it was my first conference, it was amazing; it was a lifeline. I started this year full of passion for CS Ed and applied to 7 PhD programs to study it after I graduated. When SIGCSE started, I had been rejected from 5 of those programs, and I would know I was rejected from the other 2 by the time SIGCSE was over. Suffice to say, I was feeling pretty convinced that CS Ed just might not be for me. SIGCSE completely pulled me out of that. A full week of meeting droves of people passionate about CS education, getting to experience nuanced, deep, passionate discussions about things I’ve never had people to talk with about, getting to hear people talk about years and years of experience with things I’d only ever heard about. It was enlightening; like finding a new world full of people who care just as much about this niche thing I care about as me. For people already acquainted with that world, I’m sure the virtual conference didn’t deliver all the networking, connecting, and reuniting it normally does. But for someone discovering that world for the first time, especially with social anxiety, the whole experience was revelatory and refreshing. It was also bittersweet.</p>
+            <p>SIGCSE 2021 was the first conference of my college career, but it wasn’t supposed to be. Just a year before, I had been packing for SIGCSE 2020, which my department had funded me to attend. The conference, which was set to be in nearby Portland OR, was cancelled last minute due to COVID-19, and I never got to go. As I experienced SIGCSe for the first time this year, as excited as I was, I couldn’t help but wonder what it would’ve been like to be able to attend earlier in my college career. How might my path have been different -- how might I have been different, if I had been able to experience everything I was experiencing now a year earlier, long before I jumped into graduate program applications without a clue as to what I was doing or where I was going. I am truly happy I got to experience SIGCSE before I graduated, but God do I wish  I could’ve had some of those formative experiences just a little sooner.</p>
+            <p>On a brighter note, SIGCSE also left me with some hope for my future with CS education; when it started, I was pretty much ready to give up on it. But in my time attending the conference, I met so many people, who took so many paths to get into the field I thought I was ready to give up on. It was really nice to see living, breathing proof that just because the path I thought I would take didn’t work out, I shouldn’t give in to despair just yet.</p>
+        </section>
+
+        <footer>
+            <p>Omar Ibrahim &copy; 2020</p>
+        </footer>
+    </main>
+
+    <script src="https://kit.fontawesome.com/b4c4b44588.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>

@@ -10,12 +10,20 @@
 }
 
 body, html {
-    height: 100%;
+    min-height: 100%;
     margin: 0;
+}
+
+body {
+    transition: all 0.3s ease 0s;
 }
 
 section {
     padding: 3rem 5rem;
+}
+
+section#projects-content, section#experience-content {
+    padding: 3rem 1.5rem;
 }
 
 h1 {
@@ -59,6 +67,10 @@ iframe {
 /* header */
 header {
     padding: 1rem 5rem;
+    margin: 1.5rem;
+    margin-bottom: 0;
+    border-radius: 1.5rem;
+    transition: all 0.3s ease 0s;
 }
 
 nav {
@@ -147,12 +159,15 @@ p#headline {
 
 /* footer */
 footer {
-    margin-top: auto;
+    /* margin-top: auto; */
     padding: 1rem 5rem;
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    border-radius: 1.5rem;
 }
 
 footer p {
     margin-bottom: 0;
+    font-weight: bold;
 }
 
 /* welcome */
@@ -179,6 +194,13 @@ footer p {
 }
 
 /* lists */
+.projects-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .project, .job {
     display: flex;
     margin-bottom: 2rem;
@@ -187,10 +209,23 @@ footer p {
 .card {
     border-radius: 0;
     border: none;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    transition: all 0.3s ease 0s;
+    margin-bottom: 2rem;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
 }
 
 .card-img-top {
-    height: 10rem;
+    /* height: 10rem; */
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
     object-fit: cover;
     border-radius: 0;
     border: none;
@@ -208,21 +243,49 @@ footer p {
 }
 
 .project-card, .job-card {
-    width: 20%;
-    margin-right: 2rem;
-    margin-left: 2rem;
+    margin-right: .1rem;
+    margin-left: .1rem;
     box-sizing: content-box;
-    flex-basis: 20%;
+    flex-basis: 27.5%;
 }
 
 .project-title, .job-title {
     font-weight: bold;
     text-align: left;
     width: 100%;
-    font-size: 1.5em;
-    padding-top: 5%;
+    font-size: 2rem;
+    /* padding-top: 5%; */
     text-transform: lowercase;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;   
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.job-subtitle {
+    text-align: left;
+    width: 100%;
+    font-size: 1rem;
+    /* text-align: center;
+    font-weight: bold;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: ghostwhite; */
+}
+
+.card-dates {
+    text-align: right;
+    margin-left: auto;
+    float: right;
+    background-color: ghostwhite;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    /* width: 100%;              */
+    font-size: 1rem;
+    /* font-style: italic; */
+    /* font-weight: bold; */
+    color: #3f23e6;
 }
 
 .project-description, .job-description {
@@ -251,6 +314,56 @@ footer p {
     font-weight: bold;
     font-style: italic;
 }
+
+/* modals */
+.modal-content {
+    flex-direction: row;
+    border-radius: 1.5rem;
+    border: none;
+}
+
+.modal-card {
+    flex-basis: 30%;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+/* .modal-card-img {
+    margin-top: auto;
+    margin-bottom: auto;
+    object-fit: cover;
+    border-radius: 0;
+    border: none;
+} */
+
+.modal-wrapper {
+    flex-basis: 70%;
+    padding-right: 1rem;
+}
+
+.modal-header {
+    /* border-bottom: none; */
+    /* padding-bottom: 0; */
+}
+
+.modal-body p:last-of-type {
+    margin-bottom: 0;
+}
+
+.btn {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.btn-project {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* .modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+} */
 
 /* contact form styles */
 #contact-form {
@@ -476,6 +589,8 @@ footer p {
     header {
         padding: 1rem 0rem;
         text-align: center;
+        margin: 0;
+        border-radius: 0;
     }
 
     .bio {
@@ -654,3 +769,32 @@ footer p {
     fill:  #009583;
 }
 
+.btnPurple {
+    color: ghostwhite !important;
+    background-color: #3f23e6;
+}
+
+.btnBlack {
+    color: ghostwhite !important;
+    background-color: black;
+}
+
+.btnStrawberry {
+    color: ghostwhite !important;
+    background-color: #b75166;
+}
+
+.btnGhostwhite {
+    color: #121212 !important;
+    background-color: ghostwhite;
+}
+
+.btnMaroon {
+    color: ghostwhite !important;
+    background-color: #570000;
+}
+
+.btnSophieblue {
+    color: ghostwhite !important;
+    background-color: #009583;
+}

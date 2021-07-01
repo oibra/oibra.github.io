@@ -80,6 +80,16 @@
                 }
             }
         }
+
+        for (const p in projectImages) {
+            const element = $("#" + p + " img")[0]
+            const modalElement = $("#" + p + "-modal img")[0]
+            element.src = "assets/img/" + projectImages[p][state.color]
+            if (modalElement) {
+                modalElement.src = "assets/img/" + projectImages[p][state.color]
+            }
+            
+        }
     }
 
     function setIntroMessage() {
@@ -188,8 +198,17 @@
             className: "project-title card-title",
             palette: ["cardTitle"]
         },
+        
+        ".project-dates": {
+            className: "project-dates card-dates",
+            palette: ["body", "textLink"]
+        },
         ".job-title": {
             className: "job-title card-title",
+            palette: ["cardTitle"]
+        },
+        ".job-subtitle": {
+            className: "job-subtitle card-title",
             palette: ["cardTitle"]
         },
         ".job-dates": {
@@ -197,13 +216,41 @@
             palette: ["textLink"]
         },
         ".project-link": {
-            className: "project-link",
+            className: "project-link btn btn-project",
             palette: ["textLink"]
         },
-        ".card-body": {
-            className: "card-body",
+        ".modal-content": {
+            className: "modal-content",
+            palette: ["body"]
+        },
+        ".modal-title": {
+            className: "modal-title card-title",
+            palette: ["textLink"]
+        },
+        ".project-card": {
+            className: "card project-card",
             palette: ["card"]
         },
+        ".job-card": {
+            className: "card job-card",
+            palette: ["card"]
+        },
+        ".modal-card": {
+            className: "modal-card",
+            palette: ["card"]
+        },
+        ".btn-project": {
+            className: "btn btn-project",
+            palette: ["modal"]
+        },
+        ".btn-close": {
+            className: "btn-close",
+            palette: ["textLink"]
+        },
+        // ".card-body": {
+        //     className: "card-body",
+        //     palette: ["card"]
+        // },
         ".link": {
             className: "link",
             palette: ["textLink"]
@@ -243,6 +290,121 @@
         }
     }
 
+    const projectImages = {
+        "forager": {
+            "mediumslateblue": "forager-light.png",
+            "ghostwhite": "forager-light.png",
+            "strawberry": "forager-dark.png",
+            "dark": "forager-dark.png",
+            "maroon": "forager-light.png",
+            "sophieblue": "forager-dark.png"
+        },
+        "linter": {
+            "mediumslateblue": "linter-mediumslateblue.png",
+            "ghostwhite": "linter-ghostwhite.png",
+            "strawberry": "linter-strawberry.png",
+            "dark": "linter-dark.png",
+            "maroon": "linter-maroon.png",
+            "sophieblue": "linter-sophieblue.png"
+        },
+        "style-guide": {
+            "mediumslateblue": "style-guide-mediumslateblue.png",
+            "ghostwhite": "style-guide-ghostwhite.png",
+            "strawberry": "style-guide-strawberry.png",
+            "dark": "style-guide-dark.png",
+            "maroon": "style-guide-maroon.png",
+            "sophieblue": "style-guide-sophieblue.png"
+        },
+        "readycipe": {
+            "mediumslateblue": "readycipe-mediumslateblue.png",
+            "ghostwhite": "readycipe-ghostwhite.png",
+            "strawberry": "readycipe-strawberry.png",
+            "dark": "readycipe-dark.png",
+            "maroon": "readycipe-maroon.png",
+            "sophieblue": "readycipe-sophieblue.png"
+        },
+        "ictc": {
+            "mediumslateblue": "ictc-light.png",
+            "ghostwhite": "ictc-light.png",
+            "strawberry": "ictc-dark.png",
+            "dark": "ictc-dark.png",
+            "maroon": "ictc-light.png",
+            "sophieblue": "ictc-dark.png"
+        },
+        "snaptrack": {
+            "mediumslateblue": "snap-mediumslateblue.png",
+            "ghostwhite": "snap-ghostwhite.png",
+            "strawberry": "snap-strawberry.png",
+            "dark": "snap-dark.png",
+            "maroon": "snap-maroon.png",
+            "sophieblue": "snap-sophieblue.png"
+        },
+        "info201": {
+            "mediumslateblue": "info201-mediumslateblue.png",
+            "ghostwhite": "info201-ghostwhite.png",
+            "strawberry": "info201-strawberry.png",
+            "dark": "info201-dark.png",
+            "maroon": "info201-maroon.png",
+            "sophieblue": "info201-sophieblue.png"
+        },
+        "sophie": {
+            "mediumslateblue": "sophie-mediumslateblue.png",
+            "ghostwhite": "sophie-ghostwhite.png",
+            "strawberry": "sophie-strawberry.png",
+            "dark": "sophie-dark.png",
+            "maroon": "sophie-maroon.png",
+            "sophieblue": "sophie-sophieblue.png"
+        },
+        "undergrad-ta": {
+            "mediumslateblue": "undergrad-ta-mediumslateblue.png",
+            "ghostwhite": "undergrad-ta-ghostwhite.png",
+            "strawberry": "undergrad-ta-strawberry.png",
+            "dark": "undergrad-ta-dark.png",
+            "maroon": "undergrad-ta-maroon.png",
+            "sophieblue": "undergrad-ta-sophieblue.png"
+        },
+        "mentor": {
+            "mediumslateblue": "mentor-mediumslateblue.png",
+            "ghostwhite": "mentor-ghostwhite.png",
+            "strawberry": "mentor-strawberry.png",
+            "dark": "mentor-dark.png",
+            "maroon": "mentor-maroon.png",
+            "sophieblue": "mentor-sophieblue.png"
+        },
+        "amazon": {
+            "mediumslateblue": "amazon-mediumslateblue.png",
+            "ghostwhite": "amazon-ghostwhite.png",
+            "strawberry": "amazon-strawberry.png",
+            "dark": "amazon-dark.png",
+            "maroon": "amazon-maroon.png",
+            "sophieblue": "amazon-sophieblue.png"
+        },
+        "citrix": {
+            "mediumslateblue": "citrix-mediumslateblue.png",
+            "ghostwhite": "citrix-ghostwhite.png",
+            "strawberry": "citrix-strawberry.png",
+            "dark": "citrix-dark.png",
+            "maroon": "citrix-maroon.png",
+            "sophieblue": "citrix-sophieblue.png"
+        },
+        "wrps": {
+            "mediumslateblue": "wrps-mediumslateblue.png",
+            "ghostwhite": "wrps-ghostwhite.png",
+            "strawberry": "wrps-strawberry.png",
+            "dark": "wrps-dark.png",
+            "maroon": "wrps-maroon.png",
+            "sophieblue": "wrps-sophieblue.png"
+        },
+        "pnnl": {
+            "mediumslateblue": "pnnl-mediumslateblue.png",
+            "ghostwhite": "pnnl-ghostwhite.png",
+            "strawberry": "pnnl-strawberry.png",
+            "dark": "pnnl-dark.png",
+            "maroon": "pnnl-maroon.png",
+            "sophieblue": "pnnl-sophieblue.png"
+        },
+    }
+
     /**
      * color palette dictionary
      */
@@ -258,7 +420,8 @@
             color: 'mediumslateblue',
             button: 'ghostwhiteButton',
             input: 'inputLight',
-            textarea: 'textareaLight'
+            textarea: 'textareaLight',
+            modal: 'btnPurple',
         },
         ghostwhite: {
             header: 'ghostwhiteBackground',
@@ -271,7 +434,8 @@
             color: 'ghostwhite',
             button: 'blackButton',
             input: 'inputLight',
-            textarea: 'textareaLight'
+            textarea: 'textareaLight',
+            modal: 'btnBlack',
         },
         strawberry: {
             header: 'strawberryBackground',
@@ -284,7 +448,8 @@
             color: 'strawberry',
             button: 'blackButton',
             input: 'inputLight',
-            textarea: 'textareaLight'
+            textarea: 'textareaLight',
+            modal: 'btnStrawberry'
         },
         dark: {
             header: 'darkBackground',
@@ -297,7 +462,8 @@
             color: 'dark',
             button: 'ghostwhiteButton',
             input: 'inputDark',
-            textarea: 'textareaDark'
+            textarea: 'textareaDark',
+            modal: 'btnGhostwhite'
         },
         maroon: {
             header: 'maroonBackground',
@@ -310,7 +476,8 @@
             color: 'maroon',
             button: 'ghostwhiteButton',
             input: 'inputLight',
-            textarea: 'textareaLight'
+            textarea: 'textareaLight',
+            modal: 'btnMaroon'
         },
         sophieblue: {
             header: 'sophieblueBackground',
@@ -323,7 +490,8 @@
             color: 'sophieblue',
             button: 'blackButton',
             input: 'inputLight',
-            textarea: 'textareaLight'
+            textarea: 'textareaLight',
+            modal: 'btnSophieblue'
         }
     }
 })();
