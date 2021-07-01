@@ -673,6 +673,37 @@ footer p {
     }
 }
 
+@media only screen and (max-width:576px) {
+    .modal-dialog {
+
+    }
+
+    .modal-dialog-scrollable .modal-content {
+        height: 100%;
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+    .modal-card-img {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #projects-content .modal-body {
+        max-height: 100%;
+    }
+    
+    #experience-content .modal-body {
+        max-height: 100%;
+    }
+    
+    .modal-dialog-scrollable .modal-body{
+        /* height: 80vh; */
+        overflow-y: initial;
+    }
+}
+
 /* colors */
 .mediumslateblue {
     color: mediumslateblue !important;
