@@ -363,6 +363,22 @@
             "maroon": "undergrad-ta-maroon.png",
             "sophieblue": "undergrad-ta-sophieblue.png"
         },
+        "grad-ta": {
+            "mediumslateblue": "grad-ta-mediumslateblue.png",
+            "ghostwhite": "grad-ta-ghostwhite.png",
+            "strawberry": "grad-ta-strawberry.png",
+            "dark": "grad-ta-dark.png",
+            "maroon": "grad-ta-maroon.png",
+            "sophieblue": "grad-ta-sophieblue.png"
+        },
+        "instructor": {
+            "mediumslateblue": "instructor-mediumslateblue.png",
+            "ghostwhite": "instructor-ghostwhite.png",
+            "strawberry": "instructor-strawberry.png",
+            "dark": "instructor-dark.png",
+            "maroon": "instructor-maroon.png",
+            "sophieblue": "instructor-sophieblue.png"
+        },
         "mentor": {
             "mediumslateblue": "mentor-mediumslateblue.png",
             "ghostwhite": "mentor-ghostwhite.png",
