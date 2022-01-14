@@ -9,7 +9,7 @@
         currentPage: null
     }
 
-    const pages = ['welcome', 'projects', 'experience', 'teaching', 'contact']
+    const pages = ['welcome', 'projects', 'experience', 'teaching'/*, 'contact'*/]
     const blogs = ['sigcse2021']
     const welcomeMessage = "hello! nice to meet you! i'm omar."
 
