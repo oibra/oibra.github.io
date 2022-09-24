@@ -340,6 +340,21 @@ h2 {
     margin-bottom: 0;
 }
 
+.modal-subtitle {
+    display: flex;
+    align-items: center;
+}
+
+.modal-dates {
+    color: ghostwhite;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    font-size: .9rem;
+    background-color: mediumslateblue;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
 .btn {
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -411,6 +426,16 @@ h2 {
         width: 100%;
         flex-basis: auto;
         max-width: none;
+    }
+
+    .modal-subtitle {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .modal-dates {
+        margin-left: 0;
+        margin-top: .5rem;
     }
 
     iframe {
