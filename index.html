@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <head lang="en">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Omar Ibrahim">
-    <meta name="description" content="my personal portfolio website">
-    <meta property="og:image" content="assets/img/website.png">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Omar Ibrahim" />
+    <meta name="description" content="omar ibrahim portfolio website" />
+    <meta property="og:image" content="assets/img/website.png" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://omaryibrahim.me" />
     <meta property="og:title" content="omar's portfolio" />
-    <meta property="og:description" content="it's omar. and a website. hooray." />
     <title>omar ibrahim</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
@@ -20,26 +19,26 @@
     <div class="loading-icon"></div>
     <header>
         <nav>
-            <button class="btn dropdown-toggle" type="button" id="colorSelectorButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="colorSelectorButton" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-square fa-lg" id="currentColor"></i>
-              </button>
-              <div class="dropdown-menu" aria-labelledby="colorSelectorButton">
-                  <div class="color-menu">
-                <a class="dropdown-item textBlack" id="mediumslateblue"><i class="fas fa-square fa-lg" style="color: mediumslateblue"></i> mediumslateblue</a>
-                <a class="dropdown-item textBlack" id="ghostwhite"><i class="fas fa-square fa-lg white-square" style="color: ghostwhite"></i> ghostwhite</a>
-                <a class="dropdown-item textBlack" id="strawberry"><i class="fas fa-square fa-lg" style="color: #ec8094"></i> strawberry</a>
-                <a class="dropdown-item textBlack" id="dark"><i class="fas fa-square fa-lg" style="color: #121212"></i> dark</a>
-                <a class="dropdown-item textBlack" id="maroon"><i class="fas fa-square fa-lg" style="color: #8b0023"></i> maroon</a>
-                <a class="dropdown-item textBlack" id="sophieblue" alt="sophie blue"><i class="fas fa-square fa-lg" style="color: #00e1c6"></i> sophie blue</a>
+            </button>
+            <div class="dropdown-menu" aria-labelledby="colorSelectorButton">
+                <div class="color-menu">
+                    <button class="dropdown-item textBlack" id="mediumslateblue"><i class="fas fa-square fa-lg" style="color: mediumslateblue"></i> mediumslateblue</button>
+                    <button class="dropdown-item textBlack" id="ghostwhite"><i class="fas fa-square fa-lg white-square" style="color: ghostwhite"></i> ghostwhite</button>
+                    <button class="dropdown-item textBlack" id="strawberry"><i class="fas fa-square fa-lg" style="color: #ec8094"></i> strawberry</button>
+                    <button class="dropdown-item textBlack" id="dark"><i class="fas fa-square fa-lg" style="color: #121212"></i> dark</button>
+                    <button class="dropdown-item textBlack" id="maroon"><i class="fas fa-square fa-lg" style="color: #8b0023"></i> maroon</button>
+                    <button class="dropdown-item textBlack" id="sophieblue" alt="sophie blue"><i class="fas fa-square fa-lg" style="color: #00e1c6"></i> sophie blue</button>
+                </div>
             </div>
-              </div>
+        </div>
             
             &nbsp;    
             <a href="https://github.com/oibra"><i id="github" class="fab fa-github-square fa-lg" ></i></a>
             &nbsp;
             <a href="https://www.linkedin.com/in/omaryibrahim"><i class="fab fa-linkedin fa-lg" ></i></a>
-            &nbsp;
-            <a href="mailto:oibrahim.2727@gmail.com"><i class="fas fa-envelope-square fa-lg"></i></a>
             &nbsp;
             <a href="assets/files/cv.pdf"><strong>CV</strong></a>
         </nav>
@@ -50,115 +49,444 @@
             <a href="https://mypronouns.org/he-him">he</a>/<a href="https://mypronouns.org/they-them">they</a>
         </div>
         <p id="headline" class="bio">a computer scientist with a passion for music, web design, and teaching, and a strong dislike of capital letters.</p>
-        <div class="page-nav">
-            <ul>
-                <li id="teaching">teaching</li>
-                <li id="experience">experience</li>
-                <li id="projects">projects</li>
-                <!-- <li id="contact">contact</li> -->
-            </ul>
-        </div>
     </header>
 
     <main id="main">
         <section id="welcome-content">
             <h1 id="hello">&nbsp;</h1>
             <p id="description">i'm a 22 year old computer scientist based in seattle, washington. i recently graduated with my B.S. in Computer Science with a minor in informatics from the university of washington, and I'm currently an M.S. student at the university of washington studying computer science.</p>
-            <div id="blog" class="">
-                <hr>
-                <div class="blog-snippet">
-                    <h3>04.10.21 | <em class="blog-title">sigcse 2021 post-mortem</em></h3>
-                    <p>SIGCSE 2021 was the first, and, as I move ever closer to graduating this year, seemingly the last academic conference of my college career. I’ve heard faculty members talk about all the issues with the conference, and I get where they’re coming from, but for me, and maybe because it was my first conference, it was amazing; it was a lifeline...</p>
-                    <a id="sigcse2021" class="blog-link">read more</a>
+
+            <h2>teaching (university of washington)</h2>
+            <div class="accentBorder borderLeft">
+                <h3 class="accent">instructor</h3>
+                <p>
+                    <strong>cse 190y: cse 12x direct admit workshop</strong>
+                    <br>
+                    <small><a class="link" href="cs.uw.edu/190y/22au">22au</a></small>
+                </p>
+                <p>
+                    <strong>cse 390z: mathematics for computing workshop</strong>
+                    <br>
+                    <small><a class="link" href="cs.uw.edu/390z/22sp">22sp</a> — <a class="link" href="cs.uw.edu/390z/22wi">22wi</a> — <a class="link" href="cs.uw.edu/390z/21au">21au</a></small>
+                </p>
+                <p>
+                    <strong>cse 142: intro to computer programming 1</strong>
+                    <br>
+                    <small><a class="link" href="https://cs.uw.edu/142/21su">21su</a></small>
+                </p>
+
+                <h3 class="accent">teaching assistant</h3>
+                <p>
+                    <strong>cse 142: intro to computer programming 1</strong>
+                    <br>
+                    <small><a class="link" href="https://cs.uw.edu/142/22su">22su</a> — <a class="link" href="https://cs.uw.edu/142/21sp">21sp</a> (head ta) — <a class="link" href="https://cs.uw.edu/142/20au">20au</a> (head ta) — <a class="link" href="https://cs.uw.edu/142/20wi">20wi</a> (lead ta) — <a class="link" href="https://cs.uw.edu/142/19au">19au</a> (lead ta) — <a class="link" href="https://cs.uw.edu/142/19sp">19sp</a> (lead ta) — <a class="link" href="https://cs.uw.edu/142/18au">18au</a> — <a class="link" href="https://cs.uw.edu/142/18sp">18sp</a></small>
+                </p>  
+                <p>
+                    <strong>cse 143: intro to computer programming 2</strong>
+                    <br>
+                    <small><a class="link" href="https://cs.uw.edu/143e/22wi">22wi</a> — <a class="link" href="https://cs.uw.edu/143/19wi">19wi</a></small>
+                </p>
+                <p>
+                    <strong>cse 341: programming languages</strong>
+                    <br>
+                    <small><a class="link" href="https://cs.uw.edu/341/20sp">20sp</a></small>
+                </p>
+            </div>
+        
+            <h2 class="text-end">experience</h2>
+            <div class="projects-grid accentBorder borderRight" id="exp-grid">
+                <div class="job-card card" id="instructor" data-bs-toggle="modal" data-bs-target="#instructor-modal" >
+                    <div class="card-body ">
+                        <h2 class="job-title card-title">instructor</h2>
+                        <p class="job-subtitle card-title">university of washington</p>
+                        <div class="card-date">
+                            <span class="card-dates project-dates">2021 - present</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="blog-snippet">
-                    <h3>11.09.20 | <em class="blog-title">building a new website</em></h3>
-                    <p>at the beginning of every school year, i feel like a different person, creatively, than the year before. so every school year, i redesign my portfolio site to reflect where i'm currently at. being in my senior year and applying to grad schools, i got pretty behind and didn't end up updating it until i got a spur of inspiration and wrote the whole thing this last weekend. so welcome to omar's portfolio 4.0!</p>
+
+                <div class="job-card card" id="grad-ta" data-bs-toggle="modal" data-bs-target="#grad-ta-modal" >
+                    <div class="card-body ">
+                        <h2 class="job-title card-title">graduate teaching assistant</h2>
+                        <p class="job-subtitle card-title">university of washington</p>
+                    </div>
+                    <div class="card-date">
+                        <span class="card-dates project-dates">2022</span>
+                    </div>
+                </div>
+
+                <div class="job-card card" id="undergrad-ta" data-bs-toggle="modal" data-bs-target="#undergrad-ta-modal" >
+                    <div class="card-body ">
+                        <h2 class="job-title card-title">undergraduate teaching assistant</h2>
+                        <p class="job-subtitle card-title">university of washington</p>
+                    </div>
+                    <div class="card-date">
+                        <span class="card-dates project-dates">2018 - 2021</span>
+                    </div>
+                </div>
+
+                <div class="job-card card" id="mentor" data-bs-toggle="modal" data-bs-target="#mentor-modal" >
+                    <div class="card-body ">
+                        <h2 class="job-title card-title">student mentor</h2>
+                        <p class="job-subtitle card-title">stem league</p>
+                    </div>
+                    <div class="card-date">
+                        <span class="card-dates project-dates">2020</span>
+                    </div>
+                </div>
+
+                <div class="job-card card" id="amazon" data-bs-toggle="modal" data-bs-target="#amazon-modal">
+                    <div class="card-body ">
+                        <h2 class="job-title card-title">software development engineer intern</h2>
+                        <p class="job-subtitle card-title">amazon web services</p>
+                    </div>
+                    <div class="card-date">
+                        <span class="card-dates project-dates">2020</span>
+                    </div>
+                </div>
+
+                <div class="job-card card" id="citrix" data-bs-toggle="modal" data-bs-target="#citrix-modal">
+                    <div class="card-body ">
+                        <h2 class="job-title card-title">software development intern</h2>
+                        <p class="job-subtitle card-title">citrix systems</p>
+                    </div>
+                    <div class="card-date">
+                        <span class="card-dates project-dates">2019</span>
+                    </div>
+                </div>
+
+                <div class="job-card card" id="wrps" data-bs-toggle="modal" data-bs-target="#wrps-modal">
+                    <div class="card-body ">
+                        <h2 class="job-title card-title">undergrad intern - technical</h2>
+                        <p class="job-subtitle card-title">washington river protection solutions</p>
+                    </div>
+                    <div class="card-date">
+                        <span class="card-dates project-dates">2018</span>
+                    </div>
+                </div>
+
+                <div class="job-card card" id="pnnl" data-bs-toggle="modal" data-bs-target="#pnnl-modal">
+                    <div class="card-body ">
+                        <h2 class="job-title card-title">science research intern</h2>
+                        <p class="job-subtitle card-title">pacific northwest national laboratory</p>
+                    </div>
+                    <div class="card-date">
+                        <span class="card-dates project-dates">2016 - 2017</span>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <section id="projects-content" class="hidden">
-            <div class="projects-grid">
+            <h2>publications + talks</h2>
+            <div class="accentBorder borderLeft">
+                <p><strong>Spoof-It: Correcting incorrect proofs as a method to learn proof-writing. </strong>M.S. Thesis, University of Washington, expected 2022. Pre-print forthcoming.</p>
+
+                <h3 class="accent">campus talks</h3>
+                <p><strong>What is a Computer?</strong> UW CSE 14X Exploration Session. 2022.</p>
+                <p><strong>Esoteric Programming Languages.</strong> UW CSE 14X Exploration Session. 2022.</p>
+                <p><strong>What is a Computer?</strong> UW CSE 14X Exploration Session. 2021.</p>
+            </div>
+
+            <!-- <hr class="accent"> -->
+            <h2 class="text-end">projects</h2>
+            <div class="projects-grid accentBorder borderRight">
                 <div class="project-card card" id="linter" data-bs-toggle="modal" data-bs-target="#linter-modal">
-                    <div class="card-date">
-                        <span class="card-dates project-dates">2020 - 2021</span>
-                    </div>
-                    <img class=" card-img-top" src="assets/img/linter.png" />
+                    
+                    <!-- <img class=" card-img-top" src="assets/img/linter.png" /> -->
                     <div class="card-body ">
                         <p class="project-title card-title">intro java style linter</p>
+                        <!-- <div class="card-date">
+                            <span class="card-dates project-dates">2020 - 2021</span>
+                        </div> -->
                     </div>
                 </div>
                 
                 <div class="project-card card" id="forager" data-bs-toggle="modal" data-bs-target="#forager-modal">
-                    <div class="card-date">
-                        <span class="card-dates project-dates">2020</span>
-                    </div>
-                    <img class=" card-img-top" src="assets/img/forager-light.png" />
+                    
+                    <!-- <img class=" card-img-top" src="assets/img/forager-light.png" /> -->
                     <div class="card-body ">
                         <p class="project-title card-title">forager</p>
+                        <!-- <div class="card-date">
+                            <span class="card-dates project-dates">2020</span>
+                        </div> -->
                     </div>
                 </div>
                 
                 <div class="project-card card" id="sophie" data-bs-toggle="modal" data-bs-target="#sophie-modal">
-                    <div class="card-date">
-                        <span class="card-dates project-dates">2019 - 2020</span>
-                    </div>
-                    <img class=" card-img-top" src="assets/img/Group.png" />
+                    
+                    <!-- <img class=" card-img-top" src="assets/img/Group.png" /> -->
                     <div class="card-body ">
                         <p class="project-title card-title">sophie larsen portfolio</p>
+                        <!-- <div class="card-date">
+                            <span class="card-dates project-dates">2019 - 2020</span>
+                        </div> -->
                     </div>
                 </div>
 
                 <div class="project-card card" id="style-guide" data-bs-toggle="modal" data-bs-target="#style-guide-modal">
-                    <div class="card-date">
-                        <span class="card-dates project-dates">2018 - 2020</span>
-                    </div>
-                    <img class=" card-img-top" src="assets/img/cse142.jpg" />
+                    
+                    <!-- <img class=" card-img-top" src="assets/img/cse142.jpg" /> -->
                     <div class="card-body ">
                         <p class="project-title card-title">cse 142 style guide</p>
+                        <!-- <div class="card-date">
+                            <span class="card-dates project-dates">2018 - 2020</span>
+                        </div> -->
                     </div>
                 </div>
 
                 <div class="project-card card" id="readycipe" data-bs-toggle="modal" data-bs-target="#readycipe-modal">
-                    <div class="card-date">
-                        <span class="card-dates project-dates">2019</span>
-                    </div>
-                    <img class="card-img-top" src="assets/img/readycipe.png" />
+                    
+                    <!-- <img class="card-img-top" src="assets/img/readycipe.png" /> -->
                     <div class="card-body ">
                         <p class="project-title card-title">readycipe</p>
+                        <!-- <div class="card-date">
+                            <span class="card-dates project-dates">2019</span>
+                        </div> -->
                     </div>
                 </div>
 
-                <div class="project-card card" id="ictc" data-bs-toggle="modal" data-bs-target="#ictc-modal">
-                    <div class="card-date">
-                        <span class="card-dates project-dates">2018 - 2019</span>
-                    </div>
-                    <img class="card-img-top" src="assets/img/ictc.jpg" />
+                <!-- <div class="project-card card" id="ictc" data-bs-toggle="modal" data-bs-target="#ictc-modal">
+                    
+                    <!-- <img class="card-img-top" src="assets/img/ictc.jpg" /> --
                     <div class="card-body ">
                         <span class="project-title card-title">ICTC Website</span>
+                        <!-- <div class="card-date">
+                            <span class="card-dates project-dates">2018 - 2019</span>
+                        </div> --
                     </div>
-                </div>
+                </div> -->
 
                 <div class="project-card card" id="info201" data-bs-toggle="modal" data-bs-target="#info201-modal">
-                    <div class="card-date">
-                        <span class="card-dates project-dates">2018</span>
-                    </div>
-                    <img class="card-img-top" src="assets/img/info201.png" />
+                    
+                    <!-- <img class="card-img-top" src="assets/img/info201.png" /> -->
                     <div class="card-body ">
                         <span class="project-title card-title">info 201 final project</span>
+                        <!-- <div class="card-date">
+                            <span class="card-dates project-dates">2018</span>
+                        </div> -->
                     </div>
                 </div>
 
                 <div class="project-card card" id="snaptrack" data-bs-toggle="modal" data-bs-target="#snaptrack-modal">
-                    <div class="card-date">
-                        <span class="card-dates project-dates">2017</span>
-                    </div>
-                    <img class="card-img-top" src="assets/img/snap.png" />
+                    
+                    <!-- <img class="card-img-top" src="assets/img/snap.png" /> -->
                     <div class="card-body ">
                         <span class="project-title card-title">SNAPTrack</span>
+                        <!-- <div class="card-date">
+                            <span class="card-dates project-dates">2017</span>
+                        </div> -->
                     </div>
                 </div>   
+            </div>
+
+            <div class="modal fade" id="grad-ta-modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-card">
+                            <img class="card-img modal-card-img" src="" />
+                        </div>
+                        <div class="modal-wrapper">
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                    <h2 class="modal-title card-title">graduate teaching assistant</h2>
+                                    <p class="modal-title card-title">university of washington</p>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <span class="job-dates">01.2022 - 08.2022</span>
+                                <p></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="instructor-modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-card">
+                            <img class="card-img modal-card-img" src="" />
+                        </div>
+                        <div class="modal-wrapper">
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                    <h2 class="modal-title card-title">instructional lecturer</h2>
+                                    <p class="modal-title card-title">university of washington</p>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <span class="job-dates">06.2021 - present</span>
+                                <p></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="undergrad-ta-modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-card">
+                            <img class="card-img modal-card-img" src="" />
+                        </div>
+                        <div class="modal-wrapper">
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                    <h2 class="modal-title card-title">undergraduate teaching assistant</h2>
+                                    <p class="modal-title card-title">university of washington</p>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <span class="job-dates">03.2018 - 06.2021</span>
+                                <p>I taught a weekly quiz section of ~10-25 students for various courses in the Paul G. Allen School of Computer science. I taught intro to computer programming I (<a href="cs.uw.edu/142">cse 142</a>) for seven quarters, intro to computer programming II (<a href="cs.uw.edu/143">cse 143</a>)for one quarter, and  programming languages (<a href="cs.uw.edu/341">cse 341</a>) for one quarter. My job as a TA has included teaching a weekly quiz section, holding office hours, grading homework, quizzes, and exams, creating materials and resources for students, and t=creating testing structures for student programs.</p>
+                                <h4>head teaching assisstant</h4>
+                                <span class="job-dates">09.2020 - 06.2021</span>
+                                <p>i served as the head TA of cse 142 for the last 2 quarters I taught it. as head TA, I was responsible for scheduling and leading meetings with the course staff and course instructors, advising other teaching assistants, managing and developing course infrastructure and resources, and developing and managing the course website. my work as head ta also included building infrastructure in python and bash to change our grading infrstructure to increase reliability and reduce the course's tech debt, as well as building infrastructure to transition the course to a new pedagogical grade system.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="mentor-modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-card">
+                            <img class="card-img modal-card-img" src="" />
+                        </div>
+                        <div class="modal-wrapper">
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                    <h2 class="modal-title card-title">student mentor</h2>
+                                    <p class="modal-title card-title">stem league</p>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <span class="job-dates">06.2020 - 08.2020</span>
+                                <p>I taught bi-weekly mentoring sessions for a small group of middle- and high-school students. An 8-week program in which we covered basic skills in web development (HTML, CSS, JS) and data programming (in Python). Students went from learning basic syntax at the beginning of the program to developing their own small projects by the end of the program</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="amazon-modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-card">
+                            <img class="card-img modal-card-img" src="" />
+                        </div>
+                        <div class="modal-wrapper">
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                    <h2 class="modal-title card-title">software development engineer intern</h2>
+                                    <p class="modal-title card-title">amazon web services</p>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <span class="job-dates">06.2020 - 09.2020</span>
+                                <p>I did fullstack development on a new feature for an internal EC2 insight tool. I designed the feature using Sketch and wrote a Java backend that connected to an existing frontend built using React and Redux. I also worked on and added features to said frontend. The project was developed and deployed through AWS</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="citrix-modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-card">
+                            <img class="card-img modal-card-img" src="" />
+                        </div>
+                        <div class="modal-wrapper">
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                    <h2 class="modal-title card-title">software development intern</h2>
+                                    <p class="modal-title card-title">citrix systems</p>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <span class="job-dates">06.2020 - 09.2020</span>
+                                <p>I did fullstack development on a new feature for an internal EC2 insight tool. I designed the feature using Sketch and wrote a Java backend that connected to an existing frontend built using React and Redux. I also worked on and added features to said frontend. The project was developed and deployed through AWS</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="wrps-modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-card">
+                            <img class="card-img modal-card-img" src="" />
+                        </div>
+                        <div class="modal-wrapper">
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                    <h2 class="modal-title card-title">undergrad intern - technical</h2>
+                                    <p class="modal-title card-title">washington river protection solutions</p>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <span class="job-dates">06.2018 - 08.2020</span>
+                                <p>I created near-real-time data visualizations for nuclear waste treatment facilities on the Hanford site using PI Systems and JavaScript. I also built and updated attribute templates for data organization and management on PI Asset Framework servers using R and SQL.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal fade" id="pnnl-modal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-card">
+                            <img class="card-img modal-card-img" src="" />
+                        </div>
+                        <div class="modal-wrapper">
+                            <div class="modal-header">
+                                <div class="modal-title">
+                                    <h2 class="modal-title card-title">science research intern</h2>
+                                    <p class="modal-title card-title">pacific northwest national laboratories</p>
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <span class="job-dates">09.2016 - 05.2017</span>
+                                <p>I maintained and updated mass spectrometry contaminant databases to provide a higher level of precision to mass spectroscopy analysis results. I also worked on debugging, generating test data sets, and testing of new mass spectrometer data analysis application Formularity to ensure reproducible and accurate measurements</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="modal fade" id="forager-modal" tabindex="-1" aria-hidden="true">
@@ -346,365 +674,15 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
-        <section id="experience-content" class="hidden">
-            <div class="projects-grid">
-                <div class="job-card card" id="grad-ta" data-bs-toggle="modal" data-bs-target="#grad-ta-modal" >
-                    <div class="card-date">
-                        <span class="card-dates project-dates">2021 - present</span>
-                    </div>
-                    <img class=" card-img-top" src="assets/img/grad-ta-mediumslateblue.png" />
-                    <div class="card-body ">
-                        <h2 class="job-title card-title">graduate teaching assistant</h2>
-                        <p class="job-subtitle card-title">university of washington</p>
-                    </div>
-                </div>
-
-                <div class="job-card card" id="instructor" data-bs-toggle="modal" data-bs-target="#instructor-modal" >
-                    <div class="card-date">
-                        <span class="card-dates project-dates">2021</span>
-                    </div>
-                    <img class=" card-img-top" src="assets/img/instructor-mediumslateblue.png" />
-                    <div class="card-body ">
-                        <h2 class="job-title card-title">instructor</h2>
-                        <p class="job-subtitle card-title">university of washington</p>
-                    </div>
-                </div>
-
-                <div class="job-card card" id="undergrad-ta" data-bs-toggle="modal" data-bs-target="#undergrad-ta-modal" >
-                    <div class="card-date">
-                        <span class="card-dates project-dates">2018 - 2021</span>
-                    </div>
-                    <img class=" card-img-top" src="assets/img/undergrad-ta-mediumslateblue.png" />
-                    <div class="card-body ">
-                        <h2 class="job-title card-title">undergraduate teaching assistant</h2>
-                        <p class="job-subtitle card-title">university of washington</p>
-                    </div>
-                </div>
-
-                <div class="job-card card" id="mentor" data-bs-toggle="modal" data-bs-target="#mentor-modal" >
-                    <div class="card-date">
-                        <span class="card-dates project-dates">2020</span>
-                    </div>
-                    <img class=" card-img-top" src="assets/img/mentor-mediumslateblue.png" />
-                    <div class="card-body ">
-                        <h2 class="job-title card-title">student mentor</h2>
-                        <p class="job-subtitle card-title">stem league</p>
-                    </div>
-                </div>
-
-                <div class="job-card card" id="amazon" data-bs-toggle="modal" data-bs-target="#amazon-modal">
-                    <div class="card-date">
-                        <span class="card-dates project-dates">2020</span>
-                    </div>
-                    <img class=" card-img-top" src="assets/img/amazon-mediumslateblue.png" />
-                    <div class="card-body ">
-                        <h2 class="job-title card-title">software development engineer intern</h2>
-                        <p class="job-subtitle card-title">amazon web services</p>
-                    </div>
-                </div>
-
-                <div class="job-card card" id="citrix" data-bs-toggle="modal" data-bs-target="#citrix-modal">
-                    <div class="card-date">
-                        <span class="card-dates project-dates">2019</span>
-                    </div>
-                    <img class=" card-img-top" src="assets/img/citrix-mediumslateblue.png" />
-                    <div class="card-body ">
-                        <h2 class="job-title card-title">software development intern</h2>
-                        <p class="job-subtitle card-title">citrix systems</p>
-                    </div>
-                </div>
-
-                <div class="job-card card" id="wrps" data-bs-toggle="modal" data-bs-target="#wrps-modal">
-                    <div class="card-date">
-                        <span class="card-dates project-dates">2018</span>
-                    </div>
-                    <img class=" card-img-top" src="assets/img/wrps-mediumslateblue.png" />
-                    <div class="card-body ">
-                        <h2 class="job-title card-title">undergrad intern - technical</h2>
-                        <p class="job-subtitle card-title">washington river protection solutions</p>
-                    </div>
-                </div>
-
-                <div class="job-card card" id="pnnl" data-bs-toggle="modal" data-bs-target="#pnnl-modal">
-                    <div class="card-date">
-                        <span class="card-dates project-dates">2016 - 2017</span>
-                    </div>
-                    <img class=" card-img-top" src="assets/img/pnnl-mediumslateblue.png" />
-                    <div class="card-body ">
-                        <h2 class="job-title card-title">science research intern</h2>
-                        <p class="job-subtitle card-title">pacific northwest national laboratory</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal fade" id="grad-ta-modal" tabindex="-1" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-card">
-                            <img class="card-img modal-card-img" src="" />
-                        </div>
-                        <div class="modal-wrapper">
-                            <div class="modal-header">
-                                <div class="modal-title">
-                                    <h2 class="modal-title card-title">graduate teaching assistant</h2>
-                                    <p class="modal-title card-title">university of washington</p>
-                                </div>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <span class="job-dates">09.2021 - present</span>
-                                <p></p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal fade" id="instructor-modal" tabindex="-1" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-card">
-                            <img class="card-img modal-card-img" src="" />
-                        </div>
-                        <div class="modal-wrapper">
-                            <div class="modal-header">
-                                <div class="modal-title">
-                                    <h2 class="modal-title card-title">instructional lecturer</h2>
-                                    <p class="modal-title card-title">university of washington</p>
-                                </div>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <span class="job-dates">06.2021 - 08.2021</span>
-                                <p></p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal fade" id="undergrad-ta-modal" tabindex="-1" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-card">
-                            <img class="card-img modal-card-img" src="" />
-                        </div>
-                        <div class="modal-wrapper">
-                            <div class="modal-header">
-                                <div class="modal-title">
-                                    <h2 class="modal-title card-title">undergraduate teaching assistant</h2>
-                                    <p class="modal-title card-title">university of washington</p>
-                                </div>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <span class="job-dates">03.2018 - 06.2021</span>
-                                <p>I taught a weekly quiz section of ~10-25 students for various courses in the Paul G. Allen School of Computer science. I taught intro to computer programming I (<a href="cs.uw.edu/142">cse 142</a>) for seven quarters, intro to computer programming II (<a href="cs.uw.edu/143">cse 143</a>)for one quarter, and  programming languages (<a href="cs.uw.edu/341">cse 341</a>) for one quarter. My job as a TA has included teaching a weekly quiz section, holding office hours, grading homework, quizzes, and exams, creating materials and resources for students, and t=creating testing structures for student programs.</p>
-                                <h4>head teaching assisstant</h4>
-                                <span class="job-dates">09.2020 - 06.2021</span>
-                                <p>i served as the head TA of cse 142 for the last 2 quarters I taught it. as head TA, I was responsible for scheduling and leading meetings with the course staff and course instructors, advising other teaching assistants, managing and developing course infrastructure and resources, and developing and managing the course website. my work as head ta also included building infrastructure in python and bash to change our grading infrstructure to increase reliability and reduce the course's tech debt, as well as building infrastructure to transition the course to a new pedagogical grade system.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal fade" id="mentor-modal" tabindex="-1" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-card">
-                            <img class="card-img modal-card-img" src="" />
-                        </div>
-                        <div class="modal-wrapper">
-                            <div class="modal-header">
-                                <div class="modal-title">
-                                    <h2 class="modal-title card-title">student mentor</h2>
-                                    <p class="modal-title card-title">stem league</p>
-                                </div>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <span class="job-dates">06.2020 - 08.2020</span>
-                                <p>I taught bi-weekly mentoring sessions for a small group of middle- and high-school students. An 8-week program in which we covered basic skills in web development (HTML, CSS, JS) and data programming (in Python). Students went from learning basic syntax at the beginning of the program to developing their own small projects by the end of the program</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal fade" id="amazon-modal" tabindex="-1" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-card">
-                            <img class="card-img modal-card-img" src="" />
-                        </div>
-                        <div class="modal-wrapper">
-                            <div class="modal-header">
-                                <div class="modal-title">
-                                    <h2 class="modal-title card-title">software development engineer intern</h2>
-                                    <p class="modal-title card-title">amazon web services</p>
-                                </div>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <span class="job-dates">06.2020 - 09.2020</span>
-                                <p>I did fullstack development on a new feature for an internal EC2 insight tool. I designed the feature using Sketch and wrote a Java backend that connected to an existing frontend built using React and Redux. I also worked on and added features to said frontend. The project was developed and deployed through AWS</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal fade" id="citrix-modal" tabindex="-1" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-card">
-                            <img class="card-img modal-card-img" src="" />
-                        </div>
-                        <div class="modal-wrapper">
-                            <div class="modal-header">
-                                <div class="modal-title">
-                                    <h2 class="modal-title card-title">software development intern</h2>
-                                    <p class="modal-title card-title">citrix systems</p>
-                                </div>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <span class="job-dates">06.2020 - 09.2020</span>
-                                <p>I did fullstack development on a new feature for an internal EC2 insight tool. I designed the feature using Sketch and wrote a Java backend that connected to an existing frontend built using React and Redux. I also worked on and added features to said frontend. The project was developed and deployed through AWS</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal fade" id="wrps-modal" tabindex="-1" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-card">
-                            <img class="card-img modal-card-img" src="" />
-                        </div>
-                        <div class="modal-wrapper">
-                            <div class="modal-header">
-                                <div class="modal-title">
-                                    <h2 class="modal-title card-title">undergrad intern - technical</h2>
-                                    <p class="modal-title card-title">washington river protection solutions</p>
-                                </div>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <span class="job-dates">06.2018 - 08.2020</span>
-                                <p>I created near-real-time data visualizations for nuclear waste treatment facilities on the Hanford site using PI Systems and JavaScript. I also built and updated attribute templates for data organization and management on PI Asset Framework servers using R and SQL.</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="modal fade" id="pnnl-modal" tabindex="-1" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-card">
-                            <img class="card-img modal-card-img" src="" />
-                        </div>
-                        <div class="modal-wrapper">
-                            <div class="modal-header">
-                                <div class="modal-title">
-                                    <h2 class="modal-title card-title">science research intern</h2>
-                                    <p class="modal-title card-title">pacific northwest national laboratories</p>
-                                </div>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <span class="job-dates">09.2016 - 05.2017</span>
-                                <p>I maintained and updated mass spectrometry contaminant databases to provide a higher level of precision to mass spectroscopy analysis results. I also worked on debugging, generating test data sets, and testing of new mass spectrometer data analysis application Formularity to ensure reproducible and accurate measurements</p>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-        <section id="teaching-content" class="hidden">
-            <p>i am currently a graduate student and instructor at the univeristy of washington. i served as a teaching assistant in the allen school at the university of washington for 3 years during my undergraduate degree, where i taught intro programming and programming languages courses. i'm really passionate about introductory computer science, equitable cs pedagogy, and equitable cs outreach -- dealing with diversity/inclusion/equity problems in the cs world and cs spaces.</p>
-            <h2>instructor</h2>
-            <div class="course">
-                <h3 class="accent">cse 390z: mathematics for computing workshop</h3>
-                <small><a class="link" href="cs.uw.edu/390z/22wi">winter '22</a>- autumn '21</small>
-                <p></p>
-            </div>
-            <div class="course">
-                <h3 class="accent">cse 142: intro to computer programming 1</h3>
-                <small><a class="link" href="https://cs.uw.edu/142/21su">summer '21</a></small>
-                <p>a course on basic procedural programming, as well as introductory object-oriented programming concepts. i taught this course for 7 terms as a teaching assistant, and most recently taught the course as the instructional lecturer. in my time as a teaching assistant, i lead exploration sessions where we host talks on a wide variety of computing topics for intro students, and served as head ta for the course.</p>
-            </div>
-
-            <h2>teaching assistant</h2>
-            <div class="course">
-                <h3 class="accent">cse 143: intro to computer programming 2</h3>
-                <small><a class="link" href="https://cs.uw.edu/143e/22wi">winter '22</a>- winter '19</small>
-                <p></p>
-            </div>
-            <div class="course">
-                <h3 class="accent">cse 142: intro to computer programming 1</h3>
-                <small><a class="link" href="https://cs.uw.edu/142/21sp">spring '21</a> - autumn '20 - winter '20 - autumn '19 - spring '19 - autumn '18 - spring '18</small>
-                <p>see course description above</p>
-            </div>
-            <div class="course">
-                <h3 class="accent">cse 341: programming languages</h3>
-                <small><a class="link" href="https://cs.uw.edu/341/20sp">spring '20</a></small>
-                <p>the allen school's course on programming languages. it explores a variety of programming language topics by studying functional programming languages, static- and dynamicly-typed languages, and loose- and strict-typed languages, through the lenses of SML, racket, and ruby. i taught this course for one term, and I think it's a super fun exploration into the mechanics of programming languages. if you're a cse student at uw, i highly recommend this class!/p>
-            </div>
-            <h2>resources</h2>
-            <ul>
-                <li>a <a href="https://www.omaryibrahim.me/java-code-quality-guide/" class="link">code quality guide</a> for cse 142 @ the university of washington that I wrote</li>
-                <li>the cs-ed podcast! a set of great dives into cs education topics with some great people in the field, including the university of washington's own brett wortzman, kevin lin, and dr. amy ko!</li>
-            </ul>
-            <iframe src="https://open.spotify.com/embed-podcast/episode/7x2wJcQs9jrSiRHu9ZNmlr" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>        
-        </section>
-        
-        <!-- <section id="contact-content"class="hidden">
-            <h3 class="accent">schedule a meeting</h3>
-            <p>you can schedule a meeting with me through <a class="link" href="https://https://calendly.com/oibra">calendly</a></p>
-            <h3 class="accent">contact me</h3>
-            <p></p>
-        </section> -->
-
-        <section id="sigcse2021-content" class="blog hidden">
+        <!-- <section id="sigcse2021-content" class="blog hidden">
             <h1 class="blog-title">sigcse 2021 post-mortem</h1>
             <h3>04.10.2021</h3>
             <p>SIGCSE 2021 was the first, and, as I move ever closer to graduating this year, seemingly the last academic conference of my college career. I’ve heard faculty members talk about all the issues with the conference, and I get where they’re coming from, but for me, and maybe because it was my first conference, it was amazing; it was a lifeline. I started this year full of passion for CS Ed and applied to 7 PhD programs to study it after I graduated. When SIGCSE started, I had been rejected from 5 of those programs, and I would know I was rejected from the other 2 by the time SIGCSE was over. Suffice to say, I was feeling pretty convinced that CS Ed just might not be for me. SIGCSE completely pulled me out of that. A full week of meeting droves of people passionate about CS education, getting to experience nuanced, deep, passionate discussions about things I’ve never had people to talk with about, getting to hear people talk about years and years of experience with things I’d only ever heard about. It was enlightening; like finding a new world full of people who care just as much about this niche thing I care about as me. For people already acquainted with that world, I’m sure the virtual conference didn’t deliver all the networking, connecting, and reuniting it normally does. But for someone discovering that world for the first time, especially with social anxiety, the whole experience was revelatory and refreshing. It was also bittersweet.</p>
             <p>SIGCSE 2021 was the first conference of my college career, but it wasn’t supposed to be. Just a year before, I had been packing for SIGCSE 2020, which my department had funded me to attend. The conference, which was set to be in nearby Portland OR, was cancelled last minute due to COVID-19, and I never got to go. As I experienced SIGCSe for the first time this year, as excited as I was, I couldn’t help but wonder what it would’ve been like to be able to attend earlier in my college career. How might my path have been different -- how might I have been different, if I had been able to experience everything I was experiencing now a year earlier, long before I jumped into graduate program applications without a clue as to what I was doing or where I was going. I am truly happy I got to experience SIGCSE before I graduated, but God do I wish  I could’ve had some of those formative experiences just a little sooner.</p>
             <p>On a brighter note, SIGCSE also left me with some hope for my future with CS education; when it started, I was pretty much ready to give up on it. But in my time attending the conference, I met so many people, who took so many paths to get into the field I thought I was ready to give up on. It was really nice to see living, breathing proof that just because the path I thought I would take didn’t work out, I shouldn’t give in to despair just yet.</p>
-        </section>
+        </section> -->
 
         <footer>
             <p>Omar Ibrahim &copy; 2020</p>
@@ -714,9 +692,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b4c4b44588.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-    <script src="assets/js/index.js"></script>
+    <script src="assets/js/index.js" type="text/javascript"></script>
 </body>

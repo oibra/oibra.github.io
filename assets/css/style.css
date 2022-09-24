@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Nova+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+
 /* general */
 * {
     font-family: 'Montserrat', sans-serif;
@@ -16,14 +18,13 @@ body, html {
 
 body {
     transition: all 0.3s ease 0s;
+    padding: 2.5rem 2.5rem 0 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section {
-    padding: 3rem 5rem;
-}
-
-section#projects-content, section#experience-content {
-    padding: 3rem 1.5rem;
+    padding: 2rem 3rem;
 }
 
 h1 {
@@ -50,10 +51,6 @@ iframe {
     display: none;
 }
 
-.link {
-    font-weight: bold;
-}
-
 .loading-icon {
     position: fixed;
     left: 0px;
@@ -66,8 +63,7 @@ iframe {
 
 /* header */
 header {
-    padding: 1rem 5rem;
-    margin: 1.5rem;
+    padding: 1rem 3rem;
     margin-bottom: 0;
     border-radius: 1.5rem;
     transition: all 0.3s ease 0s;
@@ -85,29 +81,23 @@ nav a strong {
     text-transform: uppercase;
 }
 
-/* .color-menu {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+.dropdown {
+    display: inline;
 }
 
-.dropdown-item {
-    width: auto;
+#colorSelectorButton {
+    box-shadow: none;
 }
 
-.dropdown-menu {
-    max-width: 15rem;
-} */
-
-.page-nav ul {
+/* .page-nav ul {
     margin-left: auto;
     padding: 0;
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
-}
+} */
 
-.page-nav ul li {
+/* .page-nav ul li {
     display: inline;
     font-size: 1.5rem;
     padding-left: 1rem;
@@ -121,7 +111,7 @@ nav a strong {
 
 .page-nav ul li:hover {
     cursor: pointer;
-}
+} */
 
 .name {
     font-size:5rem;
@@ -159,8 +149,7 @@ p#headline {
 
 /* footer */
 footer {
-    /* margin-top: auto; */
-    padding: 1rem 5rem;
+    padding: 1rem 3rem;
     margin: 0 1.5rem 1.5rem 1.5rem;
     border-radius: 1.5rem;
 }
@@ -174,12 +163,11 @@ footer p {
 #description {
     font-weight: bold;
     margin-top: 1rem;
-    width: 90%;
 }
 
 /* blog */
 
-.blog-snippet {
+/* .blog-snippet {
     margin-bottom: 1rem;
 }
 
@@ -191,28 +179,37 @@ footer p {
     cursor: pointer;
     text-decoration: underline !important;
     font-weight: bold;
-}
+} */
 
 /* lists */
+h2 {
+    margin-top: 1rem;
+}
+
 .projects-grid {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+}
+
+#exp-grid {
+    justify-content: flex-end;
 }
 
 .project, .job {
     display: flex;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .card {
     border-radius: 0;
     border: none;
-    padding: 1.5rem;
-    border-radius: 1.5rem;
+    padding: .9rem 1.5rem 1rem 1.5rem;
+    border-radius: 2.5rem;
     transition: all 0.3s ease 0s;
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
 }
 
 .card:hover {
@@ -234,8 +231,8 @@ footer p {
 .card-body {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding: .5rem;
+    justify-content: space-evenly;
+    padding: 0rem;
 }
 
 .card-title {
@@ -243,18 +240,17 @@ footer p {
 }
 
 .project-card, .job-card {
-    margin-right: .1rem;
-    margin-left: .1rem;
+    margin-right: .5rem;
+    margin-left: .5rem;
     box-sizing: content-box;
-    flex-basis: 27.5%;
+    max-width: 35%;
 }
 
 .project-title, .job-title {
     font-weight: bold;
     text-align: left;
     width: 100%;
-    font-size: 2rem;
-    /* padding-top: 5%; */
+    font-size: 1.3rem;
     text-transform: lowercase;
     font-family: 'Josefin Sans', sans-serif;   
     margin-bottom: 0;
@@ -265,13 +261,6 @@ footer p {
     text-align: left;
     width: 100%;
     font-size: 1rem;
-    /* text-align: center;
-    font-weight: bold;
-    width: 100%;
-    font-size: 1rem;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    background-color: ghostwhite; */
 }
 
 .card-dates {
@@ -281,10 +270,7 @@ footer p {
     background-color: ghostwhite;
     padding: .5rem 1rem;
     border-radius: 1rem;
-    /* width: 100%;              */
-    font-size: 1rem;
-    /* font-style: italic; */
-    /* font-weight: bold; */
+    font-size: .9rem;
     color: #3f23e6;
 }
 
@@ -304,10 +290,6 @@ footer p {
     font-weight: bold;
     text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
-}
-
-.right-align {
-    text-align: right;
 }
 
 .job-dates {
@@ -347,22 +329,11 @@ footer p {
     align-items: center;
 }
 
-/* .modal-card-img {
-    margin-top: auto;
-    margin-bottom: auto;
-    object-fit: cover;
-    border-radius: 0;
-    border: none;
-} */
-
 .modal-wrapper {
     flex-basis: 70%;
     padding-right: 1rem;
-}
-
-.modal-header {
-    /* border-bottom: none; */
-    /* padding-bottom: 0; */
+    display: flex;
+    flex-direction: column;
 }
 
 .modal-body p:last-of-type {
@@ -378,234 +349,24 @@ footer p {
     text-decoration: none;
 }
 
-/* .modal-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-} */
-
-/* contact form styles */
-#contact-form {
-    font-size: 1.25rem;
-    font-weight: 300;
-    -webkit-font-smoothing: antialiased;
-    max-width: 90%;
+.borderLeft {
+    border-left: 1px solid;
+    padding-left: 1rem;
 }
 
-#contact-content label {
-    font-weight: 400;
-    cursor: pointer;
-}
-
-#contact-content textarea,
-#contact-content input {
-    border: none;
-    outline: none;
-    border-radius: 0;
-    background: none;
-    font-weight: 700;
-    max-width: 90%;
-    padding: 1rem;
-    box-sizing: border-box;
-    cursor: text;
-}
-
-#contact-content .inputLight,
-#contact-content .textareaLight {
-    border: 2px dashed rgba(0, 0, 0, 0);
-}
-
-#contact-content .inputDark,
-#contact-content .textareaDark {
-    border: 2px dashed rgba(255, 255, 255, 0);
-}
-
-#contact-content textarea {
-    text-align: left;
-    resize: none;
-    width: 100%;
-}
-
-#contact-content .textareaLight {
-    border-color: rgba(0, 0, 0, 0);
-}
-
-#contact-content .textareaDark {
-    border-color: rgba(255, 255, 255, 0);
-}
-
-#contact-content .textareaLight:focus {
-    background-color: rgba(255, 255, 255, .1);
-    border: 2px dashed black;
-}
-
-#contact-content .textareaDark:focus {
-    background-color: rgba(255, 255, 255, .5);
-    border: 2px dashed ghostwhite;
-}
-
-#contact-content .textareaDark:focus:required:valid {
-    border: 2px solid rgba(255, 255, 255, 0);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-}
-
-#contact-content .textareaLight:focus:required:valid {
-    border: 2px solid rgba(0, 0, 0, 0);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-}
-
-#contact-content .textareaDark:required:valid {
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-}
-
-#contact-content .textareaLight:required:valid {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
-}
-
-#contact-content .inputLight {
-    border-bottom: 2px dashed rgba(0, 0, 0, 0.5);
-}
-
-#contact-content .inputDark {
-    border-bottom: 2px dashed rgba(255, 255, 255, 0.5);
-}
-
-#contact-content .inputLight:required,
-#contact-content .textareaLight:required {
-    border-bottom: 2px dashed rgba(0, 0, 0, 0.5);
-}
-
-#contact-content .inputDark:required,
-#contact-content .textareaDark:required {
-    border-bottom: 2px dashed rgba(255, 255, 255, 0.5);
-}
-
-#contact-content .inputLight:focus,
-#contact-content .inputLight:active {
-    border: 2px dashed black;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-#contact-content .inputDark:focus,
-#contact-content .inputDark:active {
-    border: 2px dashed ghostwhite;
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-#contact-content .inputLight:required:valid {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-}
-
-#contact-content .inputDark:required:valid {
-    border-bottom: 2px solid rgba(255, 255, 255, 1);
-}
-
-#contact-content .inputLight:required:invalid {
-    color: rgba(0, 0, 0, 0.5);
-}
-
-#contact-content .inputDark:required:invalid {
-    color: rgba(255, 255, 255, 0.5);
-}
-
-#contact-content .inputLight:required:valid {
-    color: rgba(0, 0, 0, 1);
-}
-
-#contact-content .inputDark:required:valid {
-    color: rgba(255, 255, 255, 1);
-}
-
-::-webkit-input-placeholder {
-    text-align: center;
-    font-style: italic;
-    font-weight: 400;
-}
-
-.inputLight ::-webkit-input-placeholder,
-.textareaLight ::-webkit-input-placeholder {
-    color: rgba(0, 0, 0, 0.4);
-}
-
-.inputDark ::-webkit-input-placeholder,
-.textareaDark ::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.4);
-}
-
-:-moz-placeholder {
-    /* Firefox 18- */
-    text-align: center;
-    font-style: italic;
-    font-weight: 400;
-}
-
-.inputLight :-moz-placeholder,
-.textareaLight :-moz-placeholder {
-    color: rgba(0, 0, 0, 0.4);
-}
-
-.inputDark :-moz-placeholder,
-.textareaDark :-moz-placeholder {
-    color: rgba(255, 255, 255, 0.4);
-}
-
-::-moz-placeholder {
-    /* Firefox 19+ */
-    text-align: center;
-    font-style: italic;
-    font-weight: 400;
-}
-
-.inputLight ::-moz-placeholder,
-.textareaLight ::-moz-placeholder {
-    color: rgba(0, 0, 0, 0.4);
-}
-
-.inputDark ::-moz-placeholder,
-.textareaDark ::-moz-placeholder {
-    color: rgba(255, 255, 255, 0.4);
-}
-
-:-ms-input-placeholder {
-    text-align: center;
-    font-style: italic;
-    font-weight: 400;
-}
-
-.inputLight :-ms-input-placeholder,
-.textareaLight :-ms-input-placeholder {
-    color: rgba(0, 0, 0, 0.4);
-}
-
-.inputDark :-ms-input-placeholder,
-.textareaDark :-ms-input-placeholder {
-    color: rgba(255, 255, 255, 0.4);
-}
-
-#contact-content .expanding {
-    vertical-align: top;
-    border-radius: 0;
-}
-
-#contact-content button {
-    background: none;
-    border: none;
-    outline: none;
-    margin: 2vmax;
-}
-
-#contact-content button:hover * {
-    cursor: pointer;
-}
-
-#contact-content small {
-    display: block;
-    font-size: 20px;
+.borderRight {
+    border-right: 1px solid;
+    padding-right: 1rem;
 }
 
 /* Small screen styling */
 @media only screen and (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
     header {
-        padding: 1rem 0rem;
+        padding: 1rem;
         text-align: center;
         margin: 0;
         border-radius: 0;
@@ -623,7 +384,7 @@ footer p {
         text-align: center;
     }
 
-    .page-nav ul {
+    /* .page-nav ul {
         display: inherit;
     }
 
@@ -632,14 +393,10 @@ footer p {
         text-decoration: underline;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
-    }
+    } */
 
     section {
-        padding: 3rem 2rem;
-    }
-
-    section#welcome-content, section#projects-content, section#experience-content {
-        padding-bottom: 0;
+        padding: 2rem 2rem;
     }
 
     .project, .job {
@@ -650,18 +407,10 @@ footer p {
         flex-direction: column-reverse;
     }
 
-    .right-align {
-        text-align: left;
-    }
-
     .project-card, .job-card {
         width: 100%;
-        /* margin: 0; */
         flex-basis: auto;
-    }
-
-    .card-img-top {
-        /* display: none; */
+        max-width: none;
     }
 
     iframe {
@@ -671,15 +420,21 @@ footer p {
     #contact-content, #contact-form {
         text-align: center;
     }
+
+    .borderRight {
+        border: none;
+        padding-right: 0;
+    }
+
+    footer {
+        margin: 0;
+        border-radius: 0;
+    }
 }
 
 @media only screen and (max-width:576px) {
-    .modal-dialog {
-
-    }
 
     .modal-dialog-scrollable .modal-content {
-        height: 100%;
         flex-direction: column;
         overflow-y: auto;
     }
@@ -699,8 +454,11 @@ footer p {
     }
     
     .modal-dialog-scrollable .modal-body{
-        /* height: 80vh; */
         overflow-y: initial;
+    }
+
+    .modal-wrapper {
+        padding-left: 1rem;
     }
 }
 
@@ -851,4 +609,28 @@ footer p {
 .btnSophieblue {
     color: ghostwhite !important;
     background-color: #009583;
+}
+
+.borderPurple {
+    border-color: #3f23e6;
+}
+
+.borderBlack {
+    border-color: black;
+}
+
+.borderStrawberry {
+    border-color: #b75166;
+}
+
+.borderWhite {
+    border-color: ghostwhite;
+}
+
+.borderMaroon {
+    border-color: #570000;
+}
+
+.borderBlue {
+    border-color: #009583;
 }

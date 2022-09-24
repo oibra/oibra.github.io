@@ -9,49 +9,36 @@
         currentPage: null
     }
 
-    const pages = ['welcome', 'projects', 'experience', 'teaching'/*, 'contact'*/]
+    const pages = ['welcome'/*, 'projects', 'experience', 'teaching'/*, 'contact'*/]
     const blogs = ['sigcse2021']
     const welcomeMessage = "hello! nice to meet you! i'm omar."
 
     window.onload = () => {
-        setTimeout(hideLoading, 1000);
+        setTimeout(hideLoading, 100);
         setColorPalette();
-        changePage('welcome')
+        // hideLoading();
         
-        for (let i = 0; i < pages.length; i++) {
-            $$(pages[i]).onclick = () => {
-                changePage(pages[i])
-            }
-        }
+        // for (let i = 0; i < pages.length; i++) {
+        //     $$(pages[i]).onclick = () => {
+        //         changePage(pages[i])
+        //     }
+        // }
 
-        for (let i = 0; i < blogs.length; i++) {
-            $$(blogs[i]).onclick = () => {
-                showBlog(blogs[i])
-            }
-        }
+        // for (let i = 0; i < blogs.length; i++) {
+        //     $$(blogs[i]).onclick = () => {
+        //         showBlog(blogs[i])
+        //     }
+        // }
 
         for (const color in colorPalettes) {
-            $$(color).onclick = () => {
+            $$(color).onclick = (e) => {
                 setColor(color)
             }
         }
 
         setIntroMessage();
-        setTimeout(typeIntro, 1500);
+        setTimeout(typeIntro, 500);
     };
-
-    // window.onpopstate = (e) => {
-    //     console.log(e.state.page)
-    //     if (e.state.page) {
-    //         // history.replaceState({page: state.currentPage}, "")
-
-    //         if (blogs.includes(e.state.page)) {
-    //             showBlog(e.state.page)
-    //         } else {
-    //             changePage(e.state.page)
-    //         }
-    //     }
-    // }
 
     function hideLoading() {
         $(".loading-icon").fadeOut();
@@ -73,6 +60,10 @@
                 for (let j = 0; j < paletteElements[e].palette.length; j++) {
                     c += " " + palette[paletteElements[e].palette[j]]
                 }
+                if (element.classList.contains("show")) {
+                    c += " show"
+                }
+
                 if (paletteElements[e]["baseVal"]) {
                     element.className.baseVal = paletteElements[e].className + c
                 } else {
@@ -82,9 +73,7 @@
         }
 
         for (const p in projectImages) {
-            const element = $("#" + p + " img")[0]
             const modalElement = $("#" + p + "-modal img")[0]
-            element.src = "assets/img/" + projectImages[p][state.color]
             if (modalElement) {
                 modalElement.src = "assets/img/" + projectImages[p][state.color]
             }
@@ -115,60 +104,52 @@
         state.introTimer = setInterval(type, 50, state.introMessage, $$('hello'));
     }
 
-    function changePage(id) {
-        if (id != 'welcome') {
-            setActive(id);
-        }
-        show(id + '-content');
-        for (let i = 0; i < pages.length; i++) {
-            if (pages[i] !== id) {
-                hide(pages[i] + '-content');
-                if (pages[i] !== 'welcome') {
-                    removeActive(pages[i])
-                }
-            }
-        }
+    // function changePage(id) {
+    //     if (id != 'welcome') {
+    //         setActive(id);
+    //     }
+    //     show(id + '-content');
+    //     for (let i = 0; i < pages.length; i++) {
+    //         if (pages[i] !== id) {
+    //             hide(pages[i] + '-content');
+    //             if (pages[i] !== 'welcome') {
+    //                 removeActive(pages[i])
+    //             }
+    //         }
+    //     }
 
-        for (let i = 0; i < blogs.length; i++) {
-            hide(blogs[i] + '-content');
-        }
+    //     for (let i = 0; i < blogs.length; i++) {
+    //         hide(blogs[i] + '-content');
+    //     }
 
-        // console.log(window.history)
-        // if (state.currentPage != null) {
-        //     history.replaceState({page: state.currentPage}, "")
-        // } else {
-        //     history.replaceState({page: "welcome"}, "")
-        // }
-        state.currentPage = id
-    }
+    //     state.currentPage = id
+    // }
 
-    function showBlog(id) {
-        show(id + '-content');
-        hide('welcome-content');
-        // console.log(window.history)
-        // history.replaceState({page: state.currentPage}, "")
-        state.currentPage = id
-    }
+    // function showBlog(id) {
+    //     show(id + '-content');
+    //     hide('welcome-content');
+    //     state.currentPage = id
+    // }
 
     function $$(id) {
         return document.getElementById(id);
     }
 
-    function show(id) {
-        $$(id).classList.remove('hidden');
-    }
+    // function show(id) {
+    //     $$(id).classList.remove('hidden');
+    // }
 
-    function hide(id) {
-        $$(id).classList.add('hidden');
-    }
+    // function hide(id) {
+    //     $$(id).classList.add('hidden');
+    // }
 
-    function setActive(id) {
-        $$(id).classList.add('active');
-    }
+    // function setActive(id) {
+    //     $$(id).classList.add('active');
+    // }
 
-    function removeActive(id) {
-        $$(id).classList.remove('active');
-    }
+    // function removeActive(id) {
+    //     $$(id).classList.remove('active');
+    // }
 
     /**
      * palette affected elements dictionary
@@ -247,10 +228,6 @@
             className: "btn-close",
             palette: ["textLink"]
         },
-        // ".card-body": {
-        //     className: "card-body",
-        //     palette: ["card"]
-        // },
         ".link": {
             className: "link",
             palette: ["textLink"]
@@ -287,6 +264,14 @@
         "#colorSelectorButton": {
             className: "btn dropdown-toggle",
             palette: ["button", "color"]
+        },
+        ".accentBorder.borderLeft": {
+            className: "accentBorder borderLeft",
+            palette: ["border"]
+        },
+        ".accentBorder.borderRight": {
+            className: "accentBorder borderRight projects-grid",
+            palette: ["border"]
         }
     }
 
@@ -438,6 +423,7 @@
             input: 'inputLight',
             textarea: 'textareaLight',
             modal: 'btnPurple',
+            border: 'borderPurple',
         },
         ghostwhite: {
             header: 'ghostwhiteBackground',
@@ -452,6 +438,7 @@
             input: 'inputLight',
             textarea: 'textareaLight',
             modal: 'btnBlack',
+            border: 'borderBlack',
         },
         strawberry: {
             header: 'strawberryBackground',
@@ -465,7 +452,8 @@
             button: 'blackButton',
             input: 'inputLight',
             textarea: 'textareaLight',
-            modal: 'btnStrawberry'
+            modal: 'btnStrawberry',
+            border: 'borderStrawberry',
         },
         dark: {
             header: 'darkBackground',
@@ -479,7 +467,8 @@
             button: 'ghostwhiteButton',
             input: 'inputDark',
             textarea: 'textareaDark',
-            modal: 'btnGhostwhite'
+            modal: 'btnGhostwhite',
+            border: 'borderWhite',
         },
         maroon: {
             header: 'maroonBackground',
@@ -493,7 +482,8 @@
             button: 'ghostwhiteButton',
             input: 'inputLight',
             textarea: 'textareaLight',
-            modal: 'btnMaroon'
+            modal: 'btnMaroon',
+            border: 'borderMaroon',
         },
         sophieblue: {
             header: 'sophieblueBackground',
@@ -507,7 +497,8 @@
             button: 'blackButton',
             input: 'inputLight',
             textarea: 'textareaLight',
-            modal: 'btnSophieblue'
+            modal: 'btnSophieblue',
+            border: 'borderBlue',
         }
     }
 })();
