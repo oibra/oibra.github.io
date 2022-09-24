@@ -3,4 +3,3 @@
 ### To-Do List
 - rewrite bio
 - add contact section
-- add project dates
