@@ -5,3 +5,4 @@
 - add description for instructor
 - add description for grad ta
 - add contact section
+- add project dates
