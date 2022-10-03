@@ -232,6 +232,10 @@
             className: "link",
             palette: ["textLink"]
         },
+        ".person-link": {
+            className: "person-link no-transform",
+            palette: ["textLink"]
+        },
         ".blog-link": {
             className: "blog-link",
             palette: ["textLink"]
