@@ -50,26 +50,11 @@
     }
 
     function setColorPalette() {
-        let palette = colorPalettes[state.color]
+        const palette = colorPalettes[state.color]
+        const root = document.querySelector(':root');
 
-        for (const e in paletteElements) {
-            const elements = $(e)
-            for(let i = 0; i < elements.length; i++) {
-                const element = elements[i]
-                let c = ""
-                for (let j = 0; j < paletteElements[e].palette.length; j++) {
-                    c += " " + palette[paletteElements[e].palette[j]]
-                }
-                if (element.classList.contains("show")) {
-                    c += " show"
-                }
-
-                if (paletteElements[e]["baseVal"]) {
-                    element.className.baseVal = paletteElements[e].className + c
-                } else {
-                    element.className = paletteElements[e].className + c
-                }
-            }
+        for (const prop in paletteVariables) {
+            root.style.setProperty(prop, palette[paletteVariables[prop]]);
         }
 
         for (const p in projectImages) {
@@ -77,7 +62,6 @@
             if (modalElement) {
                 modalElement.src = "assets/img/" + projectImages[p][state.color]
             }
-            
         }
     }
 
@@ -151,133 +135,6 @@
     //     $$(id).classList.remove('active');
     // }
 
-    /**
-     * palette affected elements dictionary
-     */
-    const paletteElements = {
-        "body": {
-            className: "",
-            palette: ["body", "text"]
-        },
-        "header": {
-            className: "",
-            palette: ["header", "textAccent"]
-        },
-        "footer": {
-            className: "",
-            palette: ["header", "textAccent"]
-        },
-        "#hello": {
-            className: "",
-            palette: ["textLink"]
-        },
-        ".blog-title": {
-            className: "blog-title",
-            palette: ["textLink"]
-        },
-        ".project-title": {
-            className: "project-title card-title",
-            palette: ["cardTitle"]
-        },
-        
-        ".project-dates": {
-            className: "project-dates card-dates",
-            palette: ["body", "textLink"]
-        },
-        ".job-title": {
-            className: "job-title card-title",
-            palette: ["cardTitle"]
-        },
-        ".job-subtitle": {
-            className: "job-subtitle card-title",
-            palette: ["cardTitle"]
-        },
-        ".job-dates": {
-            className: "job-dates",
-            palette: ["textLink"]
-        },
-        ".project-link": {
-            className: "project-link btn btn-project",
-            palette: ["textLink"]
-        },
-        ".modal-content": {
-            className: "modal-content",
-            palette: ["body"]
-        },
-        ".modal-title": {
-            className: "modal-title card-title",
-            palette: ["textLink"]
-        },
-        ".project-card": {
-            className: "card project-card",
-            palette: ["card"]
-        },
-        ".job-card": {
-            className: "card job-card",
-            palette: ["card"]
-        },
-        ".modal-card": {
-            className: "modal-card",
-            palette: ["card"]
-        },
-        ".btn-project": {
-            className: "btn btn-project",
-            palette: ["modal"]
-        },
-        ".btn-close": {
-            className: "btn-close",
-            palette: ["textLink"]
-        },
-        ".link": {
-            className: "link",
-            palette: ["textLink"]
-        },
-        ".person-link": {
-            className: "person-link no-transform",
-            palette: ["textLink"]
-        },
-        ".blog-link": {
-            className: "blog-link",
-            palette: ["textLink"]
-        },
-        "input": {
-            className: "",
-            palette: ["input"]
-        },
-        ".accent": {
-            className: "accent",
-            palette: ["textLink"]
-        },
-        "textarea": {
-            className: "expanding",
-            palette: ["textarea"]
-        },
-        "#contact-content button small": {
-            className: "",
-            palette: ["textLink"]
-        },
-        "#contact-content button .send-icn": {
-            className: "send-icn",
-            palette: ["textLink"],
-            baseVal: true
-        },
-        "#currentColor": {
-            className: "fas fa-square fa-lg",
-            palette: ["color"]
-        },
-        "#colorSelectorButton": {
-            className: "btn dropdown-toggle",
-            palette: ["button", "color"]
-        },
-        ".accentBorder.borderLeft": {
-            className: "accentBorder borderLeft",
-            palette: ["border"]
-        },
-        ".accentBorder.borderRight": {
-            className: "accentBorder borderRight projects-grid",
-            palette: ["border"]
-        }
-    }
 
     const projectImages = {
         "forager": {
@@ -410,99 +267,80 @@
         },
     }
 
+    const paletteVariables = {
+        '--bg-color': 'bgval',
+        '--text-color': 'textcolor',
+        '--accent-bg': 'accentbg',
+        '--accent-color': 'accentcolor',
+        '--link-color': 'linkcolor',
+        '--card-bg': 'cardbg',
+        '--card-color': 'cardcolor',
+        '--btn-color': 'btncolor'
+    }
+
     /**
      * color palette dictionary
      */
     const colorPalettes = {
         mediumslateblue: {
-            header: 'mediumslateblueBackground',
-            body: 'ghostwhiteBackground',
-            text: 'textBlack',
-            textLink: 'textPurple',
-            textAccent: 'textWhite',
-            card: 'mediumslateblueBackground',
-            cardTitle: 'textWhite',
-            color: 'mediumslateblue',
-            button: 'ghostwhiteButton',
-            input: 'inputLight',
-            textarea: 'textareaLight',
-            modal: 'btnPurple',
-            border: 'borderPurple',
+            bgval: 'white',
+            textcolor: 'black',
+            accentbg: 'mediumslateblue',
+            accentcolor: 'ghostwhite',
+            linkcolor: '#3f23e6',
+            cardbg: 'mediumslateblue',
+            cardcolor: 'ghostwhite',
+            btncolor: 'white'
         },
         ghostwhite: {
-            header: 'ghostwhiteBackground',
-            body: 'ghostwhiteBackground',
-            text: 'textBlack',
-            textLink: 'textBlack',
-            textAccent: 'textBlack',
-            card: 'blackBackground',
-            cardTitle: 'textWhite',
-            color: 'ghostwhite',
-            button: 'blackButton',
-            input: 'inputLight',
-            textarea: 'textareaLight',
-            modal: 'btnBlack',
-            border: 'borderBlack',
+            bgval: 'ghostwhite',
+            textcolor: 'black',
+            accentbg: 'ghostwhite',
+            accentcolor: 'black',
+            linkcolor: 'black',
+            cardbg: 'black',
+            cardcolor: 'ghostwhite',
+            btncolor: 'white'
         },
         strawberry: {
-            header: 'strawberryBackground',
-            body: 'ghostwhiteBackground',
-            text: 'textBlack',
-            textLink: 'textDarkStrawberry',
-            textAccent: 'textBlack',
-            card: 'strawberryBackground',
-            cardTitle: 'textBlack',
-            color: 'strawberry',
-            button: 'blackButton',
-            input: 'inputLight',
-            textarea: 'textareaLight',
-            modal: 'btnStrawberry',
-            border: 'borderStrawberry',
+            bgval: 'white',
+            textcolor: 'black',
+            accentbg: '#ec8094',
+            accentcolor: 'black',
+            linkcolor: '#b75166',
+            cardbg: '#ec8094',
+            cardcolor: 'black',
+            btncolor: 'white'
         },
         dark: {
-            header: 'darkBackground',
-            body: 'darkBackground',
-            text: 'textWhite',
-            textLink: 'textWhite',
-            textAccent: 'textWhite',
-            card: 'ghostwhiteBackground',
-            cardTitle: 'textDark',
-            color: 'dark',
-            button: 'ghostwhiteButton',
-            input: 'inputDark',
-            textarea: 'textareaDark',
-            modal: 'btnGhostwhite',
-            border: 'borderWhite',
+            bgval: '#121212',
+            textcolor: 'ghostwhite',
+            accentbg: '#121212',
+            accentcolor: 'ghostwhite',
+            linkcolor: 'ghostwhite',
+            cardbg: 'ghostwhite',
+            cardcolor: '#121212',
+            btncolor: 'black'
         },
         maroon: {
-            header: 'maroonBackground',
-            body: 'ghostwhiteBackground',
-            text: 'textBlack',
-            textLink: 'textMaroonAccent',
-            textAccent: 'textWhite',
-            card: 'maroonBackground',
-            cardTitle: 'textWhite',
-            color: 'maroon',
-            button: 'ghostwhiteButton',
-            input: 'inputLight',
-            textarea: 'textareaLight',
-            modal: 'btnMaroon',
-            border: 'borderMaroon',
+            bgval: 'white',
+            textcolor: 'black',
+            accentbg: '#8b0023',
+            accentcolor: 'ghostwhite',
+            linkcolor: '#570000',
+            cardbg: '#8b0023',
+            cardcolor: 'ghostwhite',
+            btncolor: 'white'
         },
         sophieblue: {
-            header: 'sophieblueBackground',
-            body: 'ghostwhiteBackground',
-            text: 'textBlack',
-            textLink: 'textSophieblueAccent',
-            textAccent: 'textBlack',
-            card: 'sophieblueBackground',
-            cardTitle: 'textBlack',
-            color: 'sophieblue',
-            button: 'blackButton',
-            input: 'inputLight',
-            textarea: 'textareaLight',
-            modal: 'btnSophieblue',
-            border: 'borderBlue',
+            bgval: 'white',
+            textcolor: 'black',
+            accentbg: '#00e1c6',
+            accentcolor: 'black',
+            linkcolor: '#009583',
+            cardbg: '#00e1c6',
+            cardcolor: 'black',
+            btncolor: 'white'
         }
     }
 })();
