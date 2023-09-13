@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton|Montserrat|Righteous|Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Nova+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+
+/* general */
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --accent-bg: white;
+    --accent-color: black;
+    --link-color: black;
+    --card-bg: black;
+    --card-color: white;
+    --btn-color: white;
+    /* --header-bg-color: ; */
+    /* --header-color: ; */
+    /* --card-bg-color: ; */
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: lowercase;
+    box-sizing: border-box;
+}
+
+body, html {
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    transition: all 0.3s ease 0s;
+    padding: 2.5rem 2.5rem 0 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--bg-color, white) !important;
+    color: var(--text-color, black) !important;
+}
+
+section {
+    padding: 2rem 3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+h4 {
+    font-weight: normal;
+}
+
+h1,h2,h3,h3 em,h4,h5,h6 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+iframe {
+    width: 45%;
+}
+
+.hidden {
+    display: none;
+}
+
+.no-transform {
+    text-transform: none;
+}
+
+.loading-icon {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../img/loading.gif) center no-repeat, mediumslateblue;
+}
+
+.link, .link:hover, .link:visited, 
+.person-link, .person-link:hover, .person-link:visited,
+.blog-link, .blog-link:hover, .blog-link:visited,
+.accent {
+    color: var(--link-color) !important;
+}
+
+.accentBorder {
+    border-color: var(--link-color) !important;
+}
+
+/* header */
+header {
+    padding: 1rem 3rem;
+    margin-bottom: 0;
+    border-radius: 1.5rem;
+    transition: all 0.3s ease 0s;
+    background-color: var(--accent-bg) !important;
+    /* color: var(--accent-color) !important; */
+}
+
+nav {
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 1.5em;
+    padding: 1rem;
+    z-index: 1010;
+}
+
+nav a strong {
+    text-transform: uppercase;
+}
+
+header, header a, header nav a, header a:hover, header nav a:hover, header a:visited, nav a:visited {
+    color: var(--accent-color) !important;
+}
+
+.dropdown {
+    display: inline;
+}
+
+#colorSelectorButton {
+    box-shadow: none;
+    background-color: var(--accent-color) !important;
+    color: var(--accent-bg) !important;
+}
+
+#currentColor {
+    color: var(--accent-bg) !important;
+}
+
+/* .page-nav ul {
+    margin-left: auto;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+} */
+
+/* .page-nav ul li {
+    display: inline;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.page-nav ul li.active {
+    text-decoration: underline;
+}
+
+.page-nav ul li:hover {
+    cursor: pointer;
+} */
+
+.name {
+    font-size:5rem;
+    font-family: 'Major Mono Display', monospace;
+    font-display: block;
+    text-transform: none;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.pronouns {
+    padding-left: 0.3rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    
+}
+
+.pronouns a {
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: underline;
+}
+
+.bio {
+    padding: 1rem 0.3rem;
+    width: 60%;
+}
+
+p#headline {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#hello {
+    color: var(--link-color) !important;
+}
+
+/* footer */
+footer {
+    padding: 1rem 3rem;
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    border-radius: 1.5rem;
+    background-color: var(--accent-bg) !important;
+    
+}
+
+footer p {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+footer, footer a, footer a:hover, footer a:visited {
+    color: var(--accent-color) !important;
+}
+
+/* welcome */
+#description {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+/* blog */
+
+/* .blog-snippet {
+    margin-bottom: 1rem;
+}
+
+.blog-snippet p {
+    margin-bottom: 0;
+}
+
+.blog-link {
+    cursor: pointer;
+    text-decoration: underline !important;
+    font-weight: bold;
+} 
+
+.blog-title {
+    color: var(--link-color) !important;
+}
+*/
+
+/* lists */
+h2 {
+    margin-top: 1rem;
+}
+
+.projects-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+#exp-grid {
+    justify-content: flex-end;
+}
+
+.project, .job {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.card {
+    border-radius: 0;
+    border: none;
+    padding: .9rem 1.5rem 1rem 1.5rem;
+    border-radius: 2.5rem;
+    transition: all 0.3s ease 0s;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.card-img-top {
+    /* height: 10rem; */
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    object-fit: cover;
+    border-radius: 0;
+    border: none;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0rem;
+}
+
+.card-title {
+    vertical-align: baseline;
+}
+
+.project-card, .job-card {
+    margin-right: .5rem;
+    margin-left: .5rem;
+    box-sizing: content-box;
+    max-width: 35%;
+    background: var(--card-bg) !important;
+}
+
+.project-title, .job-title {
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+    font-size: 1.3rem;
+    text-transform: lowercase;
+    font-family: 'Josefin Sans', sans-serif;   
+    margin-bottom: 0;
+    margin-top: 0;
+    color: var(--card-color) !important;
+}
+
+.project-dates {
+    background-color: var(--bg-color, white) !important;
+    color: var(--link-color, black) !important;
+}
+
+.job-subtitle {
+    text-align: left;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--card-color) !important;
+}
+
+.card-dates {
+    text-align: right;
+    margin-left: auto;
+    float: right;
+    background-color: ghostwhite;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    font-size: .9rem;
+    color: #3f23e6;
+}
+
+.project-description, .job-description {
+    text-align: left;
+    font-size: 1em;
+    line-height: 2em;
+    text-transform: lowercase;
+    flex-basis: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.project-link, .job-link, 
+.project-link:hover, .job-link:hover, 
+.project-link:visited, .job-link:visited {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--link-color, black) !important;
+}
+
+.job-dates {
+    font-weight: bold;
+    font-style: italic;
+    color: var(--link-color) !important;
+}
+
+/* modals */
+
+#projects-content .modal-body {
+    max-height: 80%;
+}
+
+#experience-content .modal-body {
+    max-height: 72%;
+}
+
+.modal-dialog-scrollable {
+    overflow-y: initial !important
+}
+
+.modal-dialog-scrollable .modal-body{
+    /* height: 80vh; */
+    overflow-y: auto;
+}
+
+.modal-content {
+    flex-direction: row;
+    border-radius: 1.5rem;
+    border: none;
+    background-color: var(--bg-color, white) !important;
+}
+
+.modal-card {
+    flex-basis: 30%;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    background: var(--card-bg) !important;
+}
+
+.modal-wrapper {
+    flex-basis: 70%;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body p:last-of-type {
+    margin-bottom: 0;
+}
+
+.modal-title {
+    color: var(--link-color, black) !important;
+}
+
+.modal-subtitle {
+    display: flex;
+    align-items: center;
+}
+
+.modal-dates {
+    color: var(--card-color) !important;
+    padding: .5rem 1rem;
+    border-radius: 1rem;
+    font-size: .9rem;
+    background-color: var(--card-bg) !important;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.btn {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.btn-close {
+    color: var(--link-color) !important;
+}
+
+.btn-project {
+    font-weight: bold;
+    text-decoration: none;
+    background-color: var(--link-color) !important;
+    color: var(--btn-color) !important;
+}
+
+.borderLeft {
+    border-left: 1px solid;
+    padding-left: 1rem;
+}
+
+.borderRight {
+    border-right: 1px solid;
+    padding-right: 1rem;
+}
+
+/* Small screen styling */
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 0;
+    }
+
+    header {
+        padding: 1rem;
+        text-align: center;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .bio {
+        width: 100%;
+    }
+
+    .name {
+        font-size: 4rem;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    /* .page-nav ul {
+        display: inherit;
+    }
+
+    .page-nav ul li {
+        font-size: 1rem;
+        text-decoration: underline;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    } */
+
+    section {
+        padding: 2rem 2rem;
+    }
+
+    .project, .job {
+        flex-direction: column;
+    }
+
+    .project.flipped, .job.flipped {
+        flex-direction: column-reverse;
+    }
+
+    .project-card, .job-card {
+        width: 100%;
+        flex-basis: auto;
+        max-width: none;
+    }
+
+    .modal-subtitle {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .modal-dates {
+        margin-left: 0;
+        margin-top: .5rem;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    #contact-content, #contact-form {
+        text-align: center;
+    }
+
+    .borderRight {
+        border: none;
+        padding-right: 0;
+    }
+
+    footer {
+        margin: 0;
+        border-radius: 0;
+    }
+}
+
+@media only screen and (max-width:576px) {
+
+    .modal-dialog-scrollable .modal-content {
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+    .modal-card-img {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #projects-content .modal-body {
+        max-height: 100%;
+    }
+    
+    #experience-content .modal-body {
+        max-height: 100%;
+    }
+    
+    .modal-dialog-scrollable .modal-body{
+        overflow-y: initial;
+    }
+
+    .modal-wrapper {
+        padding-left: 1rem;
+    }
+}
