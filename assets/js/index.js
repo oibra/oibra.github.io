@@ -1,43 +1,74 @@
+// import bootstrap;
+
 "use strict";
 (function() {
     let state = {
-        introTimer: null,
-        introIndex: 0,
-        introMessage: new Array(),
-        bio: "i'm a 20 year old undergraduate student based in seattle, washington. i'm currently in my final year studying computer science with minors in informatics and music at the university of washington, planning on pursuing a graduate degree studying computer science education. during the school year, i work as a teaching assistant in the paul g. allen school of computer science, and am currently the head teaching assistant for intro to computer programming 1 at the university of washington",
+        // introTimer: null,
+        // introIndex: 0,
+        // introMessage: new Array(),
+        // bio: "i'm a 20 year old undergraduate student based in seattle, washington. i'm currently in my final year studying computer science with minors in informatics and music at the university of washington, planning on pursuing a graduate degree studying computer science education. during the school year, i work as a teaching assistant in the paul g. allen school of computer science, and am currently the head teaching assistant for intro to computer programming 1 at the university of washington",
         color: 'mediumslateblue',
-        currentPage: null
+        cookiesAccepted: true
+        // currentPage: null
     }
 
-    // const pages = ['welcome'/*, 'projects', 'experience', 'teaching'/*, 'contact'*/]
-    // const blogs = ['sigcse2021']
-    const welcomeMessage = "hello! nice to meet you! i'm omar."
+    const domain = 'omaryibrahim.me'
+
+    // const welcomeMessage = "hello! nice to meet you! i'm omar."
 
     window.onload = () => {
-        setTimeout(hideLoading, 100);
-        setColorPalette();
-        // hideLoading();
-        
-        // for (let i = 0; i < pages.length; i++) {
-        //     $$(pages[i]).onclick = () => {
-        //         changePage(pages[i])
-        //     }
-        // }
+        // setTimeout(hideLoading, 100);
+        // setColorPalette();
+        const cookies = document.cookie
+            .split(';');
+        const cookiesAccepted = cookies
+            .find(row => row.trim().startsWith('cookiesAccepted'));
+        if (cookiesAccepted) {
+            // $$('cookieAlert').close()
+            // const alert = bootstrap.Alert.getOrCreateInstance('#cookieAlert');
+            $$('cookieAlert').remove();
+            state.cookiesAccepted = cookiesAccepted.split('=')[1];
+        } else {
+            // showCookieWarning();
+            // state.cookiesAccepted = false;
+            $$('allowCookies').onclick = (e) => {
+                state.cookiesAccepted = true;
+                document.cookie = 'cookiesAccepted=true;samesite=Lax';
+            }
 
-        // for (let i = 0; i < blogs.length; i++) {
-        //     $$(blogs[i]).onclick = () => {
-        //         showBlog(blogs[i])
-        //     }
-        // }
+            $$('disallowCookies').onclick = (e) => {
+                state.cookiesAccepted = false;
+                document.cookie = 'cookiesAccepted=false;samesite=Lax';
+            }
+        }
+
+        
+        if (state.cookiesAccepted) {
+            // console.log(cookies)
+            // console.log('setting cookie theme')
+            const cookieTheme = cookies
+                .find(row => row.trim().startsWith('colorTheme'));
+            // console.log(cookies)
+        
+            if (cookieTheme) {
+                const color = cookieTheme.split('=')[1]
+                if (color && colorPalettes[color]) {
+                // console.log(cookieTheme.split('=')[1])
+                    setColor(color);
+                }
+            }
+        }
+        
 
         for (const color in colorPalettes) {
             $$(color).onclick = (e) => {
+                
                 setColor(color)
             }
         }
 
-        setIntroMessage();
-        setTimeout(typeIntro, 500);
+        // setIntroMessage();
+        // setTimeout(typeIntro, 500);
     };
 
     function hideLoading() {
@@ -46,7 +77,15 @@
 
     function setColor(color) {
         state.color = color
+        document.querySelectorAll('.color-button')
+            .forEach(button => {
+                button.classList.remove('active');
+            })
+        $$(color).classList.add('active')
         setColorPalette()
+        if (state.cookiesAccepted) {
+            document.cookie = "colorTheme=" + color  + '; samesite=Lax'; 
+        }
     }
 
     function setColorPalette() {
@@ -341,6 +380,26 @@
             cardbg: '#00e1c6',
             cardcolor: 'black',
             btncolor: 'white'
+        },
+        udub: {
+            bgval: 'white',
+            textcolor: 'black',
+            accentbg: '#4b2e83',
+            accentcolor: 'ghostwhite',
+            linkcolor: '#85754d',
+            cardbg: '',
+            cardcolor: '',
+            btncolor: 'white'
+        },
+        uic: {
+            bgval: 'white',
+            textcolor: 'black',
+            accentbg: '#d50032',
+            accentcolor: '#f2f7eb',
+            linkcolor: '#001e62',
+            cardbg: '',
+            cardcolor: '',
+            btncolor: ''
         }
     }
 })();
