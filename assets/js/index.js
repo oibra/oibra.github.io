@@ -12,7 +12,7 @@
         // currentPage: null
     }
 
-    const domain = 'omaryibrahim.me'
+    const domain = '127.0.0.1:3000' // 'omaryibrahim.me'
 
     // const welcomeMessage = "hello! nice to meet you! i'm omar."
 
@@ -33,12 +33,12 @@
             // state.cookiesAccepted = false;
             $$('allowCookies').onclick = (e) => {
                 state.cookiesAccepted = true;
-                document.cookie = 'cookiesAccepted=true;samesite=Lax';
+                document.cookie = 'cookiesAccepted=true; samesite=Lax; path=/';
             }
 
             $$('disallowCookies').onclick = (e) => {
                 state.cookiesAccepted = false;
-                document.cookie = 'cookiesAccepted=false;samesite=Lax';
+                document.cookie = 'cookiesAccepted=false; samesite=Lax; path=/';
             }
         }
 
@@ -84,7 +84,7 @@
         $$(color).classList.add('active')
         setColorPalette()
         if (state.cookiesAccepted) {
-            document.cookie = "colorTheme=" + color  + '; samesite=Lax'; 
+            document.cookie = "colorTheme=" + color  + '; samesite=Lax; path=/'; 
         }
     }
 

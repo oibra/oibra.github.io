@@ -45,6 +45,7 @@ body {
 .accent {
     color: var(--link-color) !important;
     text-decoration: none;
+    opacity: 1;
 }
 
 .link {
@@ -56,7 +57,8 @@ body {
 
 .link:hover, .link:focus {
     color: var(--bg-color) !important;
-    box-shadow: inset 200px 0 0 0 var(--link-color);
+    box-shadow: inset 300px 0 0 0 var(--link-color);
+    opacity: 1;
 }
 
 header {
@@ -96,6 +98,7 @@ header .nav-link:hover, header .nav-link:focus, header .nav-link.active {
     transition: border 0.3s ease 0s; */
     box-shadow: inset 200px 0 0 0 var(--accent-color);
     color: var(--accent-bg) !important;
+    opacity: 1;
 }
 
 header, header a, header nav a, header a:hover, header nav a:hover, header a:visited, nav a:visited {
@@ -238,4 +241,51 @@ section > *:first-child {
 
 .alert .btn:focus {
     box-shadow: none;
+}
+
+img {
+    flex-basis: 1em;
+    max-width: 50%;
+    height: fit-content;
+    border-radius: 1rem;
+    margin-right: 1.5rem;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.em {
+    font-style: italic;
+}
+
+.card-header {
+    font-weight: bold;
+    text-transform: none;
+}
+
+.card-title {
+    margin-bottom: 0;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+a {
+    color: var(--link-color);
+}
+
+a:hover, a:focus {
+    color:var(--link-color);
+    opacity: .9;
+}
+
+.course {
+    font-size: 1.1rem;
+}
+
+.dot {
+    font-weight: bold;
+    font-size: 1.5rem;
 }
