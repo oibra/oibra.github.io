@@ -1,5 +1,1 @@
-# [Omar Ibrahim Portfolio Site](https://oibra.github.io)
-
-### To-Do List
-- rewrite bio
-- add contact section
+# [Omar Ibrahim Portfolio Site v6.0](https://oibra.github.io)
