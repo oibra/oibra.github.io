@@ -1,0 +1,107 @@
+- school: university of illinois chicago
+  start: 2023
+  end: present
+  courses:
+    - name: cs 301
+      title: languages and automata
+      instructor: true
+      offerings:
+        - name: fall 2023
+          role: instructor
+          recent: true
+
+- school: university of washington
+  start: 2018
+  end: 2023
+  courses:
+    - name: cse 190x
+      title: cse 12x direct admit workshop
+      instructor: true
+      offerings:
+        - name: winter 2023
+          link: https://courses.cs.washington.edu/courses/cse190x/23wi
+          role: instructor
+          recent: true
+
+    - name: cse 190y
+      title: cse 12x direct admit workshop
+      instructor: true
+      offerings:
+        - name: autumn 2022
+          link: https://courses.cs.washington.edu/courses/cse190y/22au
+          role: instructor
+          recent: true
+
+    - name: cse 390z
+      title: mathematics for computation workshop
+      instructor: true
+      offerings:
+        - name: spring 2022
+          link: https://courses.cs.washington.edu/courses/cse390z/22sp
+          role: instructor
+          recent: true
+        - name: winter 2022
+          link: https://courses.cs.washington.edu/courses/cse390z/22wi
+          role: instructor
+        - name: autumn 2021
+          link: https://courses.cs.washington.edu/courses/cse390z/21au
+          role: instructor
+    - name: cse 142
+      title: introduction to computer programming 1
+      instructor: true
+      headta: true
+      leadta: true
+      ta: true
+      offerings:
+        - name: summer 2022
+          link: https://courses.cs.washington.edu/courses/cse142/22su
+          role: ta
+          recent: true
+        - name: summer 2021
+          link: https://courses.cs.washington.edu/courses/cse142/21su
+          role: instructor
+          recent: true
+        - name: spring 2021
+          link: https://courses.cs.washington.edu/courses/cse142/21sp
+          role: headta
+          recent: true
+        - name: autumn 2020
+          link: https://courses.cs.washington.edu/courses/cse142/20au
+          role: headta
+        - name: winter 2020
+          link: https://courses.cs.washington.edu/courses/cse142/20wi
+          role: leadta
+          recent: true
+        - name: autumn 2019
+          link: https://courses.cs.washington.edu/courses/cse142/19au
+          role: leadta
+        - name: spring 2019
+          link: https://courses.cs.washington.edu/courses/cse142/19sp
+          role: leadta
+        - name: autumn 2018
+          link: https://courses.cs.washington.edu/courses/cse142/18au
+          role: ta
+        - name: spring 2018
+          link: https://courses.cs.washington.edu/courses/cse142/18sp
+          role: ta
+    
+    - name: cse 143
+      title: introduction to computer programming 2
+      ta: true
+      offerings:
+        - name: winter 2022
+          link: https://courses.cs.washington.edu/courses/cse143e/22wi
+          role: ta
+          recent: true
+        - name: winter 2019
+          link: https://courses.cs.washington.edu/courses/cse143/19wi
+          role: ta
+
+    - name: cse 341
+      title: programming languages
+      ta: true
+      offerings:
+        - name: spring 2020
+          link: https://courses.cs.washington.edu/courses/cse341/20sp
+          role: ta
+          recent: true

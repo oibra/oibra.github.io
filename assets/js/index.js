@@ -1,36 +1,20 @@
-// import bootstrap;
-
 "use strict";
 (function() {
     let state = {
-        // introTimer: null,
-        // introIndex: 0,
-        // introMessage: new Array(),
-        // bio: "i'm a 20 year old undergraduate student based in seattle, washington. i'm currently in my final year studying computer science with minors in informatics and music at the university of washington, planning on pursuing a graduate degree studying computer science education. during the school year, i work as a teaching assistant in the paul g. allen school of computer science, and am currently the head teaching assistant for intro to computer programming 1 at the university of washington",
         color: 'mediumslateblue',
         cookiesAccepted: true
-        // currentPage: null
     }
-
     const domain = '127.0.0.1:3000' // 'omaryibrahim.me'
 
-    // const welcomeMessage = "hello! nice to meet you! i'm omar."
-
     window.onload = () => {
-        // setTimeout(hideLoading, 100);
-        // setColorPalette();
         const cookies = document.cookie
             .split(';');
         const cookiesAccepted = cookies
             .find(row => row.trim().startsWith('cookiesAccepted'));
         if (cookiesAccepted) {
-            // $$('cookieAlert').close()
-            // const alert = bootstrap.Alert.getOrCreateInstance('#cookieAlert');
             $$('cookieAlert').remove();
             state.cookiesAccepted = cookiesAccepted.split('=')[1];
         } else {
-            // showCookieWarning();
-            // state.cookiesAccepted = false;
             $$('allowCookies').onclick = (e) => {
                 state.cookiesAccepted = true;
                 document.cookie = 'cookiesAccepted=true; samesite=Lax; path=/';
@@ -44,16 +28,12 @@
 
         
         if (state.cookiesAccepted) {
-            // console.log(cookies)
-            // console.log('setting cookie theme')
             const cookieTheme = cookies
                 .find(row => row.trim().startsWith('colorTheme'));
-            // console.log(cookies)
         
             if (cookieTheme) {
                 const color = cookieTheme.split('=')[1]
                 if (color && colorPalettes[color]) {
-                // console.log(cookieTheme.split('=')[1])
                     setColor(color);
                 }
             }
@@ -66,9 +46,6 @@
                 setColor(color)
             }
         }
-
-        // setIntroMessage();
-        // setTimeout(typeIntro, 500);
     };
 
     function hideLoading() {
@@ -127,183 +104,8 @@
         state.introTimer = setInterval(type, 50, state.introMessage, $$('hello'));
     }
 
-    // function changePage(id) {
-    //     if (id != 'welcome') {
-    //         setActive(id);
-    //     }
-    //     show(id + '-content');
-    //     for (let i = 0; i < pages.length; i++) {
-    //         if (pages[i] !== id) {
-    //             hide(pages[i] + '-content');
-    //             if (pages[i] !== 'welcome') {
-    //                 removeActive(pages[i])
-    //             }
-    //         }
-    //     }
-
-    //     for (let i = 0; i < blogs.length; i++) {
-    //         hide(blogs[i] + '-content');
-    //     }
-
-    //     state.currentPage = id
-    // }
-
-    // function showBlog(id) {
-    //     show(id + '-content');
-    //     hide('welcome-content');
-    //     state.currentPage = id
-    // }
-
     function $$(id) {
         return document.getElementById(id);
-    }
-
-    // function show(id) {
-    //     $$(id).classList.remove('hidden');
-    // }
-
-    // function hide(id) {
-    //     $$(id).classList.add('hidden');
-    // }
-
-    // function setActive(id) {
-    //     $$(id).classList.add('active');
-    // }
-
-    // function removeActive(id) {
-    //     $$(id).classList.remove('active');
-    // }
-
-
-    const projectImages = {
-        "forager": {
-            "mediumslateblue": "forager-light.png",
-            "ghostwhite": "forager-light.png",
-            "strawberry": "forager-dark.png",
-            "dark": "forager-dark.png",
-            "maroon": "forager-light.png",
-            "sophieblue": "forager-dark.png"
-        },
-        "linter": {
-            "mediumslateblue": "linter-mediumslateblue.png",
-            "ghostwhite": "linter-ghostwhite.png",
-            "strawberry": "linter-strawberry.png",
-            "dark": "linter-dark.png",
-            "maroon": "linter-maroon.png",
-            "sophieblue": "linter-sophieblue.png"
-        },
-        "style-guide": {
-            "mediumslateblue": "style-guide-mediumslateblue.png",
-            "ghostwhite": "style-guide-ghostwhite.png",
-            "strawberry": "style-guide-strawberry.png",
-            "dark": "style-guide-dark.png",
-            "maroon": "style-guide-maroon.png",
-            "sophieblue": "style-guide-sophieblue.png"
-        },
-        "readycipe": {
-            "mediumslateblue": "readycipe-mediumslateblue.png",
-            "ghostwhite": "readycipe-ghostwhite.png",
-            "strawberry": "readycipe-strawberry.png",
-            "dark": "readycipe-dark.png",
-            "maroon": "readycipe-maroon.png",
-            "sophieblue": "readycipe-sophieblue.png"
-        },
-        "ictc": {
-            "mediumslateblue": "ictc-light.png",
-            "ghostwhite": "ictc-light.png",
-            "strawberry": "ictc-dark.png",
-            "dark": "ictc-dark.png",
-            "maroon": "ictc-light.png",
-            "sophieblue": "ictc-dark.png"
-        },
-        "snaptrack": {
-            "mediumslateblue": "snap-mediumslateblue.png",
-            "ghostwhite": "snap-ghostwhite.png",
-            "strawberry": "snap-strawberry.png",
-            "dark": "snap-dark.png",
-            "maroon": "snap-maroon.png",
-            "sophieblue": "snap-sophieblue.png"
-        },
-        "info201": {
-            "mediumslateblue": "info201-mediumslateblue.png",
-            "ghostwhite": "info201-ghostwhite.png",
-            "strawberry": "info201-strawberry.png",
-            "dark": "info201-dark.png",
-            "maroon": "info201-maroon.png",
-            "sophieblue": "info201-sophieblue.png"
-        },
-        "sophie": {
-            "mediumslateblue": "sophie-mediumslateblue.png",
-            "ghostwhite": "sophie-ghostwhite.png",
-            "strawberry": "sophie-strawberry.png",
-            "dark": "sophie-dark.png",
-            "maroon": "sophie-maroon.png",
-            "sophieblue": "sophie-sophieblue.png"
-        },
-        "undergrad-ta": {
-            "mediumslateblue": "undergrad-ta-mediumslateblue.png",
-            "ghostwhite": "undergrad-ta-ghostwhite.png",
-            "strawberry": "undergrad-ta-strawberry.png",
-            "dark": "undergrad-ta-dark.png",
-            "maroon": "undergrad-ta-maroon.png",
-            "sophieblue": "undergrad-ta-sophieblue.png"
-        },
-        "grad-ta": {
-            "mediumslateblue": "grad-ta-mediumslateblue.png",
-            "ghostwhite": "grad-ta-ghostwhite.png",
-            "strawberry": "grad-ta-strawberry.png",
-            "dark": "grad-ta-dark.png",
-            "maroon": "grad-ta-maroon.png",
-            "sophieblue": "grad-ta-sophieblue.png"
-        },
-        "instructor": {
-            "mediumslateblue": "instructor-mediumslateblue.png",
-            "ghostwhite": "instructor-ghostwhite.png",
-            "strawberry": "instructor-strawberry.png",
-            "dark": "instructor-dark.png",
-            "maroon": "instructor-maroon.png",
-            "sophieblue": "instructor-sophieblue.png"
-        },
-        "mentor": {
-            "mediumslateblue": "mentor-mediumslateblue.png",
-            "ghostwhite": "mentor-ghostwhite.png",
-            "strawberry": "mentor-strawberry.png",
-            "dark": "mentor-dark.png",
-            "maroon": "mentor-maroon.png",
-            "sophieblue": "mentor-sophieblue.png"
-        },
-        "amazon": {
-            "mediumslateblue": "amazon-mediumslateblue.png",
-            "ghostwhite": "amazon-ghostwhite.png",
-            "strawberry": "amazon-strawberry.png",
-            "dark": "amazon-dark.png",
-            "maroon": "amazon-maroon.png",
-            "sophieblue": "amazon-sophieblue.png"
-        },
-        "citrix": {
-            "mediumslateblue": "citrix-mediumslateblue.png",
-            "ghostwhite": "citrix-ghostwhite.png",
-            "strawberry": "citrix-strawberry.png",
-            "dark": "citrix-dark.png",
-            "maroon": "citrix-maroon.png",
-            "sophieblue": "citrix-sophieblue.png"
-        },
-        "wrps": {
-            "mediumslateblue": "wrps-mediumslateblue.png",
-            "ghostwhite": "wrps-ghostwhite.png",
-            "strawberry": "wrps-strawberry.png",
-            "dark": "wrps-dark.png",
-            "maroon": "wrps-maroon.png",
-            "sophieblue": "wrps-sophieblue.png"
-        },
-        "pnnl": {
-            "mediumslateblue": "pnnl-mediumslateblue.png",
-            "ghostwhite": "pnnl-ghostwhite.png",
-            "strawberry": "pnnl-strawberry.png",
-            "dark": "pnnl-dark.png",
-            "maroon": "pnnl-maroon.png",
-            "sophieblue": "pnnl-sophieblue.png"
-        },
     }
 
     const paletteVariables = {

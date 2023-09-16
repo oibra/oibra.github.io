@@ -1,0 +1,8 @@
+- name: instructor
+  tag: instructor
+- name: head ta
+  tag: headta
+- name: lead ta
+  tag: leadta
+- name: ta
+  tag: ta

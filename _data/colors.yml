@@ -1,0 +1,17 @@
+- name: mediumslateblue
+  color: mediumslateblue
+  default: true
+- name: strawberry
+  color: #ec8094
+- name: maroon
+  color: #8b0023
+- name: sophieblue
+  color: #00e1c6
+- name: udub
+  color: #4b2e83
+- name: uic
+  color: #d50032
+- name: ghostwhite
+  color: ghostwhite
+- name: dark
+  color: #121212

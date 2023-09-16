@@ -1,0 +1,89 @@
+---
+layout: default
+title: teaching
+---
+
+<section>
+  <h2 class="strong">teaching</h2>
+  <small>lecturer, teaching assistant, and other teaching related work</small>
+  <p>i currently teach computer science at the university of illinois chicago. this semester (fall 2023), i'm teaching cs 301: languages and automata.</p>
+</section>
+
+{% for school in site.data.courses %}
+<section>
+  <h3>{{ school.school }} ({{ school.start }} - {{ school.end}})</h3>
+  {% for course in school.courses %}
+      <p>
+        <strong class="course">{{ course.name }}: {{ course.title }}</strong>
+        
+        {% if course.instructor %}
+        <br>
+          {% for item in course.offerings %}
+            {% if item.role == "instructor" %}
+              {% if item.recent %}
+              {% else %}
+              <span class="dot">•</span>
+              {% endif %}
+              {% if item.link %}
+                <a href="{{ item.link }}" target="_blank">{{ item.name }}</a>
+              {% else %}
+                <span>{{ item.name }} (no course site)</span>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% if course.headta %}
+          <br><em>head ta: </em>
+          {% for item in course.offerings %}
+            {% if item.role == "headta" %}
+              {% if item.recent %}
+              {% else %}
+              <span class="dot">•</span>
+              {% endif %}
+              {% if item.link %}
+                <a href="{{ item.link }}" target="_blank">{{ item.name }}</a>
+              {% else %}
+                <span>{{ item.name }} (no course site)</span>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% if course.leadta %}
+          <br><em>lead ta: </em>
+          {% for item in course.offerings %}
+            {% if item.role == "leadta" %}
+              {% if item.recent %}
+              {% else %}
+              <span class="dot">•</span>
+              {% endif %}
+              {% if item.link %}
+                <a href="{{ item.link }}" target="_blank">{{ item.name }}</a>
+              {% else %}
+                <span>{{ item.name }} (no course site)</span>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% if course.ta %}
+          <br><em>ta: </em>
+          {% for item in course.offerings %}
+            {% if item.role == "ta" %}
+              {% if item.recent %}
+              {% else %}
+              <span class="dot">•</span>
+              {% endif %}
+              {% if item.link %}
+                <a href="{{ item.link }}" target="_blank">{{ item.name }}</a>
+              {% else %}
+                <span>{{ item.name }} (no course site)</span>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        {% endif %}
+      </p>
+    {% endfor %}
+</section>
+{% endfor %}

@@ -1,0 +1,9 @@
+- name: about
+  link: /about
+  url: /about.html
+- name: teaching
+  link: /teaching
+  url: /teaching.html
+- name: curriculum vitae
+  link: /assets/files/cv.pdf
+  url: /assets/files/cv.pdf

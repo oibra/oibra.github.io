@@ -1,0 +1,25 @@
+<header class="fixed-sm-top fixed-md-top">
+  <h1 class="name">
+    <a href="./">omar ibrahim</a>
+  </h1>
+  <small class="pronouns">
+    he / they
+  </small>
+
+  <ul class="nav nav-underline flex-column">
+    {% for item in site.data.navigation %}
+    <li class="nav-item">
+      <a href="{{ item.link }}" {% if page.url == item.url %}class="nav-link active"{% else %}class="nav-link"{% endif %}><span>{{ item.name }}</span></a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <div class="color-menu">
+    {% for item in site.data.colors %}
+    <button class="color-button {% if item.default %}active{% endif %}" id="{{ item.name }}">
+      <i class="fas fa-square fa-lg" ></i>
+    </button>
+    {% endfor %}      
+  </div>
+  <p>theme</p>
+</header>

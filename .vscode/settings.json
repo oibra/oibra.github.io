@@ -1,0 +1,8 @@
+{
+    "html.autoClosingTags": true,
+    "html.format.indentInnerHtml": true,
+    "[html]": {
+        "editor.tabSize": 2,
+        "editor.detectIndentation": false
+    }
+}
