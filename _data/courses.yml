@@ -6,9 +6,11 @@
       title: languages and automata
       instructor: true
       offerings:
-        - name: fall 2023
+        - name: spring 2024
           role: instructor
           recent: true
+        - name: fall 2023
+          role: instructor
 
 - school: university of washington
   start: 2018
