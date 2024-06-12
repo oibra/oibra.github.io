@@ -6,7 +6,18 @@
       title: languages and automata
       instructor: true
       offerings:
+        - name: fall 2024
+          role: instructor
+          recent: true
+        - name: spring 2024
+          role: instructor
         - name: fall 2023
+          role: instructor
+    - name: cs 401
+      title: computer algorithms 1
+      instructor: true
+      offerings:
+        - name: fall 2024
           role: instructor
           recent: true
 

@@ -6,7 +6,7 @@ title: teaching
 <section>
   <h2 class="strong">teaching</h2>
   <small>lecturer, teaching assistant, and other teaching related work</small>
-  <p>i currently teach computer science at the university of illinois chicago. this semester (fall 2023), i'm teaching cs 301: languages and automata.</p>
+  <p>i currently teach computer science at the university of illinois chicago. i am not teaching this semester, but will be teaching cs 301: languages and automata, and cs 401: computer algorithms 1, in fall 2024.</p>
 </section>
 
 {% for school in site.data.courses %}
@@ -27,7 +27,7 @@ title: teaching
               {% if item.link %}
                 <a href="{{ item.link }}" target="_blank">{{ item.name }}</a>
               {% else %}
-                <span>{{ item.name }} (no course site)</span>
+                <span>{{ item.name }}</span>
               {% endif %}
             {% endif %}
           {% endfor %}
