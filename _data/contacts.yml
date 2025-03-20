@@ -1,6 +1,6 @@
 - name: email
+  text: oibra [at] uic [dot] edu
   link: mailto:oibra@uic.edu
 - name: github
+  text: oibra
   link: https://github.com/oibra
-- name: linkedin
-  link: https://www.linkedin.com/in/omaryibrahim/
