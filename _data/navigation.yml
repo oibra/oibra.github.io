@@ -1,12 +1,9 @@
 - name: about me
-  link: /about
+  link: about
   url: /about.html
 - name: teaching
-  link: /teaching
+  link: teaching
   url: /teaching.html
 - name: works
-  link: /works
+  link: works
   url: /works.html
-- name: curriculum vitae
-  link: /assets/files/cv.pdf
-  url: /assets/files/cv.pdf

@@ -26,7 +26,7 @@
   <body>
     <header class="fixed-sm-top fixed-md-top">
   <h1 class="name">
-    <a href="./">omar ibrahim</a>
+    <a href="./" id="home-btn">omar ibrahim</a>
   </h1>
   <small class="pronouns">
     he / they
@@ -35,21 +35,19 @@
   <ul class="nav nav-underline flex-column">
     
     <li class="nav-item">
-      <a href="/about" class="nav-link"><span>about me</span></a>
+      <a id="about-btn" href="about" class="nav-link"><span>about me</span></a>
     </li>
     
     <li class="nav-item">
-      <a href="/teaching" class="nav-link"><span>teaching</span></a>
+      <a id="teaching-btn" href="teaching" class="nav-link"><span>teaching</span></a>
     </li>
     
     <li class="nav-item">
-      <a href="/works" class="nav-link"><span>works</span></a>
+      <a id="works-btn" href="works" class="nav-link"><span>works</span></a>
     </li>
     
-    <li class="nav-item">
-      <a href="/assets/files/cv.pdf" class="nav-link"><span>curriculum vitae</span></a>
-    </li>
-    
+
+    <li class="nav-item"><a class="nav-link" href="/assets/files/cv.pdf" >curriculum vitae</a></li>
   </ul>
 
   <div class="color-menu">
@@ -91,26 +89,27 @@
 </header>
 
     <main>
-      <section>
+      <article id="home">
+  <section>
   <p id="headline" class="bio">hello world! my name is omar. <br>i <a href="/teaching" class="link">teach</a> computer science, currently at the university of illinois chicago. this is a place i show what i've worked on.</p>
   
-  <ul class="nav">
+  <ul class="contact-nav">
   
-  →&nbsp;
+  
   <li class="nav-item">
-      email: <a href="mailto:oibra@uic.edu" class="link">oibra [at] uic [dot] edu</a>
+    → &nbsp; email: <a href="mailto:oibra@uic.edu" class="link">oibra [at] uic [dot] edu</a>
   </li>
   
-  →&nbsp;
+  
   <li class="nav-item">
-      github: <a href="https://github.com/oibra" class="link">oibra</a>
+    → &nbsp; github: <a href="https://github.com/oibra" class="link">oibra</a>
   </li>
   
 </ul>
 </section>
 
 <section>
-  <p>hi! i'm omar ("OH-mar", or əʊmɑr in IPA), and i am currently a lecturer for the department of computer science at the university of illinois chicago.</p> 
+  <p>hi! i'm omar ("OH-mar", or əʊmɑr in IPA), and i am currently a lecturer for the department of computer science at the university of illinois chicago.</p>  
   
   <p>previously, i earned my B.S. and M.S. degrees in Computer Science from the paul g. allen school of computer science at the university of washington in 2021 and 2023 respectively. while I was there, I helped teach computer science courses, taught my own courses, and completed my master's thesis on methods for teaching proof-writing advised by Robbie Weber and Lauren Bricker. I also am very anti capital letters, as you might be able to glean from this site.</p>
 
@@ -135,9 +134,563 @@
   <h3>everything else</h3>
   <ul>
       <li>are you a current student? all course information for cs 301 or 401 this semester (spring 2025) can be found on <a href="https://uic.blackboard.com/" target="_blank">blackboard</a>.</li>
-      <li><strong>Interested in applying to teaching faculty positions?</strong> Access my <a href="/tf-app-materials">application materials (from 2022) here</a>.</li>
+      <li><strong>Interested in applying to teaching faculty positions?</strong> Access my <a id="tf-app-materials-btn" href="/tf-app-materials">application materials (from 2022) here</a>.</li>
   </ul>
 </section>
+</article>
+
+<article id="about" hidden>
+  <section>
+  
+  <div class="d-flex headshot">
+      <img src="/assets/img/headshot.jpg" />
+      <div>
+        <h2>About me</h2>
+        <p>
+            lecturer<br>
+            department of computer science - university of illinois chicago<br>
+        </p>
+        <!-- <p>email: <a href="mailto:oibra@uic.edu">oibra [at] uic [dot] edu</a></p> -->
+        <p>office: <a href="https://goo.gl/maps/Tn3wCqQrxRN367QE8" class="link">SEO 811</a></p>
+      </div>
+      
+  </div>
+</section>
+
+<section>
+  <p>i am currently a lecturer for the department of computer science at the university of illinois chicago.</p> 
+  
+  <p>previously, i earned my B.S. and M.S. degrees in Computer Science from the paul g. allen school of computer science at the university of washington in 2021 and 2023 respectively. while I was there, I helped teach computer science courses, taught my own courses, and completed my master's thesis on methods for teaching proof-writing advised by Robbie Weber and Lauren Bricker. I also am very anti capital letters, as you might be able to glean from this site.</p>
+
+  <p>currently, i am teaching a number of cs theory courses at uic, and i help to manage our undergraduate ta program. i'm also deeply interested in work on embedding ethics into computer science curriculums.</p>
+
+  <!-- <p><strong>Interested in applying to teaching faculty positions?</strong> Access my <a href="/tf-app-materials" id="tf-app-materials-btn">application materials here</a>.</p> -->
+</section>
+
+<section>
+  <h3>teaching philosophy</h3>
+  <p>tbd</p>
+</section>
+
+<!-- <section>
+  <h3>Get In Touch</h3>
+  <h6>→&nbsp;<a href="mailto:oibra@uic.edu" class="link"><strong>oibra [at] uic [dot] edu</strong></a></h6>
+  <p>the best address to reach me for professional or school-related inquiries. i might not be able to respond to inquiries quickly, but i'll do my best to respond eventually.</p>
+   <h6>→&nbsp;<a href="https://calendly.com/oibra-uic" class="link"><strong>schedule a meeting with me</strong></a></h6> -
+  <p></p>
+</section> -->
+</article>
+
+<article id="teaching" hidden>
+  <section>
+  <h2 class="strong">teaching</h2>
+  <small>lecturer, teaching assistant, and other teaching related work</small>
+  <p>i currently teach computer science at the university of illinois chicago. this semester (spring 2025), i am teaching cs 301 (languages and automata) and cs 401 (computer algorithms 1).</p>
+</section>
+
+
+<section>
+  <h3>university of illinois chicago (2023 - present)</h3>
+  
+      <p>
+        <strong class="course">cs 401: computer algorithms 1</strong>
+        
+        
+        <br>
+          
+            
+              
+              
+              
+                
+                  <span>spring 2025</span>
+                
+              
+              
+            
+          
+            
+              
+              <span class="dot">•</span>
+              
+              
+                
+                  <span>fall 2024</span>
+                
+              
+              
+            
+          
+        
+
+        
+
+        
+
+        
+
+        
+      </p>
+    
+      <p>
+        <strong class="course">cs 301: languages and automata</strong>
+        
+        
+        <br>
+          
+            
+              
+              
+              
+                
+                  <span>spring 2025*</span>
+                
+              
+              
+            
+          
+            
+              
+              <span class="dot">•</span>
+              
+              
+                
+                  <span>fall 2024</span>
+                
+              
+              
+            
+          
+            
+              
+              <span class="dot">•</span>
+              
+              
+                
+                  <span>spring 2024</span>
+                
+              
+              
+            
+          
+            
+              
+              <span class="dot">•</span>
+              
+              
+                
+                  <span>fall 2023^</span>
+                
+              
+              
+            
+          
+        
+
+        
+
+        
+
+        
+
+        
+        <br/>
+          
+            <small>^ cotaught with evan mccarty</small><br/>
+          
+            <small>* cotaught with gonzalo bello-lander</small><br/>
+          
+        
+      </p>
+    
+</section>
+
+<section>
+  <h3>university of washington (2018 - 2023)</h3>
+  
+      <p>
+        <strong class="course">cse 190x: cse 12x direct admit workshop</strong>
+        
+        
+        <br>
+          
+            
+              
+              
+              
+                
+                  <a href="https://courses.cs.washington.edu/courses/cse190x/23wi" target="_blank">winter 2023</a>
+                
+              
+              
+            
+          
+        
+
+        
+
+        
+
+        
+
+        
+      </p>
+    
+      <p>
+        <strong class="course">cse 190y: cse 12x direct admit workshop</strong>
+        
+        
+        <br>
+          
+            
+              
+              
+              
+                
+                  <a href="https://courses.cs.washington.edu/courses/cse190y/22au" target="_blank">autumn 2022</a>
+                
+              
+              
+            
+          
+        
+
+        
+
+        
+
+        
+
+        
+      </p>
+    
+      <p>
+        <strong class="course">cse 390z: mathematics for computation workshop</strong>
+        
+        
+        <br>
+          
+            
+              
+              
+              
+                
+                  <a href="https://courses.cs.washington.edu/courses/cse390z/22sp" target="_blank">spring 2022</a>
+                
+              
+              
+            
+          
+            
+              
+              <span class="dot">•</span>
+              
+              
+                
+                  <a href="https://courses.cs.washington.edu/courses/cse390z/22wi" target="_blank">winter 2022</a>
+                
+              
+              
+            
+          
+            
+              
+              <span class="dot">•</span>
+              
+              
+                
+                  <a href="https://courses.cs.washington.edu/courses/cse390z/21au" target="_blank">autumn 2021</a>
+                
+              
+              
+            
+          
+        
+
+        
+
+        
+
+        
+
+        
+      </p>
+    
+      <p>
+        <strong class="course">cse 142: introduction to computer programming 1</strong>
+        
+        
+        <br>
+          
+            
+          
+            
+              
+              
+              
+                
+                  <a href="https://courses.cs.washington.edu/courses/cse142/21su" target="_blank">summer 2021</a>
+                
+              
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+
+        
+          <br><em>head ta: </em>
+          
+            
+          
+            
+          
+            
+              
+              
+              
+                <a href="https://courses.cs.washington.edu/courses/cse142/21sp" target="_blank">spring 2021</a>
+              
+            
+          
+            
+              
+              <span class="dot">•</span>
+              
+              
+                <a href="https://courses.cs.washington.edu/courses/cse142/20au" target="_blank">autumn 2020</a>
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+        
+
+        
+          <br><em>lead ta: </em>
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              
+              
+                <a href="https://courses.cs.washington.edu/courses/cse142/20wi" target="_blank">winter 2020</a>
+              
+            
+          
+            
+              
+              <span class="dot">•</span>
+              
+              
+                <a href="https://courses.cs.washington.edu/courses/cse142/19au" target="_blank">autumn 2019</a>
+              
+            
+          
+            
+              
+              <span class="dot">•</span>
+              
+              
+                <a href="https://courses.cs.washington.edu/courses/cse142/19sp" target="_blank">spring 2019</a>
+              
+            
+          
+            
+          
+            
+          
+        
+
+        
+          <br><em>ta: </em>
+          
+            
+              
+              
+              
+                <a href="https://courses.cs.washington.edu/courses/cse142/22su" target="_blank">summer 2022</a>
+              
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+              
+              <span class="dot">•</span>
+              
+              
+                <a href="https://courses.cs.washington.edu/courses/cse142/18au" target="_blank">autumn 2018</a>
+              
+            
+          
+            
+              
+              <span class="dot">•</span>
+              
+              
+                <a href="https://courses.cs.washington.edu/courses/cse142/18sp" target="_blank">spring 2018</a>
+              
+            
+          
+        
+
+        
+      </p>
+    
+      <p>
+        <strong class="course">cse 143: introduction to computer programming 2</strong>
+        
+        
+
+        
+
+        
+
+        
+          <br><em>ta: </em>
+          
+            
+              
+              
+              
+                <a href="https://courses.cs.washington.edu/courses/cse143e/22wi" target="_blank">winter 2022</a>
+              
+            
+          
+            
+              
+              <span class="dot">•</span>
+              
+              
+                <a href="https://courses.cs.washington.edu/courses/cse143/19wi" target="_blank">winter 2019</a>
+              
+            
+          
+        
+
+        
+      </p>
+    
+      <p>
+        <strong class="course">cse 341: programming languages</strong>
+        
+        
+
+        
+
+        
+
+        
+          <br><em>ta: </em>
+          
+            
+              
+              
+              
+                <a href="https://courses.cs.washington.edu/courses/cse341/20sp" target="_blank">spring 2020</a>
+              
+            
+          
+        
+
+        
+      </p>
+    
+</section>
+
+</article>
+
+<article id="works" hidden>
+  <section>
+  <h3>panels and related</h3>
+  <ul>
+    <li><a href="https://dl.acm.org/doi/10.1145/3626253.3635372">Finding Neurodivergent Community in Computing Education</a>. Birds of a Feather session at Proceedings of the 55th ACM Technical Symposium on Computer Science Education (SIGCSE '24).</li>
+  </ul>
+</section>
+
+<section>
+  <h3>other</h3>
+  <ul>
+    <li>
+      Spoof-It: Correcting incorrect proofs as a method to learn proof-writing<br/>
+      M.S. Thesis<br/>
+      <a href="">Thesis PDF</a>
+    </li>
+  </ul>
+</section>
+</article>
+
+<article id="tf-app-materials" hidden>
+  <section>
+  <h2 class="strong">teaching faculty application materials</h2>
+  <small>last updated march 20, 2025</small>
+  <p>if you've found this page, then you're probably interested in applying to a teaching faculty position. i applied for teaching faculty positions in 2022 for the 2023-24 academic year. hopefully, you find the info and materials here useful, particularly if you're applying without a phd.</p>
+
+  <p>when i wrote my materials, i referenced the materials of a number of earlier ms-only teaching faculty, including kevin lin, suraj rampure, and adam blank. i also referenced the materials of some of my mentors who offered them to me. i've also referenced some of these peoples' websites in making my own materials available here.</p>
+
+  <p>feel free to reach out to me if you wanna chat about the teaching faculty applciation process. i personally got a lot of benefit from discussing with others who went down this path when i was applying.</p>
+  
+  <p>if you're interested in pursuing teaching computer science without a phd, you might also be interested in <a href="https://adamblan.github.io/cs-ms-teaching-track/">this site</a>, which has been put together by a number of people in our commuinty of practice.</p>
+</section>
+
+<section>
+  <p>
+      <a href="/assets/files/teaching-cv.pdf">CV</a><br>
+      i put all of my teaching activities at the top right at the top, followed by scholarship i was involved in, and then other professional experience/activities that were less relevant to my teaching.
+  </p>
+  <!-- <p>
+      <a href="">Cover Letter</a><br>
+      blah blah blah
+  </p> -->
+  <p>
+      <a href="/assets/files/teaching-statement.pdf">Teaching Statement</a><br>
+      the first time i tried to sum up what my teaching philosophy, i realized i had no idea what it was. luckily, i had some time before i had to write my teaching materials. thinking about my teaching philosophy as I taught more made it easier, as did reading other people's teaching statements. i've seen people structure these in some very different ways, but mine has a few overall sections covering general themes in my philosophy on teaching.
+  </p>
+  <p>
+      <a href="/assets/files/diversity-statement.pdf">Diversity and Inclusion Statement</a><br>
+      it ended up really being an extension of my teaching statement covering general themes in my philosophy on teaching that related particularly to fostering diversity and inclusion in my classroom. it's even formatted really similarly.
+  </p>
+</section>
+</article>
     </main>
 
     <div class="alert alert-dark fixed-bottom" role="alert" id="cookieAlert">

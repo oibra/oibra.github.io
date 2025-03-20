@@ -1,8 +1,8 @@
-<ul class="nav">
+<ul class="contact-nav">
   {% for item in site.data.contacts %}
-  →&nbsp;
+  
   <li class="nav-item">
-      {{ item.name }}: <a href="{{ item.link }}" class="link">{{ item.text }}</a>
+    → &nbsp; {{ item.name }}: <a href="{{ item.link }}" class="link">{{ item.text }}</a>
   </li>
   {% endfor %}
 </ul>

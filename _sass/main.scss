@@ -298,6 +298,15 @@ a:hover, a:focus {
     font-size: 1.5rem;
 }
 
+.contact-nav {
+    list-style: none;
+    padding-left: 0;
+}
+
+li:not(.nav-item) {
+    padding-bottom: .5rem;
+}
+
 /* Small screen styling */
 @media only screen and (max-width: 768px) {
     body {

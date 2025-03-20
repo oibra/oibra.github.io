@@ -1,10 +1,13 @@
+console.log('this is still working!')
 "use strict";
 (function() {
     let state = {
         color: 'mediumslateblue',
-        cookiesAccepted: false
+        cookiesAccepted: false,
+        page: 'home'
     }
     const domain = 'omaryibrahim.me'
+    const pages = ['home', 'about', 'teaching', 'works', 'tf-app-materials']
 
     window.onload = () => {
         const cookies = document.cookie
@@ -26,6 +29,8 @@
             }
         }
 
+        history.replaceState({page: state.page}, "", "/")
+
         
         if (state.cookiesAccepted) {
             const cookieTheme = cookies
@@ -37,19 +42,91 @@
                     setColor(color);
                 }
             }
+
+            // const lastPage = cookies.find(row => row.trim().startsWith('lastPage'));
+
+            // if (lastPage && lastPage != 'home') {
+            //     const page = lastPage.split('=')[1]
+            //     if (page && pages.includes(page)) {
+            //         history.replaceState({page: page}, "", "/" + page)
+            //         loadNewPage(page)
+            //     }
+            // }
         }
+
+        
         
 
         for (const color in colorPalettes) {
             $$(color).onclick = (e) => {
-                
                 setColor(color)
             }
         }
+
+        for (const i in pages) {
+            const page = pages[i]
+            // console.log(pages)
+            try {
+                $$(page + "-btn").onclick = (e) => {
+                    e.preventDefault()
+                    if (page != 'home') {
+                        history.pushState({page: page}, "", "/" + page)
+                    } else {
+                        history.pushState({page: page}, "", "/")
+                    }
+
+                    
+                    
+                    loadNewPage(page)
+                }
+            } catch (err) {
+                console.log(page)
+            }
+            
+        }
+
+        // $$('/about-btn').onclick = (e) => {
+        //     e.preventDefault()
+        //     history.pushState({page: 'about'}, "", "/about")
+        //     loadNewPage('about')
+        // }
+
     };
 
-    function hideLoading() {
-        $(".loading-icon").fadeOut();
+    window.addEventListener("popstate", (event) => {
+        // console.log('popstate event logged')
+        // console.log(event)
+        if (event.state) {
+            // console.log(event.state)
+            loadNewPage(event.state.page)
+            $$(event.state.page + "-btn").classList.add('active')
+        }
+    });
+
+    // window.onbeforeunload = (e) => {
+    //     console.log(e.originalTarget)
+    //     console.log(e.originalTarget.URL == window.location.href)
+    //     if (e.originalTarget.URL == window.location.href) {
+    //         window.setTimeout(() => {
+    //     //     // alert('hello!')
+    //             window.location.href = '/'
+                
+    //         }, 0);
+    //         window.onbeforeunload = null
+    //     }    
+    //     return true;
+    // };
+
+
+    function loadNewPage(pagename) {
+        $$(state.page).hidden = true
+        $$(state.page + "-btn").classList.remove('active')
+        $$(pagename).hidden = false
+        state.page = pagename
+
+        // if (state.cookiesAccepted) {
+        //     document.cookie = "lastPage=" + pagename  + '; samesite=Lax; path=/'; 
+        // }
     }
 
     function setColor(color) {
@@ -72,37 +149,7 @@
         for (const prop in paletteVariables) {
             root.style.setProperty(prop, palette[paletteVariables[prop]]);
         }
-
-        // for (const p in projectImages) {
-        //     const modalElement = $("#" + p + "-modal img")[0]
-        //     if (modalElement) {
-        //         modalElement.src = "assets/img/" + projectImages[p][state.color]
-        //     }
-        // }
     }
-
-    // function setIntroMessage() {
-    //     for (let i = 0; i < welcomeMessage.length; i++) {
-    //         state.introMessage[i] = welcomeMessage.charAt(i);
-    //     }
-    // }
-
-    // function type(charArray, element) {
-    //     if (state.introIndex == 0) {
-    //         element.innerHTML = charArray[state.introIndex];
-    //         state.introIndex++;
-    //     } else if (state.introIndex < charArray.length) {
-    //         element.innerHTML += charArray[state.introIndex];
-    //         state.introIndex++;
-    //     } else {
-    //         clearInterval(state.introTimer);
-    //         state.introIndex = 0;
-    //     }
-    // }
-
-    // function typeIntro() {
-    //     state.introTimer = setInterval(type, 50, state.introMessage, $$('hello'));
-    // }
 
     function $$(id) {
         return document.getElementById(id);
