@@ -2,9 +2,9 @@
 (function() {
     let state = {
         color: 'mediumslateblue',
-        cookiesAccepted: true
+        cookiesAccepted: false
     }
-    const domain = '127.0.0.1:3000' // 'omaryibrahim.me'
+    const domain = 'omaryibrahim.me'
 
     window.onload = () => {
         const cookies = document.cookie
@@ -73,36 +73,36 @@
             root.style.setProperty(prop, palette[paletteVariables[prop]]);
         }
 
-        for (const p in projectImages) {
-            const modalElement = $("#" + p + "-modal img")[0]
-            if (modalElement) {
-                modalElement.src = "assets/img/" + projectImages[p][state.color]
-            }
-        }
+        // for (const p in projectImages) {
+        //     const modalElement = $("#" + p + "-modal img")[0]
+        //     if (modalElement) {
+        //         modalElement.src = "assets/img/" + projectImages[p][state.color]
+        //     }
+        // }
     }
 
-    function setIntroMessage() {
-        for (let i = 0; i < welcomeMessage.length; i++) {
-            state.introMessage[i] = welcomeMessage.charAt(i);
-        }
-    }
+    // function setIntroMessage() {
+    //     for (let i = 0; i < welcomeMessage.length; i++) {
+    //         state.introMessage[i] = welcomeMessage.charAt(i);
+    //     }
+    // }
 
-    function type(charArray, element) {
-        if (state.introIndex == 0) {
-            element.innerHTML = charArray[state.introIndex];
-            state.introIndex++;
-        } else if (state.introIndex < charArray.length) {
-            element.innerHTML += charArray[state.introIndex];
-            state.introIndex++;
-        } else {
-            clearInterval(state.introTimer);
-            state.introIndex = 0;
-        }
-    }
+    // function type(charArray, element) {
+    //     if (state.introIndex == 0) {
+    //         element.innerHTML = charArray[state.introIndex];
+    //         state.introIndex++;
+    //     } else if (state.introIndex < charArray.length) {
+    //         element.innerHTML += charArray[state.introIndex];
+    //         state.introIndex++;
+    //     } else {
+    //         clearInterval(state.introTimer);
+    //         state.introIndex = 0;
+    //     }
+    // }
 
-    function typeIntro() {
-        state.introTimer = setInterval(type, 50, state.introMessage, $$('hello'));
-    }
+    // function typeIntro() {
+    //     state.introTimer = setInterval(type, 50, state.introMessage, $$('hello'));
+    // }
 
     function $$(id) {
         return document.getElementById(id);

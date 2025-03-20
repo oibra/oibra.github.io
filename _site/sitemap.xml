@@ -13,6 +13,9 @@
 <loc>http://localhost:4000/tf-app-materials.html</loc>
 </url>
 <url>
+<loc>http://localhost:4000/works.html</loc>
+</url>
+<url>
 <loc>http://localhost:4000/archive/3.5/contact/</loc>
 <lastmod>2023-09-08T12:49:15-05:00</lastmod>
 </url>
@@ -63,6 +66,10 @@
 <url>
 <loc>http://localhost:4000/assets/files/diversity-statement.pdf</loc>
 <lastmod>2023-09-08T12:49:16-05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/assets/files/teaching-cv.pdf</loc>
+<lastmod>2025-03-20T12:20:19-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/assets/files/teaching-statement.pdf</loc>

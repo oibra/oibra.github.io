@@ -94,6 +94,7 @@ title: teaching
         {% endif %}
 
         {% if course.cotaught %}
+        <br/>
           {% for item in course.coteachers %}
             <small>{{ item.symbol }} cotaught with {{ item.name }}</small><br/>
           {% endfor %}

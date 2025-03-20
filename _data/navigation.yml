@@ -4,6 +4,9 @@
 - name: teaching
   link: /teaching
   url: /teaching.html
+- name: works
+  link: /works
+  url: /works.html
 - name: curriculum vitae
   link: /assets/files/cv.pdf
   url: /assets/files/cv.pdf
