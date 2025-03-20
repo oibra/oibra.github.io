@@ -5,6 +5,7 @@
     - name: cs 401
       title: computer algorithms 1
       instructor: true
+      cotaught: false
       offerings:
         - name: spring 2025
           role: instructor
@@ -41,8 +42,6 @@
         - name: gonzalo bello-lander
           symbol: '*'
 
-
-
 - school: university of washington
   start: 2018
   end: 2023
@@ -50,6 +49,7 @@
     - name: cse 190x
       title: cse 12x direct admit workshop
       instructor: true
+      cotaught: false
       offerings:
         - name: winter 2023
           link: https://courses.cs.washington.edu/courses/cse190x/23wi
@@ -60,6 +60,7 @@
     - name: cse 190y
       title: cse 12x direct admit workshop
       instructor: true
+      cotaught: false
       offerings:
         - name: autumn 2022
           link: https://courses.cs.washington.edu/courses/cse190y/22au
@@ -70,6 +71,7 @@
     - name: cse 390z
       title: mathematics for computation workshop
       instructor: true
+      cotaught: false
       offerings:
         - name: spring 2022
           link: https://courses.cs.washington.edu/courses/cse390z/22sp
@@ -90,6 +92,7 @@
       headta: true
       leadta: true
       ta: true
+      cotaught: false
       offerings:
         - name: summer 2022
           link: https://courses.cs.washington.edu/courses/cse142/22su
@@ -127,6 +130,7 @@
     - name: cse 143
       title: introduction to computer programming 2
       ta: true
+      cotaught: false
       offerings:
         - name: winter 2022
           link: https://courses.cs.washington.edu/courses/cse143e/22wi
@@ -139,6 +143,7 @@
     - name: cse 341
       title: programming languages
       ta: true
+      cotaught: false
       offerings:
         - name: spring 2020
           link: https://courses.cs.washington.edu/courses/cse341/20sp
