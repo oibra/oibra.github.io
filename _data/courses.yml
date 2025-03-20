@@ -2,26 +2,46 @@
   start: 2023
   end: present
   courses:
-    - name: cs 301
-      title: languages and automata
-      instructor: true
-      offerings:
-        - name: fall 2024
-          role: instructor
-          recent: true
-        - name: spring 2024
-          role: instructor
-        - name: fall 2023
-          role: instructor
     - name: cs 401
       title: computer algorithms 1
       instructor: true
       offerings:
-        - name: fall 2024
+        - name: spring 2025
           role: instructor
           recent: true
+          cotaught: false
+        - name: fall 2024
+          role: instructor
+          cotaught: false
+    - name: cs 301
+      title: languages and automata
+      instructor: true
+      cotaught: true
+      offerings:
+        - name: spring 2025
+          role: instructor
+          recent: true
+          cotaught: true
+          coteacher: gonzalo bello-lander
+          cosym: '*'
+        - name: fall 2024
+          role: instructor
+          cotaught: false
+        - name: spring 2024
+          role: instructor
+          cotaught: false
         - name: fall 2023
           role: instructor
+          cotaught: true
+          coteacher: evan mccarty
+          cosym: '^'
+      coteachers:
+        - name: evan mccarty
+          symbol: '^'
+        - name: gonzalo bello-lander
+          symbol: '*'
+
+
 
 - school: university of washington
   start: 2018
@@ -35,6 +55,7 @@
           link: https://courses.cs.washington.edu/courses/cse190x/23wi
           role: instructor
           recent: true
+          cotaught: false
 
     - name: cse 190y
       title: cse 12x direct admit workshop
@@ -44,6 +65,7 @@
           link: https://courses.cs.washington.edu/courses/cse190y/22au
           role: instructor
           recent: true
+          cotaught: false
 
     - name: cse 390z
       title: mathematics for computation workshop
@@ -53,12 +75,15 @@
           link: https://courses.cs.washington.edu/courses/cse390z/22sp
           role: instructor
           recent: true
+          cotaught: false
         - name: winter 2022
           link: https://courses.cs.washington.edu/courses/cse390z/22wi
           role: instructor
+          cotaught: false
         - name: autumn 2021
           link: https://courses.cs.washington.edu/courses/cse390z/21au
           role: instructor
+          cotaught: false
     - name: cse 142
       title: introduction to computer programming 1
       instructor: true
@@ -74,6 +99,7 @@
           link: https://courses.cs.washington.edu/courses/cse142/21su
           role: instructor
           recent: true
+          cotaught: false
         - name: spring 2021
           link: https://courses.cs.washington.edu/courses/cse142/21sp
           role: headta

@@ -6,7 +6,7 @@ title: teaching
 <section>
   <h2 class="strong">teaching</h2>
   <small>lecturer, teaching assistant, and other teaching related work</small>
-  <p>i currently teach computer science at the university of illinois chicago. i am not teaching this semester, but will be teaching cs 301: languages and automata, and cs 401: computer algorithms 1, in fall 2024.</p>
+  <p>i currently teach computer science at the university of illinois chicago. this semester (spring 2025), i am teaching cs 301 (languages and automata) and cs 401 (computer algorithms 1).</p>
 </section>
 
 {% for school in site.data.courses %}
@@ -24,11 +24,20 @@ title: teaching
               {% else %}
               <span class="dot">•</span>
               {% endif %}
-              {% if item.link %}
-                <a href="{{ item.link }}" target="_blank">{{ item.name }}</a>
+              {% if item.cotaught %}
+                {% if item.link %}
+                  <a href="{{ item.link }}" target="_blank">{{ item.name }}</a>{{ item.cosym }}
+                {% else %}
+                  <span>{{ item.name }}{{ item.cosym }}</span>
+                {% endif %}
               {% else %}
-                <span>{{ item.name }}</span>
+                {% if item.link %}
+                  <a href="{{ item.link }}" target="_blank">{{ item.name }}</a>
+                {% else %}
+                  <span>{{ item.name }}</span>
+                {% endif %}
               {% endif %}
+              
             {% endif %}
           {% endfor %}
         {% endif %}
@@ -81,6 +90,12 @@ title: teaching
                 <span>{{ item.name }} (no course site)</span>
               {% endif %}
             {% endif %}
+          {% endfor %}
+        {% endif %}
+
+        {% if course.cotaught %}
+          {% for item in course.coteachers %}
+            <small>{{ item.symbol }} cotaught with {{ item.name }}</small><br/>
           {% endfor %}
         {% endif %}
       </p>
