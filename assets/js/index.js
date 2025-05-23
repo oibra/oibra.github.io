@@ -80,7 +80,7 @@ console.log('this is still working!')
                     loadNewPage(page)
                 }
 
-                let links = document.getElementsByClassName(page = '-btn')
+                let links = document.getElementsByClassName(page + '-btn')
                 links.forEach(link => {
                     link.onclick = (e) => {
                     e.preventDefault()
