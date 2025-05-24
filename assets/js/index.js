@@ -80,17 +80,19 @@ console.log('this is still working!')
                     loadNewPage(page)
                 }
 
-                let links = document.getElementsByClassName(page + '-btn')
-                links.forEach(link => {
+                const links = document.getElementsByClassName(page + '-btn')
+                links.forEach((link) => {
                     link.onclick = (e) => {
-                    e.preventDefault()
-                    if (page != 'home') {
-                        history.pushState({page: page}, "", "/" + page)
-                    } else {
-                        history.pushState({page: page}, "", "/")
+                        console.log(link)
+                        e.preventDefault()
+                        if (page != 'home') {
+                            history.pushState({page: page}, "", "/" + page)
+                        } else {
+                            history.pushState({page: page}, "", "/")
+                        }
+                        loadNewPage(page)
                     }
-                    loadNewPage(page)
-                }})
+                })
             } catch (err) {
                 console.log(page)
             }
