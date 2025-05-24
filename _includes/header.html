@@ -1,6 +1,6 @@
 <header class="fixed-sm-top fixed-md-top">
   <h1 class="name">
-    <a href="./" id="home-btn">omar ibrahim</a>
+    <a href="./" class="home-btn">omar ibrahim</a>
   </h1>
   <small class="pronouns">
     he / they
@@ -9,7 +9,7 @@
   <ul class="nav nav-underline flex-column">
     {% for item in site.data.navigation %}
     <li class="nav-item">
-      <a id="{{ item.link }}-btn" href="{{ item.link }}" {% if page.url == item.url %}class="nav-link active"{% else %}class="nav-link"{% endif %}><span>{{ item.name }}</span></a>
+      <a href="{{ item.link }}" {% if page.url == item.url %}class="nav-link active {{ item.link }}-btn"{% else %}class="nav-link {{ item.link }}-btn"{% endif %}><span>{{ item.name }}</span></a>
     </li>
     {% endfor %}
 

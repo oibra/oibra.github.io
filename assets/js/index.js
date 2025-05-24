@@ -81,7 +81,7 @@ console.log('this is still working!')
                 }
 
                 const links = document.getElementsByClassName(page + '-btn')
-                for (const j = 0; j < links.length; j++) {
+                for (let j = 0; j < links.length; j++) {
                     links[j].onclick = (e) => {
                             // console.log(link)
                             e.preventDefault()
