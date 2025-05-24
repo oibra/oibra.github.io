@@ -81,10 +81,9 @@ console.log('this is still working!')
                 }
 
                 const links = document.getElementsByClassName(page + '-btn')
-                if (links) {
-                    links.forEach((link) => {
-                        link.onclick = (e) => {
-                            console.log(link)
+                for (const j = 0; j < links.length; j++) {
+                    links[j].onclick = (e) => {
+                            // console.log(link)
                             e.preventDefault()
                             if (page != 'home') {
                                 history.pushState({page: page}, "", "/" + page)
@@ -93,7 +92,6 @@ console.log('this is still working!')
                             }
                             loadNewPage(page)
                         }
-                    })
                 }
             } catch (err) {
                 console.log(page)
