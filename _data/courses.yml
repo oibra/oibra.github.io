@@ -2,6 +2,16 @@
   start: 2023
   end: present
   courses:
+    - name: cs 151
+      title: mathematical foundations of computing
+      instructor: true
+      cotaught: true
+      offerings:
+        - name: fall 2025
+          role: instructor
+          cotaught: true
+          coteacher: drishika dey
+          cosym: 'd'
     - name: cs 401
       title: computer algorithms 1
       instructor: true
@@ -14,6 +24,9 @@
         - name: fall 2024
           role: instructor
           cotaught: false
+      coteachers:
+        - name: drishika dey
+          symbol: 'd'
     - name: cs 301
       title: languages and automata
       instructor: true
@@ -24,7 +37,7 @@
           recent: true
           cotaught: true
           coteacher: gonzalo bello-lander
-          cosym: '*'
+          cosym: 'b'
         - name: fall 2024
           role: instructor
           cotaught: false
@@ -35,12 +48,12 @@
           role: instructor
           cotaught: true
           coteacher: evan mccarty
-          cosym: '^'
+          cosym: 'm'
       coteachers:
         - name: evan mccarty
-          symbol: '^'
+          symbol: 'm'
         - name: gonzalo bello-lander
-          symbol: '*'
+          symbol: 'b'
 
 - school: university of washington
   start: 2018

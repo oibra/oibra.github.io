@@ -21,9 +21,9 @@
               {% endif %}
               {% if item.cotaught %}
                 {% if item.link %}
-                  <a href="{{ item.link }}" target="_blank">{{ item.name }}</a>{{ item.cosym }}
+                  <a href="{{ item.link }}" target="_blank">{{ item.name }}</a><sup>{{ item.cosym }}</sup>
                 {% else %}
-                  <span>{{ item.name }}{{ item.cosym }}</span>
+                  <span>{{ item.name }}<sup>{{ item.cosym }}</sup></span>
                 {% endif %}
               {% else %}
                 {% if item.link %}
@@ -91,7 +91,7 @@
         {% if course.cotaught %}
         <br/>
           {% for item in course.coteachers %}
-            <small>{{ item.symbol }} cotaught with {{ item.name }}</small><br/>
+            <small><sup>{{ item.symbol }}</sup> co-taught with {{ item.name }}</small><br/>
           {% endfor %}
         {% endif %}
       </p>
