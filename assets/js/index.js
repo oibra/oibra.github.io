@@ -7,7 +7,7 @@ console.log('this is still working!')
         page: 'home'
     }
     const domain = 'omaryibrahim.me'
-    const pages = ['home', 'about', 'teaching', 'works', 'tf-app-materials']
+    const pages = ['home', 'teaching', 'works', 'tf-app-materials']
 
     window.onload = () => {
         const cookies = document.cookie
