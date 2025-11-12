@@ -16,14 +16,15 @@
           {% for item in course.offerings %}
             {% if item.role == "instructor" %}
               {% if item.recent %}
+              <strong>
               {% else %}
               <span class="dot">•</span>
               {% endif %}
               {% if item.cotaught %}
                 {% if item.link %}
-                  <a href="{{ item.link }}" target="_blank">{{ item.name }}</a><sup>{{ item.cosym }}</sup>
+                  <a href="{{ item.link }}" target="_blank">{{ item.name }}</a> (w/ {{ item.coteacher }})
                 {% else %}
-                  <span>{{ item.name }}<sup>{{ item.cosym }}</sup></span>
+                  <span>{{ item.name }} (w/ {{ item.coteacher }})</span>
                 {% endif %}
               {% else %}
                 {% if item.link %}
@@ -31,6 +32,9 @@
                 {% else %}
                   <span>{{ item.name }}</span>
                 {% endif %}
+              {% endif %}
+              {% if item.recent %}
+              </strong>
               {% endif %}
               
             {% endif %}
@@ -88,12 +92,12 @@
           {% endfor %}
         {% endif %}
 
-        {% if course.cotaught %}
+        <!-- {% if course.cotaught %}
         <br/>
           {% for item in course.coteachers %}
             <small><sup>{{ item.symbol }}</sup> co-taught with {{ item.name }}</small><br/>
           {% endfor %}
-        {% endif %}
+        {% endif %} -->
       </p>
     {% endfor %}
 </section>
